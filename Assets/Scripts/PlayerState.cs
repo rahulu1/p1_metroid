@@ -22,7 +22,7 @@ public class PlayerState : MonoBehaviour
     {
         if (isGrounded())
         {
-            if (isStanding && Input.GetKeyDown(KeyCode.DownArrow))
+            if (isStanding && Input.GetKeyDown(KeyCode.DownArrow) && playerInventory.HasMorphBall())
             {
                 standing.SetActive(false);
                 morphed.SetActive(true);
@@ -30,7 +30,7 @@ public class PlayerState : MonoBehaviour
             }
             if (!isStanding && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.A)))
             {
-                if (hasSpace() && playerInventory.HasMorphBall())
+                if (hasSpace())
                 {
                     standing.SetActive(true);
                     morphed.SetActive(false);
