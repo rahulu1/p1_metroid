@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -165,7 +165,3808 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: metroid_misc_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 223
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285fb3ac51db06f4ebdfe3a364c23a85
+      internalID: -1794314593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 223
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbe291485330194c85b3c0aca22a8ae
+      internalID: 702348157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 223
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a940562871432c347be3dfaf2907cce5
+      internalID: 51109932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 223
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478556ae736022c43adce9f574ff6e91
+      internalID: -2135793213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 223
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e58fdc467e818e42ac92dc40dbe3ef0
+      internalID: -1393749182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 208
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b583c1f010dbde478bd519992e20531
+      internalID: -1642666235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 208
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d20dc758faf524f9967cc168432b0e
+      internalID: -711111543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 204
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647192f236d056044bba56dd89ac740f
+      internalID: 1163069953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 204
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e33c3c65681c0f41aac7399f9f0e44b
+      internalID: 1198150783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 204
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb331a9d3ebb6d4d953f7a76396d889
+      internalID: -505618352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 204
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db490c5ee22f0af4fa911b8fae35ff10
+      internalID: 670251390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 204
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7b967e086999c47ad3bccaa205018c
+      internalID: 685296453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 204
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884602dc4874ee84a8de60a61b528e7c
+      internalID: 123815887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 204
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e92d7a6c066364fb92653a0c352f7d
+      internalID: -557845658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 204
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99ad68391de93342810658197b25dc6
+      internalID: 1985243365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 204
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c079a767151ab540abf983adc788f36
+      internalID: -1140361145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 204
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1242e2f30136648bb171ae34e13dd2
+      internalID: -1548131021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 212
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238ac02bfe877824b8f44820f15f1a9c
+      internalID: -1508960707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 212
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd649d725c8e77743b6a5491905abe75
+      internalID: -1526097798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 212
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1ce360005445b4dbd48f9b8ee9559a
+      internalID: 1128627499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 192
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ede1379ea3ea940b112263e423d8a8
+      internalID: -1444539431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 192
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e533679ce66fe4f8caf51d6e6d541b
+      internalID: -724821171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 192
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec41f8a52f143c245a76082f9dfbc765
+      internalID: -915171196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 192
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3cf80cfb391a741bf304d1928b8997
+      internalID: 293508489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 192
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afbd3648efba7f4c9fd16cca8476d61
+      internalID: 19319982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 192
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4e5f083730d99409a0a162ad24bab9
+      internalID: 1257899562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 192
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d05d3b4f0a96e84d95252493807eff8
+      internalID: 138582531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 192
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2103d95fcea8b0e4a8a377be79a1fc3b
+      internalID: 438235491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 192
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11028833b3d8f0443a223b038e81267e
+      internalID: -1248218815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 191
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7576a68b37305449a10e643af8bab5
+      internalID: -1133452543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 192
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6aa98bfc7e91094bb3bd33b7baad6d2
+      internalID: 1686576511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 182
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622f9413eb6e93b4d83c48a14d92cc34
+      internalID: -1339126355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 182
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4ac9d59157be24dbdd61f0e9f6700d
+      internalID: 1959356356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 182
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b57b11cd32495246bbb6238dd2768d3
+      internalID: -1821055445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 182
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552719763443bdf44bf67f31c1dbee0d
+      internalID: -1770676902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d995a0a5698b22d4c9e648639f15a76c
+      internalID: 1258413130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4698d423c9ad3bd4aaf4390e3d19d52c
+      internalID: -1772088183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0316f2210c769b49a71a7ad3f2ba25a
+      internalID: -398816059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3fef811a4cbc44b876213d2cc0736c
+      internalID: 1411380750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb15c19fab0f29488a8b6f76e1ef3ad
+      internalID: -1413004159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ca355c89a9b394ab90a02ae7a44d40
+      internalID: -1499818393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 159
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1afd18dafda37a34bb6f1245cda3ba60
+      internalID: 466197985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 155
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9d6e029c97118438a2e37290aa7899
+      internalID: -1849018818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 159
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d383f580f8cfea945a154befd15f6244
+      internalID: -1208047646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec5915450519664ab58baaf318252b4
+      internalID: -1449637581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cac523e79c18ca4786bbb22300fd452
+      internalID: 2059975698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71abfe9aff6c7414680bfb168d1c3afa
+      internalID: 1920229378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 159
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91690e6c78e1c0c49862d8e76061fca9
+      internalID: -131261647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4887c02d013388b408a036a95e259210
+      internalID: -376660703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a79e04fb7fee4d4f8ee835b2dabd48a
+      internalID: -793396908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba89be734a2ee0478cc8d989690df25
+      internalID: 918519261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc716043145be54d8d9eff4f568de8c
+      internalID: -738235579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97bdea5a128e2040bdb409162d825d5
+      internalID: 851378285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83430f7932fafb148adc154258358ff0
+      internalID: -1338107218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bad6c332b07a544d81b24e166f6023f
+      internalID: -1888099529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9d13f73bf69a34ba3bfb26d06507a8
+      internalID: 33268385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_56
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5e185d5917c654ba18284d607c8230
+      internalID: -1860295884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_57
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078a94eb3567547428b4b39a92e594c5
+      internalID: 1082602600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38bc033be03f22149bddcc190deeb9dd
+      internalID: -1352656916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc72ed94d5cedb4b8914bf3db0815fa
+      internalID: -1466429590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_60
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f715cde509028742801cd8845546354
+      internalID: -1144222628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 134
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a68f0f549855442b5b7d835a9ad9f6
+      internalID: -1606732304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_62
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 134
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f22ce2def0716a438a01568c578ba22
+      internalID: -782562232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_63
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 134
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512c44204c273a94397b164e1f67bdeb
+      internalID: 334488747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_64
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 134
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127318e629b94d146986d34b9e3ff915
+      internalID: -1722228984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_65
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 134
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12c9c3d3f7ba3344a06e298b05f88c0
+      internalID: 795130622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_66
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 134
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6438377122e2ced4d84ac69ecb5f93cb
+      internalID: -2026351807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_67
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 134
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639bcda2336372b4b8213ef6052954cd
+      internalID: 289627370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_68
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 134
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd5746fbad74a54298d410b73435b36
+      internalID: -1996088418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_69
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 134
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2939e2f38cccf45814feb062411420
+      internalID: 123337809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_70
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 134
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72f2fa7f3193984a9ada87611b50d05
+      internalID: -895461384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_71
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 134
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aafc31905c5b804982a9c0ab42bf929
+      internalID: 628108145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_72
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 134
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e5cfcf8e2a41e408cfd1e5c9dd55df
+      internalID: -310653943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_73
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 134
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0c1e9fd13c80f498164e304179d19b
+      internalID: -879655680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_74
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 134
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187e83cdb1a85234d855073dfb53fd0b
+      internalID: -2125166520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_75
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 134
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123a7c3bb4bd7c04786ad0f28f620165
+      internalID: 313534957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_76
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 134
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bdf0af01b46c842b3d2b16f93e7c73
+      internalID: 2064658721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_77
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 134
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d0ca7459e8c3848806fda997c2311d
+      internalID: 1474268308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_78
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 134
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec14467fd89d974eb9a13864296db9e
+      internalID: -1625311932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_79
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 134
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9899fcd4a096a5249902b29eff35b26c
+      internalID: -1876182115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_80
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 123
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64082d33d581fec468b3070650de8e2f
+      internalID: 128880504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_81
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 123
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a741f55e7d97249b84128a071446b0
+      internalID: 918715939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_82
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 124
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbae180386faca498ebce32b6599930
+      internalID: 822600148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_83
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 124
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff7cd30c1140f341b491fe69e70f26f
+      internalID: 1934683279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_84
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 124
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659dd757c14300b42897b04a09f55244
+      internalID: 1641504872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_85
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 124
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267d9d85995053b418e0e86bd81c0c4b
+      internalID: 1254685379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_86
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 91
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b81e8b8142d7c846bcc71d9f0d1ce54
+      internalID: 1851123499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_87
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 91
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8594a24c379608242848347304a3881c
+      internalID: 1287802345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_88
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 83
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e264647053652944bbde144804e6675
+      internalID: -2138685406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_89
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 83
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbead53674440a4d85b485f8c5ba5fc
+      internalID: -1530520536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_90
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 83
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551d32571bdba6e499b04aa162a29873
+      internalID: -1275092093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_91
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 83
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b883acffaedaf834281c1ffd3e7b1405
+      internalID: -989235548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_92
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 83
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9510c050bf31d45a1b24ec564d3244
+      internalID: 1084405061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_93
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 83
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1a98bd156c7034a8624d2a6e2cff8b
+      internalID: 428524144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_94
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 83
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76d2e3aa25eadd4fa0d08a140a13f7d
+      internalID: 1118631452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_95
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 83
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490a24e10248d424ca5f84e8f5d91833
+      internalID: 1273494471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_96
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 83
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310d0d9aebc59e647b9ed89fbc0d5290
+      internalID: -1872679727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_97
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 83
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0cfcc952eca3584e82efa75321ea0ad
+      internalID: 774164321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_98
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 83
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b403a51e686e5ef4ebd649807bc6bc06
+      internalID: -679644744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_99
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 83
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f7a0e5cad0e8948b3aeca926311e45
+      internalID: -1370718049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_100
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac92d4c374a452348810a5fa17308777
+      internalID: -1538072508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_101
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6ff34c924349a4cb793e3cab1b9dc2
+      internalID: -2082218259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_102
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 113
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eedf5d6e2124f44bb548772d3a6889b
+      internalID: 1283404622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_103
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 113
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376a0d97c28f86f46bc6516a0f440305
+      internalID: 1583766277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_104
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 113
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec82b68df023a4b4f9efe0755fdeba04
+      internalID: 1888611847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_105
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 113
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c6c6f8e0e05ff4cb8538129db7d08b
+      internalID: 488637575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_106
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 113
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d35fe5b649007408bdade10163b74d
+      internalID: 2081790042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_107
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 113
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0edd5bfe852f25c4bae6bc9747efa3af
+      internalID: -15537629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_108
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 113
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac84d3229a467f24ab2b50ecddf60146
+      internalID: -1473170804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_109
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 113
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8aacabf5017db9419a23a9f928f5879
+      internalID: 351331437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_110
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 113
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb5d226d30228f4ea72a978bbb85cb3
+      internalID: -260672548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_111
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 113
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f4a5cfe3025a6439e65b8680e1a01a
+      internalID: 1222816927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_112
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 105
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388ec2b758ee8b04496c5401c8a555ce
+      internalID: 2053025114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_113
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 101
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8911b7ef6c201774d8ea4a714bf944b4
+      internalID: -1344895781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_114
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 101
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f904ac6a2c099254aa6500009be0087c
+      internalID: 1855545586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_115
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 101
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727918ffc58afe64c9fb004757e6d24b
+      internalID: -12482482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_116
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 101
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c233f303d9736bc4db8fd656136a0e19
+      internalID: -2090375199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_117
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 101
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387c286d2c5e204479959ab66a6becc1
+      internalID: -713365608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_118
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 96
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a81fa0d7c8f6f4687a120a19c8bf31
+      internalID: 647473321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_119
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 90
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801c8d9bb6c14834fa9ab49239239185
+      internalID: 382401275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_120
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 90
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382493babb89515458cb167aeeb407c8
+      internalID: -634606789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_121
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 90
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fe86c4869f63640b5b8f5217525047
+      internalID: 1625663958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_122
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 90
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3989a108a2b43284dbe8748ed0a867c4
+      internalID: -636042183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_123
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 90
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275f086081c7bd2428b4f824eb4c6dbe
+      internalID: 411511734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_124
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 90
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1ddb255ee869e4ea4110dcc2688531
+      internalID: 1464939567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_125
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 90
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7d5251c0dfd244199025fcf054df92
+      internalID: -980150088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_126
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 90
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7d6277379ac604c8497a87e9061539
+      internalID: 1540857887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_127
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 90
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa57f1a45b143841a9cb9b82435da05
+      internalID: -1158206403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_128
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 90
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2737fb074e4f1479b8ac7339cf8bc8
+      internalID: 750669067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_129
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 78
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d78fbe2817d3a74a9bc58b5a204ed13
+      internalID: 1043866644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_130
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 78
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e629046595ec1fe49af1d50fe8d7dff5
+      internalID: 1030463020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_131
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 78
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25d52833a28fbe4b9337ee0337dbd3d
+      internalID: -697843539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_132
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 78
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbec7cdf58a46e94896d3384a35416c5
+      internalID: 242964019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_133
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 78
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebb0c299ddc5684da3ab436eef86844
+      internalID: -131023560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_134
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 78
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3b065779b65f94893b62725a12435a
+      internalID: 109799028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_135
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 78
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfde906eb59315e479b5f2913637e215
+      internalID: 306678255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_136
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 78
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d22186f38e5ac4459f6bf196ad509eb
+      internalID: 1673694939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_137
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 78
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3ddff6e3bc80a4fb36d7440b7acac9
+      internalID: 662555172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_138
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 78
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1a21ea099307742bfd4c5e89e5d1bd
+      internalID: 786455113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_139
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 78
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e3b0f3742698444ae0fac3c06f42f3
+      internalID: -2042349989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_140
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 78
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a3fd5c55e5c8b47a0b812acc653ae6
+      internalID: -1593374103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_141
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 78
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf455457136e8ea40b12b5516e730215
+      internalID: 1360444851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_142
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 67
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ffa3185daf10b4b8134ca2d59d09e4
+      internalID: -1619300238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_143
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc10fa1ddfb79e49a3185f0aefb0e12
+      internalID: 1166655028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_144
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef7a9b92087ba5149b8fc6b7a7f8809d
+      internalID: 1987238993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_145
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 55
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548d0c241ea7b9a4fb64eef88d205a1b
+      internalID: -1872984821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_146
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 55
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a76df2b810c1446985f54dad8a1931
+      internalID: -1934728145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_147
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 55
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0a0c08ddaba5c4bb0513b6e4c70592
+      internalID: -1474505063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_148
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 55
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf346858d8c51d49aab6ab3f7a38693
+      internalID: 1878240563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_149
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 55
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95eea98e1dc425d479069f00afebfe9d
+      internalID: 931588685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_150
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 55
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1392d2f9f1afbae42957964d6205a63c
+      internalID: 102611182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_151
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 55
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77836ad4a62e8ff41bc8c6e500c39fea
+      internalID: -310768468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_152
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 55
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057954e30b8714a4e9a31514f88b2b34
+      internalID: -133342423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_153
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 55
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac888f7ec3cc5c448109a1ccfdbb064
+      internalID: -704072438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_154
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 55
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceadeb41c7204ef4fbcdb5090c478dd6
+      internalID: 353385587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_155
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 55
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d510d1b3eeed8064da39449e6875e028
+      internalID: -895878776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_156
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 55
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36da2a4be9898346b245f084bb5a14b
+      internalID: -1267026973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_157
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 55
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d87e0fc6de47d840935ce997a2b96d0
+      internalID: 1750320533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_158
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 55
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d635ed8ee8f2745b31ffab3768cbb5
+      internalID: 347065803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_159
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 55
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c6016c5183fd24f9f5cece6a98d963
+      internalID: 1946524047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_160
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 55
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80d55ad8fa3b584da60804f29467e2d
+      internalID: 1324982657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_161
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 55
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853fc7e6600c7134db88741f089a2efa
+      internalID: -890949601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_162
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 55
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088c72c22b66c4e489d94a86cbc9a36e
+      internalID: -1177141418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_163
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 55
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdc0887a0893f1409ae732d21e44ca5
+      internalID: 1396400194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_164
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 55
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10823b8f4c31d9144abcd74cf06d7cf5
+      internalID: 814849746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_165
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 55
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd05955b59431b34ab55895b2f8f0c67
+      internalID: -1227704772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_166
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 55
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ac63cd7b364ec4a986728de1998636
+      internalID: 964053799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_167
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 55
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7467aee64d3ee91469f984993557152b
+      internalID: -1872088254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_168
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 55
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4c44ddb23ea3745ba2d387dc161283
+      internalID: -657243639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_169
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 55
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbbe354cf2ccd64081a7d5382b9eb8d
+      internalID: 172745383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_170
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 55
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6e79fed2e3ec8409f6e5efa93b5e72
+      internalID: -1807801218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_171
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 55
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5ecb06ce77cac4aa150238c9b3a10e
+      internalID: -391949445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_172
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 55
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a803fe0131005894b9b9262fc58bfd7f
+      internalID: -2073365934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_173
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 55
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4faded96e23009f4c90a1cb8a18172fb
+      internalID: -201934116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_174
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 45
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c886156ef1a62c47896c3c7be06814b
+      internalID: -1204753060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_175
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 45
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18569a52e8e3cff409565c681f85d213
+      internalID: -930280902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_176
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 36
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a72a9571f7197340b3496643a3fcdb7
+      internalID: -1678595248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_177
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 36
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffa2f783dc8db446ac2a0371fe8bbe3
+      internalID: -319160512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_178
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 36
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7614efc2f0fb2634591fb77fe07a10be
+      internalID: -342433165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_179
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 36
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bf89849fa497f49a3910a1ea476d04
+      internalID: 1519542057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_misc_sheet_180
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 224
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1412275f0a20d548b36ad52da418969
+      internalID: -94211004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -176,7 +3977,188 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      metroid_misc_sheet_114: 1855545586
+      metroid_misc_sheet_100: -1538072508
+      metroid_misc_sheet_75: 313534957
+      metroid_misc_sheet_120: -634606789
+      metroid_misc_sheet_148: 1878240563
+      metroid_misc_sheet_56: -1860295884
+      metroid_misc_sheet_19: 1128627499
+      metroid_misc_sheet_73: -879655680
+      metroid_misc_sheet_117: -713365608
+      metroid_misc_sheet_173: -201934116
+      metroid_misc_sheet_35: 1258413130
+      metroid_misc_sheet_50: 918519261
+      metroid_misc_sheet_111: 1222816927
+      metroid_misc_sheet_180: -94211004
+      metroid_misc_sheet_119: 382401275
+      metroid_misc_sheet_38: 1411380750
+      metroid_misc_sheet_131: -697843539
+      metroid_misc_sheet_48: -376660703
+      metroid_misc_sheet_59: -1466429590
+      metroid_misc_sheet_67: 289627370
+      metroid_misc_sheet_136: 1673694939
+      metroid_misc_sheet_26: 138582531
+      metroid_misc_sheet_151: -310768468
+      metroid_misc_sheet_139: -2042349989
+      metroid_misc_sheet_8: 1198150783
+      metroid_misc_sheet_16: -1548131021
+      metroid_misc_sheet_87: 1287802345
+      metroid_misc_sheet_21: -724821171
+      metroid_misc_sheet_160: 1324982657
+      metroid_misc_sheet_169: 172745383
+      metroid_misc_sheet_55: 33268385
+      metroid_misc_sheet_164: 814849746
+      metroid_misc_sheet_69: 123337809
+      metroid_misc_sheet_127: -1158206403
+      metroid_misc_sheet_18: -1526097798
+      metroid_misc_sheet_104: 1888611847
+      metroid_misc_sheet_9: -505618352
+      metroid_misc_sheet_145: -1872984821
+      metroid_misc_sheet_91: -989235548
+      metroid_misc_sheet_170: -1807801218
+      metroid_misc_sheet_52: 851378285
+      metroid_misc_sheet_103: 1583766277
+      metroid_misc_sheet_156: -1267026973
+      metroid_misc_sheet_22: -915171196
+      metroid_misc_sheet_130: 1030463020
+      metroid_misc_sheet_171: -391949445
+      metroid_misc_sheet_1: 702348157
+      metroid_misc_sheet_124: 1464939567
+      metroid_misc_sheet_112: 2053025114
+      metroid_misc_sheet_116: -2090375199
+      metroid_misc_sheet_34: -1770676902
+      metroid_misc_sheet_150: 102611182
+      metroid_misc_sheet_123: 411511734
+      metroid_misc_sheet_13: -557845658
+      metroid_misc_sheet_121: 1625663958
+      metroid_misc_sheet_176: -1678595248
+      metroid_misc_sheet_46: 1920229378
+      metroid_misc_sheet_29: -1133452543
+      metroid_misc_sheet_49: -793396908
+      metroid_misc_sheet_110: -260672548
+      metroid_misc_sheet_42: -1849018818
+      metroid_misc_sheet_122: -636042183
+      metroid_misc_sheet_168: -657243639
+      metroid_misc_sheet_25: 1257899562
+      metroid_misc_sheet_61: -1606732304
+      metroid_misc_sheet_63: 334488747
+      metroid_misc_sheet_44: -1449637581
+      metroid_misc_sheet_174: -1204753060
+      metroid_misc_sheet_109: 351331437
+      metroid_misc_sheet_39: -1413004159
+      metroid_misc_sheet_105: 488637575
+      metroid_misc_sheet_128: 750669067
+      metroid_misc_sheet_106: 2081790042
+      metroid_misc_sheet_147: -1474505063
+      metroid_misc_sheet_78: -1625311932
+      metroid_misc_sheet_40: -1499818393
+      metroid_misc_sheet_159: 1946524047
+      metroid_misc_sheet_129: 1043866644
+      metroid_misc_sheet_140: -1593374103
+      metroid_misc_sheet_178: -342433165
+      metroid_misc_sheet_74: -2125166520
+      metroid_misc_sheet_10: 670251390
+      metroid_misc_sheet_155: -895878776
+      metroid_misc_sheet_27: 438235491
+      metroid_misc_sheet_161: -890949601
+      metroid_misc_sheet_149: 931588685
+      metroid_misc_sheet_141: 1360444851
+      metroid_misc_sheet_118: 647473321
+      metroid_misc_sheet_12: 123815887
+      metroid_misc_sheet_137: 662555172
+      metroid_misc_sheet_165: -1227704772
+      metroid_misc_sheet_134: 109799028
+      metroid_misc_sheet_153: -704072438
+      metroid_misc_sheet_5: -1642666235
+      metroid_misc_sheet_6: -711111543
+      metroid_misc_sheet_158: 347065803
+      metroid_misc_sheet_24: 19319982
+      metroid_misc_sheet_79: -1876182115
+      metroid_misc_sheet_2: 51109932
+      metroid_misc_sheet_82: 822600148
+      metroid_misc_sheet_163: 1396400194
+      metroid_misc_sheet_86: 1851123499
+      metroid_misc_sheet_97: 774164321
+      metroid_misc_sheet_95: 1273494471
+      metroid_misc_sheet_142: -1619300238
+      metroid_misc_sheet_138: 786455113
+      metroid_misc_sheet_162: -1177141418
+      metroid_misc_sheet_85: 1254685379
+      metroid_misc_sheet_167: -1872088254
+      metroid_misc_sheet_66: -2026351807
+      metroid_misc_sheet_71: 628108145
+      metroid_misc_sheet_102: 1283404622
+      metroid_misc_sheet_58: -1352656916
+      metroid_misc_sheet_76: 2064658721
+      metroid_misc_sheet_47: -131261647
+      metroid_misc_sheet_154: 353385587
+      metroid_misc_sheet_11: 685296453
+      metroid_misc_sheet_64: -1722228984
+      metroid_misc_sheet_31: -1339126355
+      metroid_misc_sheet_14: 1985243365
+      metroid_misc_sheet_107: -15537629
+      metroid_misc_sheet_81: 918715939
+      metroid_misc_sheet_126: 1540857887
+      metroid_misc_sheet_108: -1473170804
+      metroid_misc_sheet_17: -1508960707
+      metroid_misc_sheet_93: 428524144
+      metroid_misc_sheet_77: 1474268308
+      metroid_misc_sheet_101: -2082218259
+      metroid_misc_sheet_88: -2138685406
+      metroid_misc_sheet_94: 1118631452
+      metroid_misc_sheet_132: 242964019
+      metroid_misc_sheet_54: -1888099529
+      metroid_misc_sheet_0: -1794314593
+      metroid_misc_sheet_23: 293508489
+      metroid_misc_sheet_41: 466197985
+      metroid_misc_sheet_92: 1084405061
+      metroid_misc_sheet_45: 2059975698
+      metroid_misc_sheet_70: -895461384
+      metroid_misc_sheet_15: -1140361145
+      metroid_misc_sheet_179: 1519542057
+      metroid_misc_sheet_96: -1872679727
+      metroid_misc_sheet_36: -1772088183
+      metroid_misc_sheet_65: 795130622
+      metroid_misc_sheet_57: 1082602600
+      metroid_misc_sheet_3: -2135793213
+      metroid_misc_sheet_143: 1166655028
+      metroid_misc_sheet_80: 128880504
+      metroid_misc_sheet_146: -1934728145
+      metroid_misc_sheet_98: -679644744
+      metroid_misc_sheet_133: -131023560
+      metroid_misc_sheet_28: -1248218815
+      metroid_misc_sheet_125: -980150088
+      metroid_misc_sheet_99: -1370718049
+      metroid_misc_sheet_113: -1344895781
+      metroid_misc_sheet_115: -12482482
+      metroid_misc_sheet_62: -782562232
+      metroid_misc_sheet_20: -1444539431
+      metroid_misc_sheet_33: -1821055445
+      metroid_misc_sheet_32: 1959356356
+      metroid_misc_sheet_4: -1393749182
+      metroid_misc_sheet_72: -310653943
+      metroid_misc_sheet_7: 1163069953
+      metroid_misc_sheet_60: -1144222628
+      metroid_misc_sheet_135: 306678255
+      metroid_misc_sheet_68: -1996088418
+      metroid_misc_sheet_177: -319160512
+      metroid_misc_sheet_152: -133342423
+      metroid_misc_sheet_175: -930280902
+      metroid_misc_sheet_30: 1686576511
+      metroid_misc_sheet_89: -1530520536
+      metroid_misc_sheet_166: 964053799
+      metroid_misc_sheet_43: -1208047646
+      metroid_misc_sheet_51: -738235579
+      metroid_misc_sheet_144: 1987238993
+      metroid_misc_sheet_37: -398816059
+      metroid_misc_sheet_83: 1934683279
+      metroid_misc_sheet_172: -2073365934
+      metroid_misc_sheet_84: 1641504872
+      metroid_misc_sheet_157: 1750320533
+      metroid_misc_sheet_53: -1338107218
+      metroid_misc_sheet_90: -1275092093
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
