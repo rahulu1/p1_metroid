@@ -14,27 +14,26 @@ public class PlayerWeapon : MonoBehaviour
     
     private PlayerDirection pd;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        pd = GetComponentInParent<PlayerDirection>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             GameObject bulletInstance = GameObject.Instantiate(bulletPrefab);
 
             if (pd.IsLookingUp())
             {
-                bulletInstance.transform.position = firingPosForward.position;
+                bulletInstance.transform.position = firingPosUp.position;
                 bulletInstance.GetComponent<Rigidbody>().velocity = Vector3.up * firingSpeed;
             }
             else
             {
-                bulletInstance.transform.position = firingPosUp.position;
+                bulletInstance.transform.position = firingPosForward.position;
                 if(pd.IsFacingRight())
                 {
                     bulletInstance.GetComponent<Rigidbody>().velocity = Vector3.right * firingSpeed;
