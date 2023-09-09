@@ -4,23 +4,40 @@ using UnityEngine;
 
 public class PlayerRun : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    
-    private Rigidbody rb;
+    Rigidbody rigid;
 
-    void Awake()
+    PlayerJump playerJump;
+
+    public float moveSpeed = 5;
+
+    private void Awake()
     {
-        rb = this.GetComponent<Rigidbody>();
+        rigid = this.GetComponent<Rigidbody>();
+        playerJump = this.GetComponentInChildren<PlayerJump>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 newVelocity = rb.velocity;
+        Vector3 newVelocity = rigid.velocity;
+        float input = Input.GetAxis("Horizontal");
 
-        // Horizontal
-        newVelocity.x = Input.GetAxis("Horizontal") * moveSpeed;
+        if (playerJump.IsRunningJump())
+        {
+            bool playerInput = !Mathf.Approximately(input, 0f);
+            if (playerInput)
+            {
+                newVelocity.x = input * moveSpeed;
+            }
 
-        rb.velocity = newVelocity;
+            // If no input, leave newVelocity.x as rigid.velocity.x to keep momentum
+            // during running jump
+        }
+        else
+        {
+            newVelocity.x = input * moveSpeed;
+        }
+
+        rigid.velocity = newVelocity;
     }
 }

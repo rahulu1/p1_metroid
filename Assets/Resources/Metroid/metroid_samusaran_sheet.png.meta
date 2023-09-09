@@ -37,7 +37,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -89,8 +89,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -101,8 +102,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
@@ -113,8 +115,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -125,6 +128,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -137,6 +141,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -149,8 +154,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
@@ -161,6 +167,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -173,6 +180,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -262,10 +270,7024 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1277
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f08e09174c16a438fdd02eaa5c02e7
+      internalID: 2009354871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1283
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d9e44e3b1ec8248999ee506eaef956
+      internalID: 1135672896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1283
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f83a5afacbdf6449261867c54b8948
+      internalID: 1951650014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1283
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61481f0914e81149b9c155ac2b62a7b
+      internalID: -1126517321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1283
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06ae9c0968bd6f41a628b1c7196e4d2
+      internalID: -180983967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1285
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d518b97f402c1e743a14d4f9c0fe835f
+      internalID: 1296590590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1287
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c7dbe582cdd0749b0e2baa1bcdf0fb
+      internalID: -2075930503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1285
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06577af5c6680d64eac34bae16e838a0
+      internalID: -1903907221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1285
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d732c52c13fd0b548a8e68f451a2d114
+      internalID: -1097028363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1237
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f70ad3dbd689b4f8801f5c7f172f47
+      internalID: 1560609675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1233
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6491aa4110963149888d5d49aa66f27
+      internalID: 1928501487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1233
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a7e858914d28848bb6b6caac3b8644
+      internalID: 341327018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1234
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53b9adc3a64fed4fab8d8d43a566725
+      internalID: 58629909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1233
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01f2bc807610594197d6374c6246f31
+      internalID: -1903233118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1234
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f1826b908a19348ae33a970b74c335
+      internalID: -1951014537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1233
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4825e2a0adbd9c478941586f5756fc1
+      internalID: 1193700570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1233
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4136b0c6035dc34c967262f9f4e974f
+      internalID: -754376246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1237
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf14bf11d1b2f74fa17a0ace1cd538e
+      internalID: -1154249222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1197
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ebc1682665a254d80d87353e24f49e
+      internalID: 1910127004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1194
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec5cc2ae25ea004b8aa0661d773277a
+      internalID: -1522335185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1194
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1456ba176a9788147932ea74fbf82f68
+      internalID: -1930761305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1194
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652f378fecb317f4d8230dd1ca2f1427
+      internalID: 1985437973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1193
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8933183bde83bc8488051eded481ceb1
+      internalID: -1760365752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1194
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1666d0717fa0e144b0fdacd610fbea6
+      internalID: -1590008283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1194
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95acd917e47dfb84280de42e2060831e
+      internalID: -1375902997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1194
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908e51a6b34ada5448b152279c9be9b4
+      internalID: 359369603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1197
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45841794fe5f0b4499ed1691e0078b17
+      internalID: 1228293168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1153
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4f534f3baf83747a16282fd3850a1b
+      internalID: 1478979104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1150
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b09e0331766294f82d525536de69b1
+      internalID: -1663419974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1150
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495fffc0c3cc0744281eb4792813539d
+      internalID: 2044574096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1150
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdbe0bed5be6f34ab97d75280411da2
+      internalID: 1183165619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1150
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5c17c01531ce6449a634e00dfe5251
+      internalID: -1194859426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1150
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9cf00958aaf554281143760ee3d983
+      internalID: 122551951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1150
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f4e27635b674b489689e626d6cedd6
+      internalID: -691346183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1150
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1313ecdfd814243ba40944807b26cb
+      internalID: 2076590115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1153
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2b8d7d80befba48a91db87c7af1325
+      internalID: 1536133143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1118
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07a18a9f35c09e43aedf1778119ecf2
+      internalID: 172033537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1122
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21aa0251622727944871f46bfd0ff5dd
+      internalID: 1228187175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1118
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd43e3af4db2e284882f35ba883f599f
+      internalID: -1762139304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1122
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705855b21e3257a4ab28eefd02032782
+      internalID: -2075294072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1123
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e74984755f8756428416e737ca9633a
+      internalID: 1876321749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1123
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b314271612e635f40abbed1f551938a5
+      internalID: 104489851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1123
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea045ca516ca704ea18f908be50a54b
+      internalID: 1790622786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1122
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338c171c82be3c742b71334c6ab4c0a9
+      internalID: -979052501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1118
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cc2099070b4c740920b5272a8b8399
+      internalID: -1573199149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1122
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4f923dd28e41e4486d7569d3f5728f
+      internalID: 2000349896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1118
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d2807aa141ff344a9223a5d87c430a
+      internalID: -1640133335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1077
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc629fd276722f04f83a6a1765988194
+      internalID: -284674893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1073
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fb6847fe93da34dbaa8ad81fb545f6
+      internalID: 152512205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1073
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a179b336b7175c4f85fef98570a8374
+      internalID: 1913895042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1074
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4ad807b0a532a48a700febea69bbd7
+      internalID: 2068033213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1073
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6be36d8b3ae5f14c8e6b2f31c732c79
+      internalID: -1817765489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_56
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1074
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72bb0d971ed7ae4faebbd8d3e45ee96
+      internalID: 1535199900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_57
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1073
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5875faa3a92172b41bcb3cf8e5c58268
+      internalID: -1946668792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1073
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdfcf2dd3082bf4f9e4ec53a5f0eac9
+      internalID: -242588405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1077
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c52248ffc1190746a174dcc80c3c30e
+      internalID: 1716373617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1037
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126eb34bed414394780db9d8a8b83ad6
+      internalID: -2066355558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_61
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1034
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e1bbc0e4f8fa04a8133f23e84b878c
+      internalID: 658609814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_62
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1034
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e3851ff02b8a34b87c757ef5137791
+      internalID: 1176159666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_63
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1034
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767f4794dabbf424e8d1bb6e7498b47c
+      internalID: 1433030679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_64
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1033
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02289e7d467998047a482bcf59299389
+      internalID: 2143437090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_65
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1033
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865d1649388779243a104173b31749a9
+      internalID: 57815367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_66
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1034
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f31d731010eb245bc6e2a4d90a45b7
+      internalID: 396428891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_67
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1034
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cc427eee94be047a3f79da453ec9bb
+      internalID: -1900218501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_68
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1034
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3e7e571c5a7a649a74540a99fd36db
+      internalID: 2088149688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_69
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1037
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d573c1fc7f33de84594f7c4133b02b60
+      internalID: 1388723252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_70
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 993
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8835cfb8c6b1b46b019c62fdc79ad6
+      internalID: -480574742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_71
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 990
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49363acbcf7cd774488ae25998c52624
+      internalID: -1696144795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_72
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 990
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268465bb4a2fdd048bdaccc0c3af85c3
+      internalID: 2125190234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_73
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 990
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b287c91fd3f6d74086372d8a1d8de2d
+      internalID: -907124220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_74
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 990
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c9f2205cfbcfa4fb84e18fe0ff60ce
+      internalID: 1177783442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_75
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 990
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6486853ba5e6d064390e75aef2104317
+      internalID: 605354436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_76
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 990
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2759cdb39c7bca34ea82adc7999d85ed
+      internalID: 1659500140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_77
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 990
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d311d1b8d538145b97a192bf78667c
+      internalID: 921970784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_78
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 990
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2245a8f937eec4c82d2e6bd8481af8
+      internalID: 830311797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_79
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 993
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7730025644ea06642ae7ba8dc2ec0257
+      internalID: 1347663745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_80
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 958
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4144bec94b580514c9b90e171104739b
+      internalID: 2076121197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 962
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bd2108655163e4b842646633a6c65f
+      internalID: -1589597002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_82
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 958
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e8b68a42ea24a4fbdc79611ac0be9b
+      internalID: -853274304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_83
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 962
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f5ac30108daf5418aa6c54350d8dcb
+      internalID: 412651330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_84
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 963
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56cfb5434387dd4ea510c8f5f4d6f0b
+      internalID: 2131552354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_85
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 963
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdb71820354ab044a7989c9868c994e
+      internalID: 1318307713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_86
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 963
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8ab28620ccf364c91611250be1f7a8
+      internalID: -757359854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_87
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 963
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ceea19654a852b4f998fdc111b2b555
+      internalID: -1388084710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_88
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 962
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c271b26aaa4469349bc7fb812f0fa938
+      internalID: -1284908151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_89
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 958
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce6da49557fbd34da833781a476f964
+      internalID: 1988151715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_90
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 962
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1cc2013b8a0184c81609769b0ac6e4
+      internalID: -219057922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_91
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 958
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88182c0f8c5fce41b568b107481883f
+      internalID: 1478468666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_92
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 917
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cc5a9d0bbb1404d8c1860e7dd44767
+      internalID: 130588538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_93
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 913
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0ff4143dc421241bd84831db2fb3e7
+      internalID: -620206131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_94
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 913
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf3dcacfcdaebc4f9518220017de025
+      internalID: -1751656892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_95
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 914
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0c8c8fbceb4bf4aa4afba05c9d274c
+      internalID: 1447633986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_96
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 913
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376689f42a93ec74b85302daf518c6e7
+      internalID: -954699923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_97
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 914
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead99a04816c6a44794b8c7e18882ec7
+      internalID: -912415892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_98
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 913
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80aa4771973308241b5ebaa12caff879
+      internalID: 627216702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_99
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 913
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325bd197b723de5429454665a4579ec3
+      internalID: 1588056652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_100
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 917
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59eea89c8ed63394794ffaba3f1d60bc
+      internalID: 419025913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_101
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 877
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87722051652fe8d4dbb16431d5cda8dd
+      internalID: -632160238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_102
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 874
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeead0ac066ea6340af929d00d166603
+      internalID: -1599914986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_103
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 874
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6c6ff2bf9631245b5227d587dd67c8
+      internalID: -1988343303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_104
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 874
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554bbab7a465aaf42a28d101c689690f
+      internalID: -2047085771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_105
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 873
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b56c9f1aaef1b4eaf648cf3acd978f
+      internalID: -411706644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_106
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 873
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d00329b70c72734b8c6d55d810b8c5c
+      internalID: -1025403520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_107
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 874
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8be91b9bf36b8b4696627926aa33c51
+      internalID: -1088878287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_108
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 874
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a842a20e58a6c1b45ab81a40819c5416
+      internalID: 346755838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_109
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 874
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3df4e12db2978e4d856449b5cd51bb2
+      internalID: 1066282682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_110
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 877
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdf922d382cf7d4c9b39c92ecd33d83
+      internalID: 165456987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_111
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 833
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a762f772e314ac46abe522d311eca6f
+      internalID: -1672435042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_112
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 830
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6f64c70bc140045ab2395dbbced36c
+      internalID: 1586512198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_113
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 830
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3719b86d332072744a08b6724db32a89
+      internalID: 215498532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_114
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 830
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f298995b2943b468a643562e6f179c
+      internalID: -473265940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_115
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 830
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9997f166f35e90a4284805a3f994fdb6
+      internalID: 2142709103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_116
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 830
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24746121e96b7b14e98e89ecaf5f2451
+      internalID: -284230760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_117
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 830
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbae65750ecabc45b44eab9c6a1902b
+      internalID: 259231085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_118
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 830
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0faf80fbbb6542b4086e9a2e9f696099
+      internalID: -2082598214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_119
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 830
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c21e37203838394c80075ccead3f98a
+      internalID: 45575562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_120
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 833
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95848903862299e4194ca2f7780c3472
+      internalID: 1827783743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_121
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 798
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a965b874f1e06e478426b95c35eab76
+      internalID: -607349305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_122
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 802
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e70bbbd09f3f741adbb22ac1cd3323
+      internalID: 855641009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_123
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 798
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87bd31f17b62b04a92481c9d0fdad7a
+      internalID: 1082643265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_124
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 802
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a79d3fb08ef5742ba792e5fcd722f6
+      internalID: -1259455260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_125
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 803
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d914c4764db6a3c458cbdf616be98cc1
+      internalID: -1682044438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_126
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 803
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e55f34db9f96da41a4904482d951549
+      internalID: 2070910431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_127
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 803
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00f30623e4476a4c80742a1cded1054
+      internalID: -1201446865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_128
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 803
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80fabc60cfeec6b49b475c0fd47d58fa
+      internalID: 100596692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_129
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 802
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfe60ca00c5e9941a31ba5555a4bc88
+      internalID: -699180026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_130
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 798
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90fd056ea211a74ead06e576a0ea93a
+      internalID: -2105271332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_131
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 802
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd16aef2d4e44f489b95f9ed20b61eb
+      internalID: 1492941672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_132
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 798
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2847ec78331bf6245b24797e78fce759
+      internalID: 1589880743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_133
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 757
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44dd20a9f1721a46a39b621298351b2
+      internalID: -2093987561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_134
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 753
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b09c984df7971f48aff18fd8891144e
+      internalID: 1334919307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_135
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 753
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7003174a1ac4f294dae1a5506dff60b0
+      internalID: 1013803077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_136
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 754
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40901aa3b094552428524bc1e7af6e08
+      internalID: 164019075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_137
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 753
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8ea8cbbb417874cbccc8150e556224
+      internalID: -746744841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_138
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 754
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da9047fbc0b6d7438819bde2af12e4a
+      internalID: 702544308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_139
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 753
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b6b6c9d48ed0641aba646f64ea95ad
+      internalID: 268964540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_140
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 753
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5207fd23c58004ebf4ecdc594eda0d
+      internalID: 770313668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_141
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 757
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6adfea2016212e4e9dbbf96ea2ec1bc
+      internalID: 1436033575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_142
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 717
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3c18f16111e8c4eb87654802e195c3
+      internalID: 835628592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_143
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 714
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5773346145b2142b9174daf351c07a
+      internalID: 498434843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_144
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 714
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692f4d295f80e0341a1d64233c9a9952
+      internalID: 2017374005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_145
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 714
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195285e7e112a4446b405cccbb1d748a
+      internalID: -1489496154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_146
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 713
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c70047fa6b1e1418dc22ad03eb05cd
+      internalID: -850763069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_147
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 713
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f6423f4a4980e48962b776c71ed946
+      internalID: -2883684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_148
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 714
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44dd44c3342e9e74dbbeab84aac5a2eb
+      internalID: 2071674836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_149
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 714
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211936bbc549e9d4389884eb872d8461
+      internalID: 1882909281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_150
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 714
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932417b3dce6a584caa65d403ea2b4ac
+      internalID: 1965744951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_151
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 717
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28c0dab3b9cd654bb8d40ef34ee61b7
+      internalID: 1281033819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_152
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 673
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd73150092dfa99418075d4c396b212e
+      internalID: -1557966460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_153
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 670
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b306c825d6c57364ab06f62b13354747
+      internalID: -12523231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_154
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 670
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bd9c906e6b1a4409eef0061f1b9e57
+      internalID: 954578960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_155
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 670
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4edafc9f43c0d742b4a7dffda8f9fc0
+      internalID: -1047837012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_156
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 670
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42bb5c6486e5574991a3ccde1541a32
+      internalID: 805412339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_157
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 670
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc781a370f589344f9563e78ab090566
+      internalID: -39446394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_158
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 670
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1a7e3a1c4b04c49a08f2c3d9ff6ab5
+      internalID: 652137079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_159
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 670
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1041085164569464eb9a337b476c3547
+      internalID: -2124251063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_160
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 670
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e36b0f8d10db445a5aff19cfc8dda2
+      internalID: 1973925065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_161
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 673
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b08028c94b578e40b0b454051e0922e
+      internalID: -1415501412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_162
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 638
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f348cedfbdfa9b489409272df68c13e
+      internalID: -1776939226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_163
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 642
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a83bcef27b4574897e18f697b9360e
+      internalID: 1738072006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_164
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 638
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243b2ecbe1c66f04b990325d9455ddfd
+      internalID: -108945174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_165
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 642
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eddf1edb25aedb46a26901f1dc0b014
+      internalID: -1087607676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_166
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 643
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63685647df5ab574a9a7cc68e710df5c
+      internalID: 774057895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_167
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 643
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c16d79a3259944aba8835a5bd99d4b
+      internalID: -153608387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_168
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 643
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20499e932c6877646b9cfe34d54bc06b
+      internalID: -1713580373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_169
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 643
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18bca7c986cb9e7458cf8d52c1b5197f
+      internalID: 242112968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_170
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 642
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13347d29461ced649bee85d474d6b9c7
+      internalID: 1785709963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_171
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 638
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de8f576a7f2d9840947807d8578ff42
+      internalID: 1709502641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_172
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 642
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2eba5af05f1124cabbecab173551d1
+      internalID: -2112912730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_173
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 638
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3ec9c075d17f541906b1ea9d6933d9
+      internalID: -1880957876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_174
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 597
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9faf3bd32b2e6d444a85dcd8dd8563be
+      internalID: 888239390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_175
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 593
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c91e9124e027943b0aae100e2299b8
+      internalID: -1592133579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_176
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 593
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8005d34c2ab5eeb47b28364e0d9dc51a
+      internalID: -446005215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_177
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 594
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795d3499e362f5146a14776a585013a0
+      internalID: 1298450638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_178
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 593
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d36c18ebe74e84ea95b8dcd6d5f73e
+      internalID: 615156600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_179
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 594
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f38ba56d4b4d641b7a2722b10c1be5
+      internalID: -1345195539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_180
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 593
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a399c685503def4588c36f57471d7fb
+      internalID: -1444416826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_181
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 593
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e4f441b1b35384884cfdc503da4031
+      internalID: 921286498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_182
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 597
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661fc15ee788dd545b182051027a4448
+      internalID: -677237055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_183
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 557
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876a4e3240b64154586d11d81a6231b9
+      internalID: -155485196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_184
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 554
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b824ec61ca9e5a4f8af399065e1ea6a
+      internalID: 191017750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_185
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 554
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66270d4fd6166c478ed2fbc06102cc9
+      internalID: -629359328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_186
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 554
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900dc6e913ead2a46b27e54f8d986f62
+      internalID: 1709212546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_187
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 553
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbbc8217ca8ba147b9347cbe155c8bb
+      internalID: 276042756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_188
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 553
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1370bc15add83ea4997ba6638b7ef5cd
+      internalID: 1205169602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_189
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 554
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b8eb54adf3ad1478929b23d3ffcab1
+      internalID: -628249529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_190
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 554
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac226eb61b14e54f824ff290ab52cf5
+      internalID: -212093897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_191
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 554
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62fb19cd4090a2459840ecf90704794
+      internalID: -1117932572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_192
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 557
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad953ac122b3594cb3560db99568607
+      internalID: 41090444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_193
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 514
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd187553fe8b1484a8708a326a3fe762
+      internalID: -1248669592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_194
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 511
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c667f02017d890c4d96d0c72221651a2
+      internalID: -1768015866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_195
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 511
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e3a744dc3b94e4eabf9b1f37cc3d59
+      internalID: -1753171815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_196
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 511
+        width: 13
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b120196daa4ff154a9155c88af7db938
+      internalID: -660840811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_197
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 511
+        width: 15
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab70937ae4e09143babbd0ba4183fa9
+      internalID: 278839565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_198
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 511
+        width: 15
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398b46d84d38f7441b771a9e50068ce3
+      internalID: 121029243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_199
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 511
+        width: 13
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4016136d5bb5d42a0abfce85b30bd1
+      internalID: 1569507399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_200
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 511
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9070d3e87ad1447bd8fa3372aba834
+      internalID: 1091329408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_201
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 511
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717a3b9cda9d4264cba4c5b638930e01
+      internalID: -1063209783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_202
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 514
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6836f6add5ed25348a4d091784c7053b
+      internalID: -829498853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_203
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 480
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0924f50b70a2db45b024a2f41a90f8b
+      internalID: 298463369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_204
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 482
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38cfa76cf53ada41851a6d383b41c2a
+      internalID: 1196110114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_205
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 480
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08905e45f95ab147ade63188480c067
+      internalID: 1391685319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_206
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 482
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49dd4c613a498cc4da201ab394ca357c
+      internalID: -417563753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_207
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 483
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a3d52c0b499df46a7c45a86f1bb3ff
+      internalID: 1659722518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_208
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 483
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a203c2c14da31064f87c70f865636e3b
+      internalID: -1867156757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_209
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 483
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55575c31c5d3a247a32ec67fbd3d041
+      internalID: 576959574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_210
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 483
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410a55e9184e6d64a989d0086a0e18db
+      internalID: 1935582265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_211
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 482
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d208da513fa0ac4795d398ce2be926f
+      internalID: 837756417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_212
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 480
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198041b0500bb2f4db9050073697b82c
+      internalID: -755337374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_213
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 482
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab1590d9a4382d4490b1c72ecbaf85d
+      internalID: -1720511347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_214
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 480
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4297b8089d4c19489869c1675effcfe
+      internalID: -1928424789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_215
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 437
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7765ce22f5c0d47b4459d8e10f7daf
+      internalID: 1789692068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_216
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 433
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529d3954f3bda9145acc6ac208298fce
+      internalID: 927132935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_217
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 433
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0ecbc1505483f43977e1c571c60dc3
+      internalID: 912957949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_218
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 434
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cb0ce9f83ca1f4c9ca8661c6a76f1d
+      internalID: 1191543306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_219
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 433
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb774cba483f764bba7a44cd690e914
+      internalID: -521871476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_220
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 434
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64deb7d7f130d394ea5443a376ba236f
+      internalID: 1497709104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_221
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 433
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452ef27f1e565c9459e0ebba04753eff
+      internalID: 1782325924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_222
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 433
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e9e915eef4ef9409821a83e6909061
+      internalID: -1235903861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_223
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 437
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c39965be1e5dde4b8889ece99c929bc
+      internalID: -1151281046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_224
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 397
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba9c2c00bcc3ef4da79e4566dc813e9
+      internalID: -1966389637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_225
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 394
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8036ac2fa12dd4fa2194bbfe02398c
+      internalID: -912409636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_226
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 394
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80fedc60fbbc6d498680771cb338ceb
+      internalID: -843655776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_227
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 394
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f960ec8bff9cae84da19fce6317cf835
+      internalID: -973515250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_228
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 393
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f28f4da5654ee48ad17a0dfbd11df5
+      internalID: -43821606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_229
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 393
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524d8ea9a49ffdc428093d296593f0ed
+      internalID: -948319585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_230
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 394
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f2b624a1fa90c48a621d1541af6621
+      internalID: -1669121747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_231
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 394
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf62606fc6d7e24288b5778fd376618
+      internalID: 737917842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_232
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 394
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283d89bd646994443858b1ca8c36e874
+      internalID: -2114490709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_233
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 397
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc49ff84d98b38844ac8aa1ce74faa22
+      internalID: -839396546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_234
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 354
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20fada8919e83941b5cd244ee162079
+      internalID: -52263863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_235
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 351
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b086b794898364d4fad477abd3d3b1c4
+      internalID: 90710921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_236
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 351
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77176ff00209979479579139a92c45c4
+      internalID: -358206782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_237
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 351
+        width: 13
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a01c4625d5369a42a4cb5e35b4f29ab
+      internalID: -886359668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_238
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 351
+        width: 15
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95e33f9b4cb74645ab7c2705174abdc
+      internalID: -520020013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_239
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 351
+        width: 15
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551c01e07cf1b5d4daf4409ea6e797b4
+      internalID: -2076243459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_240
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 351
+        width: 13
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874e3e9224bea4b4896cc7a64bdc2ce7
+      internalID: 809794614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_241
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 351
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57cc0c4616377f41be9c23facb81fbe
+      internalID: 671039207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_242
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 351
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414a26e78c2e4ac4ca525220c9d756b8
+      internalID: -471269972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_243
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 354
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95cab91499fa3f44aae1698f92d5010b
+      internalID: 1627240871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_244
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 320
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451fed2ecbb3cfb4ba0fef876d08df7b
+      internalID: 296960961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_245
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 322
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e46782cbe9642a4599247d41892492d
+      internalID: 323470058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_246
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 320
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a2a54f5b16372408e194e96473cc50
+      internalID: -186137563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_247
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 322
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d410c7d07fe4540847ddba06c9fa93
+      internalID: 970422052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_248
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 323
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cadfd89857f1a84fa052ae7a6736fd4
+      internalID: -1161291911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_249
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 323
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723a0f3f8f8ef0541a1cd9a090b4d6f5
+      internalID: 294995399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_250
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 323
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d296321abbedbb40832fefeb88cc628
+      internalID: -473317220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_251
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 323
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f9b7965ea904b48acba2fbca339724
+      internalID: -927573520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_252
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 322
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7d3b1517fd9054a8ffed1f09f17c1d
+      internalID: 1730106863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_253
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 320
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805af1794cbdecb41b5af9dfcfa472aa
+      internalID: 597383125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_254
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 322
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5999e662b988fd94fbebc2576da828fa
+      internalID: -1829624881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_255
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 320
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6130437a398614991bf844c1839534
+      internalID: 69045202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_256
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 277
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b9ee621c1b2674fa17869d89ae14cd
+      internalID: 1491680910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_257
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 273
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a55dfc295daa745aaaafd824716baa
+      internalID: 75124772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_258
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 273
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786a99ed244a0f04fa3fc3b51e4652b3
+      internalID: -902314365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_259
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 274
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17757488c4ba93f4297e2e3c8d2c398c
+      internalID: -1489396549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_260
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 273
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddbd1cf0f3303f4598ca009b8e1ffda
+      internalID: -1448916106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_261
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 274
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127e76eb20568b042880bb988a8db475
+      internalID: 1784099269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_262
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 273
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9b13375fd6a3c418445e630a0471b3
+      internalID: -479433106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_263
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 273
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea043635f96e0749b75425b1b1ce8d8
+      internalID: -1162813006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_264
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 277
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2048f7e6aa9928c4395be34a142d3b84
+      internalID: -324468026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_265
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 237
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc2524ca7e69b04ba8c3946d8eed5b7
+      internalID: 1251715782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_266
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 234
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e743181ff275e2847b298eb41da8ed5a
+      internalID: 1883482699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_267
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 234
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0108a29c73e364ca7d214f76bd7273
+      internalID: 524748048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_268
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 234
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a476c695eff22274b844c904ca5ccce1
+      internalID: 768355831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_269
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 233
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5627ab768f32ed74da8c3c979495ef0a
+      internalID: -1312967999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_270
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 233
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c1073dfc102e4428204a91b21cc99c
+      internalID: -331367817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_271
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 234
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39627b3a997bff948b551711731ffc4b
+      internalID: -248839839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_272
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 234
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65efde7ee6021646a0640e2ecec9fe0
+      internalID: 1945374396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_273
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 234
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a72339c2c363584f9a5b4666e1dff25
+      internalID: -767350242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_274
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 237
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f870c3921656c49bb8844cf36784bc
+      internalID: -1695585680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_275
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 194
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26860dfb5a3b9394dbd7ed5d4c59cd8c
+      internalID: 435465938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_276
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 191
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b26d294b092c945a0dfe9ec5ee3cc1
+      internalID: 1035569502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_277
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 191
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bdb49e77c721347bd863a51341466a
+      internalID: -1724473625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_278
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 191
+        width: 13
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e0f0c7b492cb643a97bc2d0e780ebe
+      internalID: -1252278248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_279
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 191
+        width: 15
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba62583d3a1e10f47bac4c2d31a876ad
+      internalID: 628435004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_280
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 191
+        width: 15
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17491d5c9a621744b89de7d6f258a798
+      internalID: -363135124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_281
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 191
+        width: 13
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14eed174cdff014d99c83da19938bd9
+      internalID: -1242729984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_282
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 191
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f1ffc016333214ea59165555f82357
+      internalID: -1754262447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_283
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 191
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ebb315f8569ec45b26ddd132213174
+      internalID: -73650670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_284
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 194
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d940a1c036ecea54591e8c78baf7cd3d
+      internalID: 1973641008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_285
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 160
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8467fe3692761984f9f5e49893413291
+      internalID: -790796461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_286
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 162
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e98be5f0288a94e8f2c4f42d328e46
+      internalID: 1496879389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_287
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 160
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3c7a71f53d8964aa5450daebb1884c
+      internalID: -839398761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_288
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 162
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c546c40dca8a644a935c29898180c2
+      internalID: -687830450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_289
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 163
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea67e033b5a52e143a3deaace706bfe9
+      internalID: 2052654076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_290
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 163
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0920663c4ab826f4bb54e20f28eeaa34
+      internalID: 1186400337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_291
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 163
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086a6d786c673504aa51a9818e1746eb
+      internalID: -144302276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_292
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 163
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2636f32774a53c41a8ea52f4d523f1c
+      internalID: 1872783825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_293
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 162
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a370098bffcff594dbc2a1ff712abee0
+      internalID: 421664659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_294
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 160
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1be298baca6d74085d69ae0460cfcf
+      internalID: -777567431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_295
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 162
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b35e337caf2f748b2b58d62b3e1c9c
+      internalID: 652294272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_296
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 160
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cfea49e43422a4688d078b207b6b45
+      internalID: -1698125512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_297
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 117
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3bd64de44176c4180fb623303ed701
+      internalID: -948995883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_298
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 113
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f094d36de36c5459c8d2d261445fb6
+      internalID: -1185342822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_299
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 113
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d10efb7cbaaef748a610f8d37ab12a2
+      internalID: -1491466505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_300
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 114
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afc82e8a8a87be488f30f5334042d64
+      internalID: -331399071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_301
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 113
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7993df674e89844b7d097e922dcd05
+      internalID: -1537895571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_302
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 114
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4849020faf2c8fb4791445697697f3af
+      internalID: -715774966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_303
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 113
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a1c6ee12e69884cb41bbbd0b61b885
+      internalID: -459607875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_304
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 113
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1eb8bad59475814e8f1e54edc6a46f6
+      internalID: -1304777455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_305
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 117
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee8e0fb65a88854f8561d5a3d13ee91
+      internalID: -628417999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_306
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da18440de30808747ae2df58127ed6f1
+      internalID: -403989475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_307
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 74
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14f9d0ad02dc7a449731ea516a8369e
+      internalID: -1081896892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_308
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 74
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4659e85e72be1994ebad6e6b57f28bfe
+      internalID: 2100681056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_309
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 74
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c927fe4c6ed35458f63ff5f6e3c2ef
+      internalID: 468768358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_310
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 73
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca77ab6c27d4b043bc769978ddad9c1
+      internalID: 168871515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_311
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 73
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd95c8374a27264d9b45c77b346a6f7
+      internalID: 2008875856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_312
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 74
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883a184751e406f41bb38cd067092a92
+      internalID: -1930616898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_313
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 74
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968b16f1ae512124080d641c1b34396a
+      internalID: 683757734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_314
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 74
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352b0833696d9d74195aaa793badaa43
+      internalID: 190680895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_315
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 77
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5183f9d56da374c991e60982e35df4
+      internalID: -923930108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_316
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 34
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96802e09543b96d46a9aadc5210b0b06
+      internalID: -1258473876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_317
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 31
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc90b14d3e6fe924eb717b84efebffd6
+      internalID: -393469865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_318
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 31
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54d3babc81a7e542b37cbed61b0489d
+      internalID: -838675972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_319
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 31
+        width: 13
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7111dc82058f2f445aed07811d2a7981
+      internalID: -330860797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_320
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 31
+        width: 15
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e7f301a7c60ed429726959c9c0f0bb
+      internalID: 2040134234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_321
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 31
+        width: 15
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1da90d4a260df4283af39d5bc38d5b
+      internalID: 1023444568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_322
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 31
+        width: 13
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d7e914af2b2bf46aced7f112cfe14a
+      internalID: -1573605992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_323
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 31
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bb18d4b2312484fb3206788137dad9
+      internalID: -1118543708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_324
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 31
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddd79f0261f68d4cb3f87be796a4548
+      internalID: -1952641963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_325
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 34
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd215d2847d6764ab9612f225e3408c
+      internalID: -1110152816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_326
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ff1227988ba314eb910f228889cd39
+      internalID: -543253201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_327
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc02247d5a515f04b8b4d1cd41030057
+      internalID: -1713272523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_328
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e119567ee245b024db9d4b868767bfc6
+      internalID: 1141833289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_329
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 2
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9886ef55de3389d4a931df7b1df7de8c
+      internalID: 705139307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_330
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 3
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fcefe24516630c4c9e36a807311d27b
+      internalID: 1943398603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_331
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee206ff97670ab43a169f0393f4027a
+      internalID: 1111691537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_332
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 3
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab9bd39914e99145b20f8f4be25649f
+      internalID: -1325012760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_333
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 3
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77e0004db41ebc49ae76c804f79b7f7
+      internalID: 1180454823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_334
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 2
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7589f7dbc1ac5234e96f9934a366589c
+      internalID: -104849877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_335
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 0
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05389318d0220ce45aad3880bab911bb
+      internalID: 521014791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_336
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 2
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc11acd93e69dd9429c00d6f2b9d4a5a
+      internalID: -263184540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_samusaran_sheet_337
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 0
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d208670e373284fbd9ca25d2b05aab
+      internalID: -1690410618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ffae2a3ac7b275e4a89710b79b3222d7
     internalID: 0
     vertices: []
     indices: 
@@ -274,10 +7296,344 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       metroid_samusaran_sheet_0: 21300000
-      metroid_samusaran_sheet_2: 21300004
       metroid_samusaran_sheet_1: 21300002
+      metroid_samusaran_sheet_10: -2075930503
+      metroid_samusaran_sheet_100: 419025913
+      metroid_samusaran_sheet_101: -632160238
+      metroid_samusaran_sheet_102: -1599914986
+      metroid_samusaran_sheet_103: -1988343303
+      metroid_samusaran_sheet_104: -2047085771
+      metroid_samusaran_sheet_105: -411706644
+      metroid_samusaran_sheet_106: -1025403520
+      metroid_samusaran_sheet_107: -1088878287
+      metroid_samusaran_sheet_108: 346755838
+      metroid_samusaran_sheet_109: 1066282682
+      metroid_samusaran_sheet_11: -1903907221
+      metroid_samusaran_sheet_110: 165456987
+      metroid_samusaran_sheet_111: -1672435042
+      metroid_samusaran_sheet_112: 1586512198
+      metroid_samusaran_sheet_113: 215498532
+      metroid_samusaran_sheet_114: -473265940
+      metroid_samusaran_sheet_115: 2142709103
+      metroid_samusaran_sheet_116: -284230760
+      metroid_samusaran_sheet_117: 259231085
+      metroid_samusaran_sheet_118: -2082598214
+      metroid_samusaran_sheet_119: 45575562
+      metroid_samusaran_sheet_12: -1097028363
+      metroid_samusaran_sheet_120: 1827783743
+      metroid_samusaran_sheet_121: -607349305
+      metroid_samusaran_sheet_122: 855641009
+      metroid_samusaran_sheet_123: 1082643265
+      metroid_samusaran_sheet_124: -1259455260
+      metroid_samusaran_sheet_125: -1682044438
+      metroid_samusaran_sheet_126: 2070910431
+      metroid_samusaran_sheet_127: -1201446865
+      metroid_samusaran_sheet_128: 100596692
+      metroid_samusaran_sheet_129: -699180026
+      metroid_samusaran_sheet_13: 1560609675
+      metroid_samusaran_sheet_130: -2105271332
+      metroid_samusaran_sheet_131: 1492941672
+      metroid_samusaran_sheet_132: 1589880743
+      metroid_samusaran_sheet_133: -2093987561
+      metroid_samusaran_sheet_134: 1334919307
+      metroid_samusaran_sheet_135: 1013803077
+      metroid_samusaran_sheet_136: 164019075
+      metroid_samusaran_sheet_137: -746744841
+      metroid_samusaran_sheet_138: 702544308
+      metroid_samusaran_sheet_139: 268964540
+      metroid_samusaran_sheet_14: 1928501487
+      metroid_samusaran_sheet_140: 770313668
+      metroid_samusaran_sheet_141: 1436033575
+      metroid_samusaran_sheet_142: 835628592
+      metroid_samusaran_sheet_143: 498434843
+      metroid_samusaran_sheet_144: 2017374005
+      metroid_samusaran_sheet_145: -1489496154
+      metroid_samusaran_sheet_146: -850763069
+      metroid_samusaran_sheet_147: -2883684
+      metroid_samusaran_sheet_148: 2071674836
+      metroid_samusaran_sheet_149: 1882909281
+      metroid_samusaran_sheet_15: 341327018
+      metroid_samusaran_sheet_150: 1965744951
+      metroid_samusaran_sheet_151: 1281033819
+      metroid_samusaran_sheet_152: -1557966460
+      metroid_samusaran_sheet_153: -12523231
+      metroid_samusaran_sheet_154: 954578960
+      metroid_samusaran_sheet_155: -1047837012
+      metroid_samusaran_sheet_156: 805412339
+      metroid_samusaran_sheet_157: -39446394
+      metroid_samusaran_sheet_158: 652137079
+      metroid_samusaran_sheet_159: -2124251063
+      metroid_samusaran_sheet_16: 58629909
+      metroid_samusaran_sheet_160: 1973925065
+      metroid_samusaran_sheet_161: -1415501412
+      metroid_samusaran_sheet_162: -1776939226
+      metroid_samusaran_sheet_163: 1738072006
+      metroid_samusaran_sheet_164: -108945174
+      metroid_samusaran_sheet_165: -1087607676
+      metroid_samusaran_sheet_166: 774057895
+      metroid_samusaran_sheet_167: -153608387
+      metroid_samusaran_sheet_168: -1713580373
+      metroid_samusaran_sheet_169: 242112968
+      metroid_samusaran_sheet_17: -1903233118
+      metroid_samusaran_sheet_170: 1785709963
+      metroid_samusaran_sheet_171: 1709502641
+      metroid_samusaran_sheet_172: -2112912730
+      metroid_samusaran_sheet_173: -1880957876
+      metroid_samusaran_sheet_174: 888239390
+      metroid_samusaran_sheet_175: -1592133579
+      metroid_samusaran_sheet_176: -446005215
+      metroid_samusaran_sheet_177: 1298450638
+      metroid_samusaran_sheet_178: 615156600
+      metroid_samusaran_sheet_179: -1345195539
+      metroid_samusaran_sheet_18: -1951014537
+      metroid_samusaran_sheet_180: -1444416826
+      metroid_samusaran_sheet_181: 921286498
+      metroid_samusaran_sheet_182: -677237055
+      metroid_samusaran_sheet_183: -155485196
+      metroid_samusaran_sheet_184: 191017750
+      metroid_samusaran_sheet_185: -629359328
+      metroid_samusaran_sheet_186: 1709212546
+      metroid_samusaran_sheet_187: 276042756
+      metroid_samusaran_sheet_188: 1205169602
+      metroid_samusaran_sheet_189: -628249529
+      metroid_samusaran_sheet_19: 1193700570
+      metroid_samusaran_sheet_190: -212093897
+      metroid_samusaran_sheet_191: -1117932572
+      metroid_samusaran_sheet_192: 41090444
+      metroid_samusaran_sheet_193: -1248669592
+      metroid_samusaran_sheet_194: -1768015866
+      metroid_samusaran_sheet_195: -1753171815
+      metroid_samusaran_sheet_196: -660840811
+      metroid_samusaran_sheet_197: 278839565
+      metroid_samusaran_sheet_198: 121029243
+      metroid_samusaran_sheet_199: 1569507399
+      metroid_samusaran_sheet_2: 21300004
+      metroid_samusaran_sheet_20: -754376246
+      metroid_samusaran_sheet_200: 1091329408
+      metroid_samusaran_sheet_201: -1063209783
+      metroid_samusaran_sheet_202: -829498853
+      metroid_samusaran_sheet_203: 298463369
+      metroid_samusaran_sheet_204: 1196110114
+      metroid_samusaran_sheet_205: 1391685319
+      metroid_samusaran_sheet_206: -417563753
+      metroid_samusaran_sheet_207: 1659722518
+      metroid_samusaran_sheet_208: -1867156757
+      metroid_samusaran_sheet_209: 576959574
+      metroid_samusaran_sheet_21: -1154249222
+      metroid_samusaran_sheet_210: 1935582265
+      metroid_samusaran_sheet_211: 837756417
+      metroid_samusaran_sheet_212: -755337374
+      metroid_samusaran_sheet_213: -1720511347
+      metroid_samusaran_sheet_214: -1928424789
+      metroid_samusaran_sheet_215: 1789692068
+      metroid_samusaran_sheet_216: 927132935
+      metroid_samusaran_sheet_217: 912957949
+      metroid_samusaran_sheet_218: 1191543306
+      metroid_samusaran_sheet_219: -521871476
+      metroid_samusaran_sheet_22: 1910127004
+      metroid_samusaran_sheet_220: 1497709104
+      metroid_samusaran_sheet_221: 1782325924
+      metroid_samusaran_sheet_222: -1235903861
+      metroid_samusaran_sheet_223: -1151281046
+      metroid_samusaran_sheet_224: -1966389637
+      metroid_samusaran_sheet_225: -912409636
+      metroid_samusaran_sheet_226: -843655776
+      metroid_samusaran_sheet_227: -973515250
+      metroid_samusaran_sheet_228: -43821606
+      metroid_samusaran_sheet_229: -948319585
+      metroid_samusaran_sheet_23: -1522335185
+      metroid_samusaran_sheet_230: -1669121747
+      metroid_samusaran_sheet_231: 737917842
+      metroid_samusaran_sheet_232: -2114490709
+      metroid_samusaran_sheet_233: -839396546
+      metroid_samusaran_sheet_234: -52263863
+      metroid_samusaran_sheet_235: 90710921
+      metroid_samusaran_sheet_236: -358206782
+      metroid_samusaran_sheet_237: -886359668
+      metroid_samusaran_sheet_238: -520020013
+      metroid_samusaran_sheet_239: -2076243459
+      metroid_samusaran_sheet_24: -1930761305
+      metroid_samusaran_sheet_240: 809794614
+      metroid_samusaran_sheet_241: 671039207
+      metroid_samusaran_sheet_242: -471269972
+      metroid_samusaran_sheet_243: 1627240871
+      metroid_samusaran_sheet_244: 296960961
+      metroid_samusaran_sheet_245: 323470058
+      metroid_samusaran_sheet_246: -186137563
+      metroid_samusaran_sheet_247: 970422052
+      metroid_samusaran_sheet_248: -1161291911
+      metroid_samusaran_sheet_249: 294995399
+      metroid_samusaran_sheet_25: 1985437973
+      metroid_samusaran_sheet_250: -473317220
+      metroid_samusaran_sheet_251: -927573520
+      metroid_samusaran_sheet_252: 1730106863
+      metroid_samusaran_sheet_253: 597383125
+      metroid_samusaran_sheet_254: -1829624881
+      metroid_samusaran_sheet_255: 69045202
+      metroid_samusaran_sheet_256: 1491680910
+      metroid_samusaran_sheet_257: 75124772
+      metroid_samusaran_sheet_258: -902314365
+      metroid_samusaran_sheet_259: -1489396549
+      metroid_samusaran_sheet_26: -1760365752
+      metroid_samusaran_sheet_260: -1448916106
+      metroid_samusaran_sheet_261: 1784099269
+      metroid_samusaran_sheet_262: -479433106
+      metroid_samusaran_sheet_263: -1162813006
+      metroid_samusaran_sheet_264: -324468026
+      metroid_samusaran_sheet_265: 1251715782
+      metroid_samusaran_sheet_266: 1883482699
+      metroid_samusaran_sheet_267: 524748048
+      metroid_samusaran_sheet_268: 768355831
+      metroid_samusaran_sheet_269: -1312967999
+      metroid_samusaran_sheet_27: -1590008283
+      metroid_samusaran_sheet_270: -331367817
+      metroid_samusaran_sheet_271: -248839839
+      metroid_samusaran_sheet_272: 1945374396
+      metroid_samusaran_sheet_273: -767350242
+      metroid_samusaran_sheet_274: -1695585680
+      metroid_samusaran_sheet_275: 435465938
+      metroid_samusaran_sheet_276: 1035569502
+      metroid_samusaran_sheet_277: -1724473625
+      metroid_samusaran_sheet_278: -1252278248
+      metroid_samusaran_sheet_279: 628435004
+      metroid_samusaran_sheet_28: -1375902997
+      metroid_samusaran_sheet_280: -363135124
+      metroid_samusaran_sheet_281: -1242729984
+      metroid_samusaran_sheet_282: -1754262447
+      metroid_samusaran_sheet_283: -73650670
+      metroid_samusaran_sheet_284: 1973641008
+      metroid_samusaran_sheet_285: -790796461
+      metroid_samusaran_sheet_286: 1496879389
+      metroid_samusaran_sheet_287: -839398761
+      metroid_samusaran_sheet_288: -687830450
+      metroid_samusaran_sheet_289: 2052654076
+      metroid_samusaran_sheet_29: 359369603
+      metroid_samusaran_sheet_290: 1186400337
+      metroid_samusaran_sheet_291: -144302276
+      metroid_samusaran_sheet_292: 1872783825
+      metroid_samusaran_sheet_293: 421664659
+      metroid_samusaran_sheet_294: -777567431
+      metroid_samusaran_sheet_295: 652294272
+      metroid_samusaran_sheet_296: -1698125512
+      metroid_samusaran_sheet_297: -948995883
+      metroid_samusaran_sheet_298: -1185342822
+      metroid_samusaran_sheet_299: -1491466505
       metroid_samusaran_sheet_3: 21300006
-  spritePackingTag: 
+      metroid_samusaran_sheet_30: 1228293168
+      metroid_samusaran_sheet_300: -331399071
+      metroid_samusaran_sheet_301: -1537895571
+      metroid_samusaran_sheet_302: -715774966
+      metroid_samusaran_sheet_303: -459607875
+      metroid_samusaran_sheet_304: -1304777455
+      metroid_samusaran_sheet_305: -628417999
+      metroid_samusaran_sheet_306: -403989475
+      metroid_samusaran_sheet_307: -1081896892
+      metroid_samusaran_sheet_308: 2100681056
+      metroid_samusaran_sheet_309: 468768358
+      metroid_samusaran_sheet_31: 1478979104
+      metroid_samusaran_sheet_310: 168871515
+      metroid_samusaran_sheet_311: 2008875856
+      metroid_samusaran_sheet_312: -1930616898
+      metroid_samusaran_sheet_313: 683757734
+      metroid_samusaran_sheet_314: 190680895
+      metroid_samusaran_sheet_315: -923930108
+      metroid_samusaran_sheet_316: -1258473876
+      metroid_samusaran_sheet_317: -393469865
+      metroid_samusaran_sheet_318: -838675972
+      metroid_samusaran_sheet_319: -330860797
+      metroid_samusaran_sheet_32: -1663419974
+      metroid_samusaran_sheet_320: 2040134234
+      metroid_samusaran_sheet_321: 1023444568
+      metroid_samusaran_sheet_322: -1573605992
+      metroid_samusaran_sheet_323: -1118543708
+      metroid_samusaran_sheet_324: -1952641963
+      metroid_samusaran_sheet_325: -1110152816
+      metroid_samusaran_sheet_326: -543253201
+      metroid_samusaran_sheet_327: -1713272523
+      metroid_samusaran_sheet_328: 1141833289
+      metroid_samusaran_sheet_329: 705139307
+      metroid_samusaran_sheet_33: 2044574096
+      metroid_samusaran_sheet_330: 1943398603
+      metroid_samusaran_sheet_331: 1111691537
+      metroid_samusaran_sheet_332: -1325012760
+      metroid_samusaran_sheet_333: 1180454823
+      metroid_samusaran_sheet_334: -104849877
+      metroid_samusaran_sheet_335: 521014791
+      metroid_samusaran_sheet_336: -263184540
+      metroid_samusaran_sheet_337: -1690410618
+      metroid_samusaran_sheet_34: 1183165619
+      metroid_samusaran_sheet_35: -1194859426
+      metroid_samusaran_sheet_36: 122551951
+      metroid_samusaran_sheet_37: -691346183
+      metroid_samusaran_sheet_38: 2076590115
+      metroid_samusaran_sheet_39: 1536133143
+      metroid_samusaran_sheet_4: 2009354871
+      metroid_samusaran_sheet_40: 172033537
+      metroid_samusaran_sheet_41: 1228187175
+      metroid_samusaran_sheet_42: -1762139304
+      metroid_samusaran_sheet_43: -2075294072
+      metroid_samusaran_sheet_44: 1876321749
+      metroid_samusaran_sheet_45: 104489851
+      metroid_samusaran_sheet_46: 1790622786
+      metroid_samusaran_sheet_47: -979052501
+      metroid_samusaran_sheet_48: -1573199149
+      metroid_samusaran_sheet_49: 2000349896
+      metroid_samusaran_sheet_5: 1135672896
+      metroid_samusaran_sheet_50: -1640133335
+      metroid_samusaran_sheet_51: -284674893
+      metroid_samusaran_sheet_52: 152512205
+      metroid_samusaran_sheet_53: 1913895042
+      metroid_samusaran_sheet_54: 2068033213
+      metroid_samusaran_sheet_55: -1817765489
+      metroid_samusaran_sheet_56: 1535199900
+      metroid_samusaran_sheet_57: -1946668792
+      metroid_samusaran_sheet_58: -242588405
+      metroid_samusaran_sheet_59: 1716373617
+      metroid_samusaran_sheet_6: 1951650014
+      metroid_samusaran_sheet_60: -2066355558
+      metroid_samusaran_sheet_61: 658609814
+      metroid_samusaran_sheet_62: 1176159666
+      metroid_samusaran_sheet_63: 1433030679
+      metroid_samusaran_sheet_64: 2143437090
+      metroid_samusaran_sheet_65: 57815367
+      metroid_samusaran_sheet_66: 396428891
+      metroid_samusaran_sheet_67: -1900218501
+      metroid_samusaran_sheet_68: 2088149688
+      metroid_samusaran_sheet_69: 1388723252
+      metroid_samusaran_sheet_7: -1126517321
+      metroid_samusaran_sheet_70: -480574742
+      metroid_samusaran_sheet_71: -1696144795
+      metroid_samusaran_sheet_72: 2125190234
+      metroid_samusaran_sheet_73: -907124220
+      metroid_samusaran_sheet_74: 1177783442
+      metroid_samusaran_sheet_75: 605354436
+      metroid_samusaran_sheet_76: 1659500140
+      metroid_samusaran_sheet_77: 921970784
+      metroid_samusaran_sheet_78: 830311797
+      metroid_samusaran_sheet_79: 1347663745
+      metroid_samusaran_sheet_8: -180983967
+      metroid_samusaran_sheet_80: 2076121197
+      metroid_samusaran_sheet_81: -1589597002
+      metroid_samusaran_sheet_82: -853274304
+      metroid_samusaran_sheet_83: 412651330
+      metroid_samusaran_sheet_84: 2131552354
+      metroid_samusaran_sheet_85: 1318307713
+      metroid_samusaran_sheet_86: -757359854
+      metroid_samusaran_sheet_87: -1388084710
+      metroid_samusaran_sheet_88: -1284908151
+      metroid_samusaran_sheet_89: 1988151715
+      metroid_samusaran_sheet_9: 1296590590
+      metroid_samusaran_sheet_90: -219057922
+      metroid_samusaran_sheet_91: 1478468666
+      metroid_samusaran_sheet_92: 130588538
+      metroid_samusaran_sheet_93: -620206131
+      metroid_samusaran_sheet_94: -1751656892
+      metroid_samusaran_sheet_95: 1447633986
+      metroid_samusaran_sheet_96: -954699923
+      metroid_samusaran_sheet_97: -912415892
+      metroid_samusaran_sheet_98: 627216702
+      metroid_samusaran_sheet_99: 1588056652
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
