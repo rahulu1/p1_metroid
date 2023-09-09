@@ -4,19 +4,31 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    bool hasMB = false;
+    bool hasMorphBall = false;
+    bool hasLongBeam = false;
+
     // Start is called before the first frame update
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("MorphBall"))
         {
             Destroy(other.gameObject);
-            hasMB = true;
+            hasMorphBall = true;
+        }
+        else if (other.gameObject.CompareTag("LongBeam"))
+        {
+            Destroy(other.gameObject);
+            hasLongBeam = true;
         }
     }
 
     public bool HasMorphBall()
     {
-        return hasMB;
+        return hasMorphBall;
+    }
+
+    public bool HasLongBeam()
+    {
+        return hasLongBeam;
     }
 }
