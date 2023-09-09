@@ -109,6 +109,20 @@ public class PlayerState : MonoBehaviour
         }
     }
 
+    // Disables all player controls for timeDisabled seconds
+    public IEnumerator DisablePlayerControls(float timeDisabled)
+    {
+        this.GetComponent<PlayerRun>().enabled = false;
+        this.GetComponentInChildren<PlayerJump>().enabled = false;
+        this.GetComponent<PlayerDirection>().enabled = false;
+
+        yield return new WaitForSeconds(timeDisabled);
+
+        this.GetComponent<PlayerRun>().enabled = true;
+        this.GetComponentInChildren<PlayerJump>().enabled = true;
+        this.GetComponent<PlayerDirection>().enabled = true;
+    }
+
     public void DeathSequence()
     {
 
