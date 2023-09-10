@@ -6,6 +6,7 @@ public class ZoomerController : MonoBehaviour
 {
     public float zoomerSpeed;
     public bool moveRight;
+    public LayerMask layerMask;
 
     private Rigidbody rb;
     private Vector3 turnAngle;
@@ -20,6 +21,7 @@ public class ZoomerController : MonoBehaviour
     private int damage = 8;
 
 
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -28,12 +30,12 @@ public class ZoomerController : MonoBehaviour
 
         if (!moveRight)
         {
-            turnAngle = new Vector3(0, 0, 90);
+            turnAngle = new Vector3(0, 0, 90f);
             directionMultiplier = -1;
         }
         else
         {
-            turnAngle = new Vector3(0, 0, -90);
+            turnAngle = new Vector3(0, 0, -90f);
             directionMultiplier = 1;
         }
         zoomerSpeed *= directionMultiplier;
@@ -65,12 +67,14 @@ public class ZoomerController : MonoBehaviour
     bool IsGrounded()
     {
         Vector3 origin = this.transform.position - (this.transform.right * 0.49f * directionMultiplier);
-        
+        bool groundBelow = Physics.Raycast(origin, down, downDistance, layerMask);
 
-        if (Physics.Raycast(origin, down, downDistance))
-            return true;
-        else
-            return false;
+        return groundBelow;
+
+        //if (Physics.Raycast(origin, down, downDistance))
+        //    return true;
+        //else
+        //    return false;
     }
 
     // Checks if running into wall
@@ -78,10 +82,17 @@ public class ZoomerController : MonoBehaviour
     {
         Vector3 origin = this.transform.position;
 
-        if (Physics.Raycast(origin, this.transform.right * directionMultiplier, aheadDistance) && Physics.Raycast(origin, down, downDistance))
-            return false;
-        else
-            return true;
+        bool wallInFront = Physics.Raycast(
+            origin, this.transform.right * directionMultiplier, aheadDistance, layerMask);
+        bool groundBelow = Physics.Raycast(origin, down, downDistance, layerMask);
+
+        return !(wallInFront && groundBelow);
+
+        //if (Physics.Raycast(origin, this.transform.right * directionMultiplier, aheadDistance, layerMask) && 
+        //    Physics.Raycast(origin, down, downDistance, layerMask))
+        //    return false;
+        //else
+        //    return true;
     }
 
     void AdjustPosition()
@@ -91,12 +102,22 @@ public class ZoomerController : MonoBehaviour
         timeSinceRotate = 0f;
     }
 
-    void OnCollisionStay(Collision collision)
+    //void OnCollisionStay(Collision collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Player"))
+    //    {
+    //        Vector2 damagePos = new Vector2(transform.position.x, transform.position.y);
+    //        collision.gameObject.GetComponent<HasHealth>().TakeDamage(damage, damagePos);
+    //    }
+    //}
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        int playerLayer = 8;
+        if (other.gameObject.layer == playerLayer)
         {
             Vector2 damagePos = new Vector2(transform.position.x, transform.position.y);
-            collision.gameObject.GetComponent<HasHealth>().TakeDamage(damage, damagePos);
+            other.gameObject.GetComponentInParent<HasHealth>().TakeDamage(damage, damagePos);
         }
     }
 

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9128582481380634923}
   - component: {fileID: 620475807759720706}
   - component: {fileID: 7683233674648152333}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Zoomer
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -172,6 +172,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomerSpeed: 2
   moveRight: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &7683233674648152333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,4 +192,3 @@ MonoBehaviour:
   knockbackForce: 5
   freezeDuration: 0.1333
   knockbackTime: 0
-  enemyController: {fileID: 0}

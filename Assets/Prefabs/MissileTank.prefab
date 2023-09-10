@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5297838398137587370}
   - component: {fileID: 4885642683284156599}
   - component: {fileID: 799947632366914507}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MissileTank
   m_TagString: MissileTank
   m_Icon: {fileID: 0}
@@ -104,5 +104,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.02, y: 1.02, z: 0.2}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
