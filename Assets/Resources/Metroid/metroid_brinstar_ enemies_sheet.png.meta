@@ -1,0 +1,1082 @@
+fileFormatVersion: 2
+guid: a811191cc25bebf44aff7bf88298b5ab
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 47
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2fd439e0d11e04884ac24e3aef492c
+      internalID: -1893923216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 47
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff54b4f414892a94ba2db2ecaa40c926
+      internalID: 961699463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 47
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a345d9b7084a5be49aaf6f3bcfc5a562
+      internalID: -1207803781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 47
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e0baa834a7f694bb90c076d7daf6e0
+      internalID: -1911104325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 39
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e548f23a92b7749b98e600d7d0c1f0
+      internalID: -960519071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 39
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f126acb93ab1124b8da7a8791944f30
+      internalID: 125542217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 39
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65e2f1a62ce8014db7da5d918a58327
+      internalID: 1078629940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 55
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f251c60c33ca548b0ac9d5d8ee2efd
+      internalID: 1602320414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 43
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a263bf701a5b3b7438a5d90d29275f6f
+      internalID: 856824774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 43
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35635e3248db334189521af494cd785
+      internalID: -1234658030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 55
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e8cbd08881bc941859d86c208a07bd
+      internalID: -328175321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 51
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9335605c2c514ec4294e9a23ab790da8
+      internalID: 547226991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f270e2d5156caf4e876abb673b1d717
+      internalID: 1847647609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 49
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb3c3a847a7b3a44ae1e0cf9c3fcaed
+      internalID: 546329915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3987998339bf204192de300095d8c3a
+      internalID: -738616441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb7d8bb871147e43bfce43b5127e70e
+      internalID: -849968767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 46
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1757c0b7c7892447bb910e62d63cb77
+      internalID: 895138063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 30
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ab69ff8a30ee649ba3d53dbb0fec10
+      internalID: -173334475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 30
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd29d5a510744fe47ac1cd4c1777dc25
+      internalID: 1287622620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 30
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d2ecf279627414b8ecef9e9b2102c8
+      internalID: 1099060495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 30
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a59d2121b5a73f47bf04f97aac28be6
+      internalID: 2045724212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 14
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3176226899b0ac4699da3529d3a324c
+      internalID: -1453494896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 14
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a06843780d9af1429d055e30071dff5
+      internalID: -218348305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 14
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48cae401b7a52b41a2965a654e21890
+      internalID: 1937506538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 22
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5608bf8e90d48046b4230029dde8e31
+      internalID: 1674638474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 22
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001ae12d2d326c64e8db0c8af200180b
+      internalID: -422820357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_57
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 37
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c46c7dfd2228a41a04a33ce515ccf3
+      internalID: 262287031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 34
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70502d5b0da06584a8316380874e16fb
+      internalID: -2098605255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b93d2ac6fe862428a6371974e77fb1
+      internalID: -239928013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_60
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 32
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55afb587bcc59e4bb87bb53d9839a5c
+      internalID: -1959419821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_62
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44861d7df1663604f97a235b3fa65b9a
+      internalID: -520613309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_64
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dda06fdf6973b446a92909152c86953
+      internalID: 2073152601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_65
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 13
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbed695e240d1543b2f9dca17c09f81
+      internalID: -1881588914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_66
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 13
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42227f49ff41cc478f732fbe1aa034e
+      internalID: 181425030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_67
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 13
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8846471990c29348a1be5030f7dd723
+      internalID: -254801912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_68
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 13
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e844fb333d89c0147b7a8f09a5c5a1c6
+      internalID: 173766852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_69
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791cb38e566fd6f4bad9059aeda7da8b
+      internalID: 502493927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_70
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad99f7655250714e84a2bb000633f7d
+      internalID: -1521438572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_72
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 13
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742313208fd16b948ac16f8e8409ddb9
+      internalID: -1059121109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metroid_brinstar_ enemies_sheet_74
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 13
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd43e419a72aab4bbc6a0dffe0b1543
+      internalID: -1113143715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      metroid_brinstar_ enemies_sheet_0: -1853314429
+      metroid_brinstar_ enemies_sheet_1: -35575901
+      metroid_brinstar_ enemies_sheet_10: 1411691794
+      metroid_brinstar_ enemies_sheet_11: -458413900
+      metroid_brinstar_ enemies_sheet_12: 963966556
+      metroid_brinstar_ enemies_sheet_13: 946996693
+      metroid_brinstar_ enemies_sheet_14: -1599232665
+      metroid_brinstar_ enemies_sheet_15: 1887335606
+      metroid_brinstar_ enemies_sheet_16: -1019662192
+      metroid_brinstar_ enemies_sheet_17: -489233025
+      metroid_brinstar_ enemies_sheet_18: -762171231
+      metroid_brinstar_ enemies_sheet_19: 1373679612
+      metroid_brinstar_ enemies_sheet_2: -1574122972
+      metroid_brinstar_ enemies_sheet_20: 1738088332
+      metroid_brinstar_ enemies_sheet_21: -1807001061
+      metroid_brinstar_ enemies_sheet_22: -1823982636
+      metroid_brinstar_ enemies_sheet_23: 1288952845
+      metroid_brinstar_ enemies_sheet_24: 1367702637
+      metroid_brinstar_ enemies_sheet_25: 1235918504
+      metroid_brinstar_ enemies_sheet_26: -1893923216
+      metroid_brinstar_ enemies_sheet_27: 961699463
+      metroid_brinstar_ enemies_sheet_28: -1207803781
+      metroid_brinstar_ enemies_sheet_29: -1911104325
+      metroid_brinstar_ enemies_sheet_3: 93752175
+      metroid_brinstar_ enemies_sheet_30: -960519071
+      metroid_brinstar_ enemies_sheet_31: 125542217
+      metroid_brinstar_ enemies_sheet_32: 1078629940
+      metroid_brinstar_ enemies_sheet_33: 1602320414
+      metroid_brinstar_ enemies_sheet_34: 856824774
+      metroid_brinstar_ enemies_sheet_35: -1234658030
+      metroid_brinstar_ enemies_sheet_36: -493324415
+      metroid_brinstar_ enemies_sheet_37: -328175321
+      metroid_brinstar_ enemies_sheet_38: 547226991
+      metroid_brinstar_ enemies_sheet_39: 1847647609
+      metroid_brinstar_ enemies_sheet_4: -1830910831
+      metroid_brinstar_ enemies_sheet_40: 546329915
+      metroid_brinstar_ enemies_sheet_41: 167980525
+      metroid_brinstar_ enemies_sheet_42: -738616441
+      metroid_brinstar_ enemies_sheet_43: -2048374624
+      metroid_brinstar_ enemies_sheet_44: -849968767
+      metroid_brinstar_ enemies_sheet_45: -1590821452
+      metroid_brinstar_ enemies_sheet_46: 895138063
+      metroid_brinstar_ enemies_sheet_47: -173334475
+      metroid_brinstar_ enemies_sheet_48: 1287622620
+      metroid_brinstar_ enemies_sheet_49: 1099060495
+      metroid_brinstar_ enemies_sheet_5: -5324028
+      metroid_brinstar_ enemies_sheet_50: 2045724212
+      metroid_brinstar_ enemies_sheet_51: -1453494896
+      metroid_brinstar_ enemies_sheet_52: -218348305
+      metroid_brinstar_ enemies_sheet_53: 1937506538
+      metroid_brinstar_ enemies_sheet_54: 1674638474
+      metroid_brinstar_ enemies_sheet_55: -422820357
+      metroid_brinstar_ enemies_sheet_56: 26313492
+      metroid_brinstar_ enemies_sheet_57: 262287031
+      metroid_brinstar_ enemies_sheet_58: -2098605255
+      metroid_brinstar_ enemies_sheet_59: -239928013
+      metroid_brinstar_ enemies_sheet_6: -1957494668
+      metroid_brinstar_ enemies_sheet_60: -1959419821
+      metroid_brinstar_ enemies_sheet_61: 211428134
+      metroid_brinstar_ enemies_sheet_62: -520613309
+      metroid_brinstar_ enemies_sheet_63: -280693659
+      metroid_brinstar_ enemies_sheet_64: 2073152601
+      metroid_brinstar_ enemies_sheet_65: -1881588914
+      metroid_brinstar_ enemies_sheet_66: 181425030
+      metroid_brinstar_ enemies_sheet_67: -254801912
+      metroid_brinstar_ enemies_sheet_68: 173766852
+      metroid_brinstar_ enemies_sheet_69: 502493927
+      metroid_brinstar_ enemies_sheet_7: -1233440042
+      metroid_brinstar_ enemies_sheet_70: -1521438572
+      metroid_brinstar_ enemies_sheet_71: -285935946
+      metroid_brinstar_ enemies_sheet_72: -1059121109
+      metroid_brinstar_ enemies_sheet_73: 655599230
+      metroid_brinstar_ enemies_sheet_74: -1113143715
+      metroid_brinstar_ enemies_sheet_75: -1500261232
+      metroid_brinstar_ enemies_sheet_8: 697298476
+      metroid_brinstar_ enemies_sheet_9: 299072015
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,14 +6,18 @@ public class DestroyOnTime : MonoBehaviour
 {
     public float destroyTime;
     // Start is called before the first frame update
+    
+    // if destroyTime == -1, destroy when exiting screenspace
     void Start()
     {
-        Destroy(this.gameObject, destroyTime);
+        if(destroyTime >= 0)
+        {
+            Destroy(this.gameObject, destroyTime);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnBecameInvisible()
     {
-        
+        Destroy(this.gameObject);
     }
 }

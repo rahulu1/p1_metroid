@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using UnityEngine;
 
 public class HasHealth : MonoBehaviour
@@ -8,8 +7,10 @@ public class HasHealth : MonoBehaviour
     public int health;
     public float invincibiltyTime;
     public float knockbackForce = 5f;
+    public float freezeDuration;
     public float knockbackTime;
 
+    private bool hurt;
     private float timeSinceDamage;
     private Rigidbody rb;
     private PlayerState playerState;
@@ -20,6 +21,7 @@ public class HasHealth : MonoBehaviour
         timeSinceDamage = 0.8f;
         rb = this.gameObject.GetComponent<Rigidbody>();
         playerState = this.gameObject.GetComponent<PlayerState>();
+        hurt = false;
     }
 
     void Update()
@@ -27,12 +29,12 @@ public class HasHealth : MonoBehaviour
         timeSinceDamage += Time.deltaTime;
     }
 
-    public int getHealth()
+    public int GetHealth()
     {
         return health;
     }
 
-    public void addHealth(int i)
+    public void AddHealth(int i)
     {
         health += i;
     }
@@ -41,7 +43,7 @@ public class HasHealth : MonoBehaviour
     // damagePos is the (x, y) position of the source of the damage and
     // it's passed in by the attacking entity (bullet, enemy, etc)
     // through the attacking entity's OnColliderEnter function
-    public void takeDamage(int i, Vector3 damagePos)
+    public void TakeDamage(int i, Vector3 damagePos)
     {
         if(timeSinceDamage >= invincibiltyTime)
         {
@@ -50,23 +52,26 @@ public class HasHealth : MonoBehaviour
             else
                 health -= i;
 
-            timeSinceDamage = 0f;
-            DamageReact(damagePos);
-        }
-    }
 
-    void DamageReact(Vector3 damagePos)
-    {
-        if (this.gameObject.CompareTag("Player"))
-        {
-            DamageReactPlayer(damagePos);
+            if (this.gameObject.CompareTag("Player"))
+            {
+                if (playerState.CheatEnabled())
+                    health += i;
+                else
+                    DamageReactPlayer(damagePos);
+            }
+            else
+                DamageReactEnemy();
         }
     }
 
     void DamageReactPlayer(Vector3 damagePos)
     {
         GameObject player = this.gameObject;
-        if(health == 0)
+
+        timeSinceDamage = 0f;
+
+        if (health == 0)
         {
             PlayerDie(player);
         }
@@ -77,6 +82,21 @@ public class HasHealth : MonoBehaviour
 
             PlayerKnockback(damagePos);
         }
+    }
+
+    void DamageReactEnemy()
+    {
+        if(health == 0)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+            hurt = true;
+            StartCoroutine(RestoreEnemyMovement(freezeDuration));
+        }
+        // TODO:
     }
 
     void PlayerDie(GameObject player)
@@ -106,5 +126,14 @@ public class HasHealth : MonoBehaviour
         yield return new WaitForSeconds(knockbackTime);
 
         rb.velocity = Vector3.zero;
+    }
+
+    IEnumerator RestoreEnemyMovement(float freezeDuration)
+    {
+        yield return new WaitForSeconds(freezeDuration);
+
+        this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+        this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ;
     }
 }

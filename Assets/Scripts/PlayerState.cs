@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.GameCenter;
 
 public class PlayerState : MonoBehaviour
 {
@@ -14,15 +12,18 @@ public class PlayerState : MonoBehaviour
     public GameManager gameManager;
 
     private Collider col;
+
     private bool isStanding;
     private bool cheatEnabled;
-    private PlayerInventory playerInventory;
 
+    private PlayerInventory playerInventory;
+    private PlayerWeapon playerWeapon;
     private void Start()
     {
         isStanding = true;
         cheatEnabled = false;
         playerInventory = GetComponent<PlayerInventory>();
+        playerWeapon = GetComponentInChildren<PlayerWeapon>();
     }
 
     // Update is called once per frame
@@ -30,6 +31,10 @@ public class PlayerState : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
+            Debug.Log("Cheat Enabled");
+            playerInventory.UnlockMissiles();
+            playerWeapon.IncreaseMaxMissiles(255);
+            playerWeapon.AddMissiles(255);
             cheatEnabled = !cheatEnabled;
         }
 

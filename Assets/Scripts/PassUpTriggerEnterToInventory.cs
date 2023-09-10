@@ -14,4 +14,9 @@ public class PassUpTriggerEnterToInventory : MonoBehaviour
     {
         playerInventory.OnTriggerEnter(other);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        playerInventory.OnCollisionEnter(collision);
+    }
 }

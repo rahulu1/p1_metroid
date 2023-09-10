@@ -19,7 +19,7 @@ public class HealthUIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(displayHealth != playerHealth.getHealth())
+        if(displayHealth != playerHealth.GetHealth())
         {
             setEn();
         }
@@ -28,7 +28,7 @@ public class HealthUIManager : MonoBehaviour
     // Update Health UI to match Player Health
     void setEn()
     {
-        displayHealth = playerHealth.getHealth();
+        displayHealth = playerHealth.GetHealth();
 
         string healthString = displayHealth.ToString();
 

@@ -10,7 +10,7 @@ public class TestDamage : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Vector2 damagePos = new Vector2(transform.position.x, transform.position.y);
-            collision.gameObject.GetComponent<HasHealth>().takeDamage(5, damagePos);
+            collision.gameObject.GetComponent<HasHealth>().TakeDamage(5, damagePos);
         }
     }
 }
