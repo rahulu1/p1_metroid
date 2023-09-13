@@ -10,7 +10,6 @@ public class HasHealth : MonoBehaviour
     public float freezeDuration;
     public float knockbackTime;
 
-    private bool hurt;
     private float timeSinceDamage;
     private Rigidbody rb;
     private PlayerState playerState;
@@ -21,7 +20,6 @@ public class HasHealth : MonoBehaviour
         timeSinceDamage = 0.8f;
         rb = this.gameObject.GetComponent<Rigidbody>();
         playerState = this.gameObject.GetComponent<PlayerState>();
-        hurt = false;
     }
 
     void Update()
@@ -93,7 +91,6 @@ public class HasHealth : MonoBehaviour
         else
         {
             this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
-            hurt = true;
             StartCoroutine(RestoreEnemyMovement(freezeDuration));
         }
         // TODO:

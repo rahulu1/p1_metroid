@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Samus Sprites
+    m_Hash: 770097114
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Standing
+      m_Hash: 418179214
+      m_Sprite: {fileID: 21300000, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Standing Looking Up
+      m_Hash: 192181510
+      m_Sprite: {fileID: 21300002, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300002, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Morph Ball 1
+      m_Hash: 171748752
+      m_Sprite: {fileID: 21300006, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300006, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Morph Ball 2
+      m_Hash: 322305066
+      m_Sprite: {fileID: 1876321749, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1876321749, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Morph Ball 3
+      m_Hash: 607308988
+      m_Sprite: {fileID: 104489851, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 104489851, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Morph Ball 4
+      m_Hash: 978737439
+      m_Sprite: {fileID: 1790622786, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1790622786, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Running Default 1
+      m_Hash: 60555756
+      m_Sprite: {fileID: -1951014537, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1951014537, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Running Default 2
+      m_Hash: 445993046
+      m_Sprite: {fileID: 1193700570, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1193700570, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Running Default 3
+      m_Hash: 764567744
+      m_Sprite: {fileID: -754376246, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -754376246, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Running Default 4
+      m_Hash: 871822691
+      m_Sprite: {fileID: -1154249222, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1154249222, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Running Shooting Forward 1
+      m_Hash: 498404121
+      m_Sprite: {fileID: -1590008283, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1590008283, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Running Shooting Forward 2
+      m_Hash: 79452835
+      m_Sprite: {fileID: -1375902997, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1375902997, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Running Shooting Forward 3
+      m_Hash: 867920437
+      m_Sprite: {fileID: 359369603, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 359369603, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Running Shooting Forward 4
+      m_Hash: 769654678
+      m_Sprite: {fileID: 1228293168, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1228293168, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Running Looking Up 1
+      m_Hash: 799406257
+      m_Sprite: {fileID: 122551951, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 122551951, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Running Looking Up 2
+      m_Hash: 917285131
+      m_Sprite: {fileID: -691346183, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -691346183, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Running Looking Up 3
+      m_Hash: 28023197
+      m_Sprite: {fileID: 2076590115, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2076590115, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: Running Looking Up 4
+      m_Hash: 533662782
+      m_Sprite: {fileID: 1536133143, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1536133143, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: In Air Default
+      m_Hash: 1055455949
+      m_Sprite: {fileID: -1154249222, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1154249222, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: In Air Looking Up
+      m_Hash: 948880945
+      m_Sprite: {fileID: 1536133143, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1536133143, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    - m_Name: In Air Shooting Forward
+      m_Hash: 493325750
+      m_Sprite: {fileID: 1228293168, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1228293168, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 21
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638301351882172136
+  m_Version: 1
