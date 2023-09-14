@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZoomerController : MonoBehaviour
+public class ZoomerController : EnemyController
 {
     public float zoomerSpeed;
     public bool moveRight;
@@ -45,15 +45,17 @@ public class ZoomerController : MonoBehaviour
         timeSinceRotate += Time.deltaTime;
         down = transform.up * -1f;
         // if out of ground, turn 90 degrees down
-        if(timeSinceRotate >= minTime)
+        if (timeSinceRotate >= minTime)
         {
             if (!(IsGrounded()))
             {
+                Debug.Log("No Ground!");
                 this.transform.Rotate(turnAngle);
                 AdjustPosition();
             }
             else if (!(HasSpace()))
             {
+                Debug.Log("No Space!");
                 this.transform.Rotate(turnAngle * -1f);
                 AdjustPosition();
             }
@@ -135,5 +137,10 @@ public class ZoomerController : MonoBehaviour
 
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(transform.position, origin + (transform.right * aheadDistance));
+    }
+
+    public override EnemyController GetController()
+    {
+        return this;
     }
 }
