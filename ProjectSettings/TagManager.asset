@@ -12,6 +12,8 @@ TagManager:
   - HealthUI
   - AmmoUI
   - Enemy
+  - Projectile
+  - Door
   layers:
   - Default
   - TransparentFX

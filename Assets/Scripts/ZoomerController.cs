@@ -49,13 +49,11 @@ public class ZoomerController : MonoBehaviour
         {
             if (!(IsGrounded()))
             {
-                Debug.Log("No Ground!");
                 this.transform.Rotate(turnAngle);
                 AdjustPosition();
             }
             else if (!(HasSpace()))
             {
-                Debug.Log("No Space!");
                 this.transform.Rotate(turnAngle * -1f);
                 AdjustPosition();
             }

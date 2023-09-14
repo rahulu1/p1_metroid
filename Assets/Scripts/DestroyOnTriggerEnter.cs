@@ -13,6 +13,10 @@ public class DestroyOnTriggerEnter : MonoBehaviour
         {
             other.gameObject.GetComponent<HasHealth>().TakeDamage(damage, this.gameObject.transform.position);
         }
+        else if(other.gameObject.GetComponent<DoorCollider>() != null)
+        {
+            other.gameObject.GetComponent<DoorCollider>().OnProjectileCollision();
+        }
         Destroy(this.gameObject);
     }
 

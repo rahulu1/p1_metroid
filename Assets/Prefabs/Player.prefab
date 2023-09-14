@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 2512086213946344444}
   m_Layer: 8
   m_Name: Standing
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,13 +158,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7420940070373130045, guid: d88aa48b563a2ae41b64f945ff59b7d6, type: 3}
   missilePrefab: {fileID: 0}
-  weaponPrefab: {fileID: 0}
   firingPosForward: {fileID: 6553869000477610318}
   firingPosUp: {fileID: 4369627128544051142}
   bulletSpeed: 10
   startingBeamBulletDuration: 0.35
   infiniteDuration: -1
-  weaponEquipped: 0
 --- !u!114 &6738928367261527620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,6 +334,7 @@ MonoBehaviour:
   health: 30
   invincibiltyTime: 0
   knockbackForce: 5
+  freezeDuration: 0
   knockbackTime: 0
 --- !u!1 &8971154280371076755
 GameObject:
@@ -382,7 +381,7 @@ GameObject:
   - component: {fileID: 32886440517675435}
   m_Layer: 8
   m_Name: Morphed
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
