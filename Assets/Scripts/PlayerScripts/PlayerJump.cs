@@ -9,11 +9,11 @@ public class PlayerJump : MonoBehaviour
     private Rigidbody rigid;
 
     [SerializeField]
-    private float minJumpTime = 0.4f;
+    private float minJumpTime = 0.16f;
     private float currJumpTime = 0f;
 
     [SerializeField]
-    private float jumpSpeed = 0.1f;
+    private float jumpSpeed = 13f;
 
     [SerializeField]
     private bool grounded = true;

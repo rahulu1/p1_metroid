@@ -12,8 +12,6 @@ public class PlayerState : MonoBehaviour
 
     public GameManager gameManager;
 
-    public float customGravity = 9f;
-
     [SerializeField]
     private Collider activeCollider;
     private CapsuleCollider capsuleCollider;
@@ -36,11 +34,6 @@ public class PlayerState : MonoBehaviour
         playerInventory = GetComponent<PlayerInventory>();
         playerWeapon = GetComponentInChildren<PlayerWeapon>();
         playerRigidbody = GetComponent<Rigidbody>();
-    }
-
-    void FixedUpdate()
-    {
-        HandleGravity();    
     }
 
     // Update is called once per frame
@@ -75,11 +68,6 @@ public class PlayerState : MonoBehaviour
                 }
             }
         }
-    }
-
-    void HandleGravity()
-    {
-        playerRigidbody.velocity -= Vector3.up * customGravity * Time.fixedDeltaTime;
     }
 
     public bool IsGrounded()
@@ -140,13 +128,21 @@ public class PlayerState : MonoBehaviour
     {
         GetComponent<PlayerRun>().enabled = false;
         GetComponentInChildren<PlayerJump>().enabled = false;
+        GetComponent<HandleCustomGravity>().enabled = false;
         GetComponent<PlayerDirection>().enabled = false;
+        GetComponentInChildren<PlayerWeapon>().enabled = false;
+        activeCollider.enabled = false;
+        playerRigidbody.isKinematic = true;
 
         yield return new WaitForSeconds(timeDisabled);
 
         GetComponent<PlayerRun>().enabled = true;
         GetComponentInChildren<PlayerJump>().enabled = true;
+        GetComponent<HandleCustomGravity>().enabled = true;
         GetComponent<PlayerDirection>().enabled = true;
+        GetComponentInChildren<PlayerWeapon>().enabled = true;
+        activeCollider.enabled = true;
+        playerRigidbody.isKinematic = false;
     }   
 
     public void DeathSequence()
