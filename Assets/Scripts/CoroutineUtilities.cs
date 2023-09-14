@@ -22,7 +22,7 @@ public class CoroutineUtilities
             // and allowing time to pass.
             yield return null;
         }
-
         target.position = dest_pos;
+        Debug.Log(target.position);
     }
 }

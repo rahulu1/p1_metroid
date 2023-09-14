@@ -156,8 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3fe15ad9f51f134fbf830cb8e190e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minJumpTime: 0.4
-  jumpSpeed: 0.1
+  minJumpTime: 0.16
+  jumpSpeed: 13
   grounded: 1
 --- !u!114 &1708843885813460162
 MonoBehaviour:
@@ -301,7 +301,7 @@ MonoBehaviour:
   gameOverText: {fileID: 0}
   HUD: {fileID: 0}
   gameManager: {fileID: 0}
-  customGravity: 9
+  customGravity: 16
   activeCollider: {fileID: 0}
 --- !u!114 &6431104769258494270
 MonoBehaviour:
