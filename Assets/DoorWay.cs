@@ -12,15 +12,13 @@ public class DoorWay : MonoBehaviour
     [SerializeField] private DoorCollider exitDoor;
 
     private Vector3 lerpRight, lerpLeft;
+    private Vector3 originalPosition;
+    private Vector3 destinationPosition;
 
+    private PlayerState playerState;
     private Transform playerTransform;
     private Rigidbody playerRB;
     private Collider playerCol;
-    private PlayerRun playerRun;
-    private PlayerJump playerJump;
-    private PlayerWeapon playerWeapon;
-    private PlayerDirection playerDirection;
-    // private Animator playerAnimator;
 
     void Start()
     {
@@ -32,80 +30,31 @@ public class DoorWay : MonoBehaviour
         else
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
+            playerState = player.GetComponent<PlayerState>();
             playerTransform = player.transform;
             playerRB = player.GetComponent<Rigidbody>();
             playerCol = player.GetComponent<Collider>();
-            playerRun = player.GetComponent<PlayerRun>();
-            playerJump = player.GetComponentInChildren<PlayerJump>();
-            playerWeapon = player.GetComponentInChildren<PlayerWeapon>();
-            playerDirection = player.GetComponent<PlayerDirection>();
-
-            // playerAnimator.speed = player.GetComponent<Animator>();
 
             lerpRight = new Vector3(4, 0, 0);
             lerpLeft = new Vector3(-4, 0, 0);
         }
     }
 
-    void Update()
-    {
-        if (lerpProgress < lerpDuration)
-        {
-            lerpProgress += Time.deltaTime;
-            if (Mathf.Approximately(lerpProgress, lerpDuration / 2f))
-            {
-                enterDoor.SetOpen(false);
-                exitDoor.SetOpen(false);
-            }
-            else if (Mathf.Approximately(lerpProgress, 0.75f * lerpDuration))
-            {
-                enterDoor.SetOpen(true);
-                exitDoor.SetOpen(true);
-            }
-        }
-    }
-
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("PlayerCollider"))
         {
+            StartCoroutine(playerState.DisablePlayerControls(lerpDuration + 0.2f));
+
+            originalPosition = playerTransform.position;
+
+            if (moveRight)
+                destinationPosition = originalPosition + lerpRight;
+            else
+                destinationPosition = destinationPosition + lerpLeft;
+            
             lerpProgress = 0f;
-            StartCoroutine(RoomTransition());
+            StartCoroutine(CoroutineUtilities.MoveObjectOverTime(playerTransform, originalPosition, destinationPosition, lerpDuration));
         }    
-    }
-
-    IEnumerator RoomTransition()
-    {
-        playerRB.velocity = Vector3.zero;
-        playerRB.isKinematic = true;
-        playerCol.enabled = false;
-        playerRun.enabled = false;
-        playerJump.enabled = false;
-        playerWeapon.enabled = false;
-        playerDirection.enabled = false;
-
-        Vector3 originalPosition = playerTransform.position;
-        Vector3 newPosition;
-
-        float lerpFraction = lerpProgress / lerpDuration;
-
-        if (moveRight)
-            newPosition = playerTransform.position + lerpRight;
-        else
-            newPosition = playerTransform.position + lerpLeft;
-
-        while(lerpProgress <= lerpDuration)
-        {
-            playerTransform.position = Vector3.Lerp(originalPosition, newPosition, lerpFraction);
-            yield return null;
-        }
-
-        playerTransform.position = newPosition;
-        playerRB.isKinematic = false;
-        playerCol.enabled = true;
-        playerRun.enabled = true;
-        playerJump.enabled = true;
-        playerWeapon.enabled = true;
-        playerDirection.enabled = true;
     }
 }

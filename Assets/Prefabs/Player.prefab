@@ -42,12 +42,12 @@ GameObject:
   - component: {fileID: 1372757334286293529}
   - component: {fileID: 266119269613550953}
   - component: {fileID: 3339873640829237281}
+  - component: {fileID: 7152564411788364017}
   - component: {fileID: 1708843885813460162}
-  - component: {fileID: 6738928367261527620}
   - component: {fileID: 2512086213946344444}
   m_Layer: 8
   m_Name: Standing
-  m_TagString: Player
+  m_TagString: PlayerCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,6 +144,21 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: -0.1, z: 0}
+--- !u!114 &7152564411788364017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261388227512904452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3fe15ad9f51f134fbf830cb8e190e8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minJumpTime: 0.4
+  jumpSpeed: 0.1
+  grounded: 1
 --- !u!114 &1708843885813460162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,27 +178,6 @@ MonoBehaviour:
   bulletSpeed: 10
   startingBeamBulletDuration: 0.35
   infiniteDuration: -1
---- !u!114 &6738928367261527620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3261388227512904452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ad6a947e10a49d469533e0c78f4e540, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialJumpForce: 10
-  continuousJumpForce: 1
-  maxJumpTime: 1.5
-  tapJumpPressDuration: 0.1
-  timeBeforeBallingUp: 0.5
-  spriteRenderer: {fileID: 0}
-  balledUpSprites: []
-  spriteJumping: {fileID: 0}
-  spriteStanding: {fileID: 0}
 --- !u!114 &2512086213946344444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,6 +301,8 @@ MonoBehaviour:
   gameOverText: {fileID: 0}
   HUD: {fileID: 0}
   gameManager: {fileID: 0}
+  customGravity: 9
+  activeCollider: {fileID: 0}
 --- !u!114 &6431104769258494270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,7 +377,7 @@ GameObject:
   - component: {fileID: 32886440517675435}
   m_Layer: 8
   m_Name: Morphed
-  m_TagString: Player
+  m_TagString: PlayerCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
