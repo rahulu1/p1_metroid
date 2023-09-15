@@ -15,6 +15,7 @@ TagManager:
   - Projectile
   - Door
   - PlayerCollider
+  - Room
   layers:
   - Default
   - TransparentFX

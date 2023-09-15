@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.U2D.Animation;
 using UnityEngine;
 
 public class DoorWay : MonoBehaviour
@@ -19,6 +20,7 @@ public class DoorWay : MonoBehaviour
     private PlayerState playerState;
     private Transform playerTransform;
     private Rigidbody playerRB;
+    private CameraController mainCamController;
 
     void Start()
     {
@@ -33,6 +35,7 @@ public class DoorWay : MonoBehaviour
             playerState = player.GetComponent<PlayerState>();
             playerTransform = player.transform;
             playerRB = player.GetComponent<Rigidbody>();
+            mainCamController = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
 
             lerpRight = new Vector3(lerpDistance, 0f, 0f);
             lerpLeft = new Vector3(-lerpDistance, 0f, 0f);
@@ -54,6 +57,7 @@ public class DoorWay : MonoBehaviour
                 destinationPosition = originalPosition + lerpLeft;
 
             StartCoroutine(CoroutineUtilities.MoveObjectOverTime(playerTransform, originalPosition, destinationPosition, lerpDuration));
+            mainCamController.StartRoomTransition(toRoom, moveRight);
             StartCoroutine(AnimateDoorsTransition());
             
         }    
