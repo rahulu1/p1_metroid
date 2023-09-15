@@ -10,6 +10,8 @@ public class SkreeController : EnemyController
     public float distanceToStopAdjusting;
     public float bulletSpeed;
 
+    public GameObject skreeBulletPrefab;
+
     public LayerMask layerMask;
     public Transform playerTransform;
 
@@ -110,6 +112,32 @@ public class SkreeController : EnemyController
 
     private void Explode()
     {
+        Vector3 rightBulletDirection = Vector3.right;
+        Vector3 leftBulletDirection = Vector3.left;
+        Vector3 topLeftBulletDirection = (Vector3.left + Vector3.up).normalized;
+        Vector3 topRightBulletDirection = (Vector3.right + Vector3.up).normalized;
 
+        Vector3 skreePos = this.transform.position;
+
+        List<GameObject> bullets = new List<GameObject>(4);
+
+        for(int i = 0; i < 4; ++i)
+        {
+            GameObject bullet = bullets[i];
+            bullet = GameObject.Instantiate(skreeBulletPrefab);
+            // Prevent bullets from doing damage to other enemies
+            bullet.GetComponent<DestroyOnTriggerEnter>().SetDamage(0);
+            bullet.transform.position = skreePos;
+        }
+
+        GameObject rightBullet = bullets[0];
+        GameObject leftBullet = bullets[1];
+        GameObject topLeftBullet = bullets[2];
+        GameObject topRightBullet = bullets[3];
+
+        rightBullet.GetComponent<Rigidbody>().velocity = rightBulletDirection * bulletSpeed;
+        leftBullet.GetComponent<Rigidbody>().velocity = leftBulletDirection * bulletSpeed;
+        topLeftBullet.GetComponent<Rigidbody>().velocity = topLeftBulletDirection * bulletSpeed;
+        topRightBullet.GetComponent<Rigidbody>().velocity = topRightBulletDirection * bulletSpeed;
     }
 }

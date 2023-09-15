@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7420940070373130045, guid: d88aa48b563a2ae41b64f945ff59b7d6, type: 3}
-  missilePrefab: {fileID: 0}
+  missilePrefab: {fileID: 7420940070373130045, guid: a927569b517a722479049d311909811d, type: 3}
   firingPosForward: {fileID: 6553869000477610318}
   firingPosUp: {fileID: 4369627128544051142}
   bulletSpeed: 10
@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 9135354992132182784}
   - component: {fileID: 6431104769258494270}
   - component: {fileID: 8991552685856899124}
+  - component: {fileID: 3629063497890524727}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -251,10 +252,10 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!114 &-7672562277035815306
 MonoBehaviour:
@@ -301,8 +302,7 @@ MonoBehaviour:
   gameOverText: {fileID: 0}
   HUD: {fileID: 0}
   gameManager: {fileID: 0}
-  customGravity: 16
-  activeCollider: {fileID: 0}
+  activeCollider: {fileID: 3339873640829237281}
 --- !u!114 &6431104769258494270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,10 +328,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
-  invincibiltyTime: 0
-  knockbackForce: 5
+  invincibiltyTime: 0.8
+  knockbackForce: 15
   freezeDuration: 0
-  knockbackTime: 0
+  knockbackTime: 0.2
+--- !u!114 &3629063497890524727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4661149022722204300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f0bc9fab2d1b5438ba2364656521b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customGravity: 16
 --- !u!1 &8971154280371076755
 GameObject:
   m_ObjectHideFlags: 0
