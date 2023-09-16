@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class ReoController : EnemyController
 {
-    public float reoInitialYSpeed;
-    public float reoInitialXSpeed;
-    public float reoYAccelerationFactor;
-    public float reoXAccelerationFactor;
+    public float initialYDescentSpeed;
+    public float initialYAscentSpeed;
+    public float initialXSpeed;
+    public float yAccelerationFactor;
+    public float xAccelerationFactor;
     public float aggroDistance;
-    public float timeBeforeSwoopingAgain;
+    public float timeBetweenAttacks;
 
     // When the reo gets this far away from the ground, it stops
     // its swooping
@@ -21,8 +22,10 @@ public class ReoController : EnemyController
     private Vector3 swoopDirection;
 
     private float initialSwoopYPosition;
-    private float distanceFromGround;
+    private float timeOfAttackEnd;
+    private KeyCode jumpKey = KeyCode.Z;
     private bool isAttacking = false;
+    private bool isAscending = false;
 
 
     public override EnemyController GetController()
@@ -34,39 +37,45 @@ public class ReoController : EnemyController
     {
         rb = this.GetComponent<Rigidbody>();
         playerTransform = GameObject.Find("Player").transform;
-        distanceFromGround = CalculateDistanceFromGround();
+        timeOfAttackEnd = Time.time;
     }
 
     private void Update()
     {
-        if(!isAttacking)
+        if(TimeToAttack())
         {
-            if(TimeToAttack())
+            if(!isAttacking)
             {
                 swoopDirection = CalculateSwoopDirection();
                 initialSwoopYPosition = this.transform.position.y;
-                Swoop();
+                Attack();
                 isAttacking = true;
             }
-        }
-        else
-        {
-            Swoop();
+            else // Already attacking
+            {
+                Attack();
+            }
         }
     }
 
-    // Returns true when Samus is within aggroDistance
+    // Returns true if Reo should attack
     private bool TimeToAttack()
     {
         float XDistanceFromPlayer =
             this.transform.position.x - playerTransform.position.x;
-        return XDistanceFromPlayer <= aggroDistance;
+        bool playerWithinAggroDistance = 
+            XDistanceFromPlayer <= aggroDistance;
+
+        bool timeBetweenAttacksEnded =
+            (Time.time - timeOfAttackEnd) >= timeBetweenAttacks;
+
+        return playerWithinAggroDistance && timeBetweenAttacksEnded;
     }
 
     private Vector3 CalculateSwoopDirection()
     {
         bool playerToLeft = 
-            playerTransform.position.x < this.transform.position.x;
+            playerTransform.position.x < this.transform.position.x;                                                                   
 
         if(playerToLeft)
             return Vector3.left;
@@ -74,32 +83,37 @@ public class ReoController : EnemyController
             return Vector3.right;
     }
 
-    private void Swoop()
+    private void Attack()
     {
         Vector3 newVelocity = rb.velocity;
 
         if (!isAttacking)
         {
-            newVelocity.x = reoInitialXSpeed * swoopDirection.x;
-            newVelocity.y = -reoInitialYSpeed;
+            newVelocity.x = initialXSpeed * swoopDirection.x;
+            newVelocity.y = -initialYDescentSpeed;
         }
 
-        if(!AtTargetHeight())
+        if(!AtTargetHeight() && !isAscending)
         {
-            newVelocity.y *= reoYAccelerationFactor;
-            // Before getting to target height, accelerates in 
-            // x direction
-            newVelocity.x *= reoXAccelerationFactor;
+            newVelocity.y *= yAccelerationFactor;
+            newVelocity.x *= xAccelerationFactor;
         }
-        else // At target height
+        else if(isAscending)
+        {
+            Ascend();
+        }
+        else // At target height, not ascending
         {
             // Stop moving in y direction, and stop accelerating
             // in x direction
             newVelocity.y = 0f;
+
+            if(CheckForPlayerJump())
+                newVelocity = Ascend();
         }
 
         rb.velocity = newVelocity;
-        Debug.Log(rb.velocity.ToString());
+        //Debug.Log(rb.velocity.ToString());
     }
 
     private bool AtTargetHeight()
@@ -111,17 +125,42 @@ public class ReoController : EnemyController
         return Physics.Raycast(origin, downwards, rayLength, layerMask);
     }
 
-    private float CalculateDistanceFromGround()
+    private bool CheckForPlayerJump()
     {
-        Vector3 origin = this.transform.position;
-        Vector3 downwards = Vector3.down;
-        float rayLength = 0.1f;
+        return Input.GetKeyDown(jumpKey) ||
+               Input.GetKey(jumpKey);
+    }
 
-        while(!Physics.Raycast(origin, downwards, rayLength, layerMask))
+    private Vector3 Ascend()
+    {
+        if(AtCeiling())
         {
-            rayLength += 0.1f;
+            Debug.Log("At ceiling");
+            isAttacking = false;
+            timeOfAttackEnd = Time.time;
+            return Vector3.zero;
         }
 
-        return rayLength;
+        Vector3 newVelocity = rb.velocity;
+
+        if(!isAscending)
+        {
+            newVelocity.y = initialYAscentSpeed;
+            isAscending = true;
+        }
+
+        newVelocity.x *= (1 / xAccelerationFactor); 
+        newVelocity.y *= (1 / yAccelerationFactor);
+
+        return newVelocity;
+    }
+
+    private bool AtCeiling()
+    {
+        Vector3 origin = this.transform.position;
+        Vector3 upwards = Vector3.up;
+        float rayLength = 0.65f;
+
+        return Physics.Raycast(origin, upwards, rayLength, layerMask);
     }
 }
