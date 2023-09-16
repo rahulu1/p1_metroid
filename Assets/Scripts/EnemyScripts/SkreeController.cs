@@ -9,16 +9,18 @@ public class SkreeController : EnemyController
     public float timeBeforeExploding;
     public float distanceToStopAdjusting;
     public float bulletSpeed;
+    public float bulletDuration;
 
     public GameObject skreeBulletPrefab;
 
     public LayerMask layerMask;
-    public Transform playerTransform;
 
     private Rigidbody rb;
+    private Transform playerTransform;
 
     private bool hasAttacked = false;
     private bool hasLanded = false;
+    private bool hasExploded = false;
     private float timeOfAttacking;
     private float timeOfLanding;
 
@@ -29,11 +31,15 @@ public class SkreeController : EnemyController
 
     private void Awake()
     {
+        playerTransform = GameObject.Find("Player").transform;
         rb = this.GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
+        if (hasExploded)
+            return;
+
         if (!hasAttacked)
         {
             WaitingToAttack();
@@ -123,11 +129,10 @@ public class SkreeController : EnemyController
 
         for(int i = 0; i < 4; ++i)
         {
-            GameObject bullet = bullets[i];
-            bullet = GameObject.Instantiate(skreeBulletPrefab);
-            // Prevent bullets from doing damage to other enemies
-            bullet.GetComponent<DestroyOnTriggerEnter>().SetDamage(0);
+            GameObject bullet = GameObject.Instantiate(skreeBulletPrefab);
             bullet.transform.position = skreePos;
+            bullet.GetComponent<DestroyOnTime>().destroyTime = bulletDuration;
+            bullets.Add(bullet);
         }
 
         GameObject rightBullet = bullets[0];
@@ -139,5 +144,8 @@ public class SkreeController : EnemyController
         leftBullet.GetComponent<Rigidbody>().velocity = leftBulletDirection * bulletSpeed;
         topLeftBullet.GetComponent<Rigidbody>().velocity = topLeftBulletDirection * bulletSpeed;
         topRightBullet.GetComponent<Rigidbody>().velocity = topRightBulletDirection * bulletSpeed;
+
+        hasExploded = true;
+        Destroy(this.gameObject);
     }
 }

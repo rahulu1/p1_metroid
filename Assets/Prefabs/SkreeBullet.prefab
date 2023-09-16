@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: -1758811562100774857}
   - component: {fileID: 5573117759611482877}
   - component: {fileID: 5562223700960799100}
-  - component: {fileID: -664549480969798750}
-  m_Layer: 9
+  - component: {fileID: 8841320048027887905}
+  m_Layer: 11
   m_Name: SkreeBullet
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.2
+  m_Radius: 0.32
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2561911120310224514
 Rigidbody:
@@ -136,7 +136,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!114 &-1758811562100774857
 MonoBehaviour:
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthDelta: -5
---- !u!114 &-664549480969798750
+--- !u!114 &8841320048027887905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -269,6 +269,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7420940070373130045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41270e68b5f6a5b489eaa54aa64b3b4a, type: 3}
+  m_Script: {fileID: 11500000, guid: d1d7d96d4a622104b95059e2e0442e58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 2048

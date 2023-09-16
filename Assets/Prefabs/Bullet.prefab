@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 540836895453147437}
   - component: {fileID: 2561911120310224514}
   - component: {fileID: -1758811562100774857}
-  - component: {fileID: 5610378065373522304}
   - component: {fileID: 5573117759611482877}
+  - component: {fileID: -679961531984305020}
   m_Layer: 9
   m_Name: Bullet
   m_TagString: Projectile
@@ -150,18 +150,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 0.35
---- !u!114 &5610378065373522304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7420940070373130045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41270e68b5f6a5b489eaa54aa64b3b4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &5573117759611482877
 AudioSource:
   m_ObjectHideFlags: 0
@@ -258,3 +246,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-679961531984305020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7420940070373130045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2be382ed0b2dd9498c7185e9fe217d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
