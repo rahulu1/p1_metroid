@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RipperController : MonoBehaviour
+public class RipperController : EnemyController
 {
     public float ripperSpeed;
     public bool movingRight;
@@ -12,6 +12,11 @@ public class RipperController : MonoBehaviour
 
     private Rigidbody rb;
     private SpriteRenderer spriteRenderer;
+
+    public override EnemyController GetController()
+    {
+        return this;
+    }
 
     private void Awake()
     {

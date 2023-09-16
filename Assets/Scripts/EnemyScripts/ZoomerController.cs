@@ -18,8 +18,6 @@ public class ZoomerController : EnemyController
 
     private const float downDistance = 0.5f, aheadDistance = 0.5f;
     private const float pixelShift = 0.03f;
-    private int damage = 8;
-
 
 
     void Awake()

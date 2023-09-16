@@ -5,7 +5,7 @@ using UnityEngine;
 public class SkreeController : EnemyController
 {
     public float skreeSpeed;
-    public float distanceBeforeAttacking;
+    public float aggroDistance;
     public float timeBeforeExploding;
     public float distanceToStopAdjusting;
     public float bulletSpeed;
@@ -58,7 +58,7 @@ public class SkreeController : EnemyController
     {
         float XDistanceFromPlayer =
                 this.transform.position.x - playerTransform.position.x;
-        bool timeToAttack = XDistanceFromPlayer <= distanceBeforeAttacking;
+        bool timeToAttack = XDistanceFromPlayer <= aggroDistance;
 
         if (timeToAttack)
             Attack();
