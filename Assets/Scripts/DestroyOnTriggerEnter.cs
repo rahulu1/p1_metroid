@@ -11,13 +11,8 @@ public class DestroyOnTriggerEnter : MonoBehaviour
     {
         int colliderLayer = other.gameObject.layer;
 
-        if (!LayerInMask(layerMask, colliderLayer))
+        if (!Utilities.LayerInMask(layerMask, colliderLayer))
             Destroy(this.gameObject);
     }
 
-    // Returns true if given layer is in layerMask, false if not
-    private bool LayerInMask(LayerMask layerMask, int layer)
-    {
-        return (layerMask == (layerMask | (1 << layer)));
-    }
 }

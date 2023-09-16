@@ -37,6 +37,11 @@ public class HasHealth : MonoBehaviour
         health += i;
     }
 
+    public void SetHealth(int healthIn)
+    {
+        health = healthIn;
+    }
+
 
     // damagePos is the (x, y) position of the source of the damage and
     // it's passed in by the attacking entity (bullet, enemy, etc)
@@ -90,8 +95,15 @@ public class HasHealth : MonoBehaviour
         }
         else
         {
-            this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
-            StartCoroutine(RestoreEnemyMovement(freezeDuration));
+            // For some reason, even when freezeDuration was 0, enemies were still
+            // frozen by bullets, so this is a workaround for that issue
+            bool freezesOnHit = !Mathf.Approximately(freezeDuration, 0f);
+            if (freezesOnHit)
+            {
+                this.gameObject.GetComponent<Rigidbody>().constraints = 
+                    RigidbodyConstraints.FreezePosition;
+                StartCoroutine(RestoreEnemyMovement(freezeDuration));
+            }
         }
         // TODO:
     }

@@ -6,11 +6,14 @@ public class AlterHealthOnTouch : MonoBehaviour
 {
     public int healthDelta;
 
+    // Only alters health of layers in layerMask
+    public LayerMask layerMask;
+
     private void OnTriggerEnter(Collider other)
     {
         HasHealth hasHealth = CheckForHasHealth(other.gameObject);
 
-        if(hasHealth)
+        if(hasHealth && ShouldAlterHealth(other.gameObject))
         {
             Vector2 damagePos = new Vector2(transform.position.x, transform.position.y);
             hasHealth.TakeDamage(-1 * healthDelta, damagePos);
@@ -21,7 +24,7 @@ public class AlterHealthOnTouch : MonoBehaviour
     {
         HasHealth hasHealth = CheckForHasHealth(collision.gameObject);
 
-        if (hasHealth)
+        if (hasHealth && ShouldAlterHealth(collision.gameObject))
         {
             Vector2 damagePos = new Vector2(transform.position.x, transform.position.y);
             hasHealth.TakeDamage(-1 * healthDelta, damagePos);
@@ -38,5 +41,13 @@ public class AlterHealthOnTouch : MonoBehaviour
             hasHealth = gameObject.GetComponent<HasHealth>();
 
         return hasHealth;
+    }
+
+    // Returns true if layer of gameObject isn't in layerMask, meaning
+    // we should alter its health
+    private bool ShouldAlterHealth(GameObject gameObject)
+    {
+        int layer = gameObject.layer;
+        return Utilities.LayerInMask(layerMask, layer);
     }
 }
