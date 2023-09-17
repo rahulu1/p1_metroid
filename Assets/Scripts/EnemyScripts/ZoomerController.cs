@@ -18,8 +18,6 @@ public class ZoomerController : EnemyController
 
     private const float downDistance = 0.5f, aheadDistance = 0.5f;
     private const float pixelShift = 0.03f;
-    private int damage = 8;
-
 
 
     void Awake()
@@ -49,13 +47,11 @@ public class ZoomerController : EnemyController
         {
             if (!(IsGrounded()))
             {
-                Debug.Log("No Ground!");
                 this.transform.Rotate(turnAngle);
                 AdjustPosition();
             }
             else if (!(HasSpace()))
             {
-                Debug.Log("No Space!");
                 this.transform.Rotate(turnAngle * -1f);
                 AdjustPosition();
             }
@@ -70,11 +66,6 @@ public class ZoomerController : EnemyController
         bool groundBelow = Physics.Raycast(origin, down, downDistance, layerMask);
 
         return groundBelow;
-
-        //if (Physics.Raycast(origin, down, downDistance))
-        //    return true;
-        //else
-        //    return false;
     }
 
     // Checks if running into wall
@@ -87,12 +78,6 @@ public class ZoomerController : EnemyController
         bool groundBelow = Physics.Raycast(origin, down, downDistance, layerMask);
 
         return !(wallInFront && groundBelow);
-
-        //if (Physics.Raycast(origin, this.transform.right * directionMultiplier, aheadDistance, layerMask) && 
-        //    Physics.Raycast(origin, down, downDistance, layerMask))
-        //    return false;
-        //else
-        //    return true;
     }
 
     void AdjustPosition()
@@ -100,25 +85,6 @@ public class ZoomerController : EnemyController
         Vector3 newPos = new Vector3(Mathf.Round(transform.position.x), Mathf.Round(transform.position.y), 0);
         this.transform.position = newPos - (transform.up * pixelShift);
         timeSinceRotate = 0f;
-    }
-
-    //void OnCollisionStay(Collision collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Player"))
-    //    {
-    //        Vector2 damagePos = new Vector2(transform.position.x, transform.position.y);
-    //        collision.gameObject.GetComponent<HasHealth>().TakeDamage(damage, damagePos);
-    //    }
-    //}
-
-    private void OnTriggerEnter(Collider other)
-    {
-        int playerLayer = 8;
-        if (other.gameObject.layer == playerLayer)
-        {
-            Vector2 damagePos = new Vector2(transform.position.x, transform.position.y);
-            other.gameObject.GetComponentInParent<HasHealth>().TakeDamage(damage, damagePos);
-        }
     }
 
     private void OnDrawGizmos()

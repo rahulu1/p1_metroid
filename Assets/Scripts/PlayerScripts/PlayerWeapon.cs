@@ -94,7 +94,7 @@ public class PlayerWeapon : MonoBehaviour
                     missileCount--;
             }
 
-            bulletInstance.GetComponent<DestroyOnTriggerEnter>().SetDamage(weaponDamage);
+            bulletInstance.GetComponent<PlayerBullet>().SetDamage(weaponDamage);
 
             bulletRenderer = bulletInstance.GetComponent<SpriteRenderer>();
 
