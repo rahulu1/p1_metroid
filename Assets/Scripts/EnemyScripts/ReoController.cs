@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ReoController : EnemyController
 {
@@ -110,6 +111,9 @@ public class ReoController : EnemyController
         }
         else
         {
+            if(HittingWall())
+                ReverseXDirection(ref newVelocity);
+
             newVelocity.y *= yAccelerationFactor;
             newVelocity.x *= xAccelerationFactor;
         }
@@ -122,9 +126,12 @@ public class ReoController : EnemyController
         Vector3 newVelocity = rb.velocity;
 
         if(PlayerJumped() && !waitingToAscend)
-        {
             StartCoroutine(WaitToAscend(delayBeforeAscending));
-        }
+
+        // Still need to check for wall collisions when waiting to
+        // ascend
+        if (HittingWall())
+            ReverseXDirection(ref newVelocity);
 
         return newVelocity;
     }
@@ -182,7 +189,8 @@ public class ReoController : EnemyController
         Vector3 downwards = Vector3.down;
         float rayLength = targetDistanceFromGround;
 
-        return Physics.Raycast(origin, downwards, rayLength, layerMask);
+        return Physics.Raycast(
+            origin, downwards, rayLength, layerMask);
     }
 
     private bool PlayerJumped()
@@ -197,7 +205,17 @@ public class ReoController : EnemyController
         Vector3 upwards = Vector3.up;
         float rayLength = 0.65f;
 
-        return Physics.Raycast(origin, upwards, rayLength, layerMask);
+        return Physics.Raycast(
+            origin, upwards, rayLength, layerMask);
+    }
+
+    private bool HittingWall()
+    {
+        Vector3 origin = this.transform.position;
+        float rayLength = 0.8f;
+
+        return Physics.Raycast(
+            origin, swoopDirection, rayLength, layerMask);
     }
 
     private IEnumerator WaitToAscend(float duration)
@@ -212,5 +230,11 @@ public class ReoController : EnemyController
         Vector3 newVelocity = rb.velocity;
         newVelocity.y = initialYAscentSpeed;
         rb.velocity = newVelocity;
+    }
+
+    private void ReverseXDirection(ref Vector3 newVelocity)
+    {
+        swoopDirection *= -1;
+        newVelocity.x *= -1;
     }
 }
