@@ -22,7 +22,7 @@ public class PlayerState : MonoBehaviour
 
     private PlayerInventory playerInventory;
     private PlayerWeapon playerWeapon;
-    private Rigidbody playerRigidbody;
+    private HasHealth playerHealth;
     private void Start()
     {
         capsuleCollider = GetComponentInChildren<CapsuleCollider>();
@@ -33,7 +33,7 @@ public class PlayerState : MonoBehaviour
         cheatEnabled = false;
         playerInventory = GetComponent<PlayerInventory>();
         playerWeapon = GetComponentInChildren<PlayerWeapon>();
-        playerRigidbody = GetComponent<Rigidbody>();
+        playerHealth = GetComponent<HasHealth>();
     }
 
     // Update is called once per frame
@@ -41,10 +41,16 @@ public class PlayerState : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Debug.Log("Cheat Enabled");
-            playerInventory.UnlockMissiles();
-            playerWeapon.IncreaseMaxMissiles(255);
-            playerWeapon.AddMissiles(255);
+            if (!cheatEnabled)
+            {
+                Debug.Log("Cheat Enabled");
+                playerInventory.UnlockMissiles();
+                playerWeapon.IncreaseMaxMissiles(255);
+                playerWeapon.AddMissiles(255);
+                playerHealth.EnableInvincibility();
+            }
+            else
+                playerHealth.DisableInvincibility();
             cheatEnabled = !cheatEnabled;
         }
 
@@ -105,46 +111,37 @@ public class PlayerState : MonoBehaviour
         return cheatEnabled;
     }
 
-    public IEnumerator Blink()
-    {
-        int blinkFrames = 31;
-        Color blinkColor = new Color(0.46f, 0.38f, 0.38f);
-
-        while (blinkFrames >= 0)
-        {
-            if ((blinkFrames % 2) == 1)
-            {
-                GetComponentInChildren<SpriteRenderer>().enabled = false;
-            }
-            else
-                GetComponentInChildren<SpriteRenderer>().enabled = true;
-            blinkFrames--;
-            yield return null;
-        }
-    }
-
-    // Disables all player controls for timeDisabled seconds
-    public IEnumerator DisablePlayerControls(float timeDisabled)
+    public void DisablePlayerControls()
     {
         GetComponent<PlayerRun>().enabled = false;
         GetComponentInChildren<PlayerJump>().enabled = false;
         GetComponent<HandleCustomGravity>().enabled = false;
         GetComponent<PlayerDirection>().enabled = false;
         GetComponentInChildren<PlayerWeapon>().enabled = false;
-        activeCollider.enabled = false;
-        playerRigidbody.isKinematic = true;
+    }
 
-        yield return new WaitForSeconds(timeDisabled);
-
+    public void EnablePlayerControls()
+    {
         GetComponent<PlayerRun>().enabled = true;
         GetComponentInChildren<PlayerJump>().enabled = true;
         GetComponent<HandleCustomGravity>().enabled = true;
         GetComponent<PlayerDirection>().enabled = true;
         GetComponentInChildren<PlayerWeapon>().enabled = true;
-        activeCollider.enabled = true;
-        playerRigidbody.isKinematic = false;
+    }
+
+    // Pauses all player controls for timePaused seconds
+    public IEnumerator PausePlayerControls(float timePaused)
+    {
+        DisablePlayerControls();
+
+        yield return new WaitForSeconds(timePaused);
+
+        EnablePlayerControls();
     }   
 
+    public void DisablePlayerCollider() { activeCollider.enabled = false; }
+
+    public void EnablePlayerCollider() { activeCollider.enabled = true; }
     public void DeathSequence()
     {
 

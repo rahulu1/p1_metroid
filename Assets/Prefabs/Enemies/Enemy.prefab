@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 1754897132106983704}
   - component: {fileID: 9128582481380634923}
   - component: {fileID: 7683233674648152333}
-  - component: {fileID: 1528962184155273435}
+  - component: {fileID: 4075298175157051577}
+  - component: {fileID: 78816078576008205}
   m_Layer: 11
   m_Name: Enemy
   m_TagString: Enemy
@@ -171,11 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
-  invincibiltyTime: 0
-  knockbackForce: 5
-  freezeDuration: 0.1333
-  knockbackTime: 0
---- !u!114 &1528962184155273435
+--- !u!114 &4075298175157051577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,10 +181,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 5803631508499331884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71e067bca2db1df4cb21d9c3f83b8052, type: 3}
+  m_Script: {fileID: 11500000, guid: 1410629ae33d7724c92127484de0cd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthDelta: 0
-  layerMask:
+  freezeDuration: 0.5
+--- !u!114 &78816078576008205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803631508499331884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e68148f2ce2cc74cb461595740101d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthDelta: 8
+  damageSource: 1
+  dontAlter:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 2048

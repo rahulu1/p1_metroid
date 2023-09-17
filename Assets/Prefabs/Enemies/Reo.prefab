@@ -30,11 +30,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1754897132106983704, guid: 5cbaf30b1083b9949a3c1b225701f13c, type: 3}
       propertyPath: m_Size.x
-      value: 1.6
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1754897132106983704, guid: 5cbaf30b1083b9949a3c1b225701f13c, type: 3}
       propertyPath: m_Size.y
-      value: 1.26
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754897132106983704, guid: 5cbaf30b1083b9949a3c1b225701f13c, type: 3}
+      propertyPath: m_Center.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4913253977924399213, guid: 5cbaf30b1083b9949a3c1b225701f13c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -78,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5803631508499331884, guid: 5cbaf30b1083b9949a3c1b225701f13c, type: 3}
       propertyPath: m_Name
-      value: Reo Variant
+      value: Reo
       objectReference: {fileID: 0}
     - target: {fileID: 9128582481380634923, guid: 5cbaf30b1083b9949a3c1b225701f13c, type: 3}
       propertyPath: m_UseGravity
@@ -91,6 +95,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5803631508499331884, guid: 5cbaf30b1083b9949a3c1b225701f13c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5017641147504372560}
+    - targetCorrespondingSourceObject: {fileID: 5803631508499331884, guid: 5cbaf30b1083b9949a3c1b225701f13c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3899233810878404022}
   m_SourcePrefab: {fileID: 100100000, guid: 5cbaf30b1083b9949a3c1b225701f13c, type: 3}
 --- !u!1 &6445250330965599671 stripped
 GameObject:
@@ -109,15 +116,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec083d9682ea43e4b8c8f54d388c4ae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialYDescentSpeed: 15
-  initialYAscentSpeed: 4
-  initialXSpeed: 2
-  yAccelerationFactor: 0.98
-  xAccelerationFactor: 1.017
-  aggroDistance: 5
-  timeBetweenAttacks: 1
-  delayBeforeAscending: 0.3
-  targetDistanceFromGround: 1
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 1
+--- !u!114 &3899233810878404022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6445250330965599671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f0bc9fab2d1b5438ba2364656521b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customGravity: -8

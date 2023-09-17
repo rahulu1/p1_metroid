@@ -47,7 +47,9 @@ public class DoorWay : MonoBehaviour
         if (other.gameObject.CompareTag("PlayerCollider"))
         {
             playerRB.velocity = Vector3.zero;
-            StartCoroutine(playerState.DisablePlayerControls(lerpDuration + 0.1f));
+            playerRB.isKinematic = true;
+            playerState.DisablePlayerCollider();
+            StartCoroutine(playerState.PausePlayerControls(lerpDuration + 0.1f));
 
             originalPosition = playerTransform.position;
 
@@ -76,6 +78,8 @@ public class DoorWay : MonoBehaviour
         exitDoor.OpenDoor();
         yield return new WaitForSeconds(0.2f);
         exitDoor.CloseDoor();
+        playerRB.isKinematic = false;
+        playerState.EnablePlayerCollider();
         enterDoor.SetTransition(false);
         exitDoor.SetTransition(false);
     }

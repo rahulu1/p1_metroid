@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2561911120310224514}
   - component: {fileID: -1758811562100774857}
   - component: {fileID: 5573117759611482877}
-  - component: {fileID: 5562223700960799100}
+  - component: {fileID: 7645709003379167443}
   - component: {fileID: 8841320048027887905}
   m_Layer: 11
   m_Name: SkreeBullet
@@ -247,7 +247,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5562223700960799100
+--- !u!114 &7645709003379167443
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,13 +256,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7420940070373130045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71e067bca2db1df4cb21d9c3f83b8052, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e68148f2ce2cc74cb461595740101d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthDelta: -5
-  layerMask:
+  healthDelta: 0
+  damageSource: 0
+  dontAlter:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 3639
 --- !u!114 &8841320048027887905
 MonoBehaviour:
   m_ObjectHideFlags: 0

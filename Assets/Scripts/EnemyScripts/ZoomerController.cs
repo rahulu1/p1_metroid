@@ -87,24 +87,6 @@ public class ZoomerController : EnemyController
         timeSinceRotate = 0f;
     }
 
-    private void OnDrawGizmos()
-    {
-        Vector3 groundOrigin = this.transform.position - (this.transform.right * 0.49f);
-        Vector3 groundEnd = groundOrigin + (down * downDistance);
-
-        Vector3 origin = transform.position;
-
-        Gizmos.color = Color.red;
-
-        Gizmos.DrawLine(groundOrigin, groundEnd);
-
-        Gizmos.color = Color.blue;
-        Gizmos.DrawLine(origin, origin + (transform.up * -downDistance));
-
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.position, origin + (transform.right * aheadDistance));
-    }
-
     public override EnemyController GetController()
     {
         return this;
