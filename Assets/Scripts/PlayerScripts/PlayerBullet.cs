@@ -8,10 +8,12 @@ public class PlayerBullet : MonoBehaviour
     private int damage;
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Hit " + other.gameObject.name);
         // if it hits an enemy, deal damage
         if (other.gameObject.CompareTag("Enemy"))
         {
-            other.gameObject.GetComponent<HasHealth>().TakeDamage(damage, this.gameObject.transform.position);
+            other.gameObject.GetComponent<HasHealth>().TakeDamage(damage, DamageReact.DamageSource.Projectile, this.gameObject.transform.position);
+            Debug.Log("Gottem");
         }
         else if (other.gameObject.GetComponent<DoorCollider>() != null)
         {
@@ -20,7 +22,6 @@ public class PlayerBullet : MonoBehaviour
         else if (other.gameObject.CompareTag("Chozo"))
         {
             other.GetComponent<ChozoController>().ProjectileEnter();
-            Debug.Log("Hit Chozo");
         }
         Destroy(this.gameObject);
     }
