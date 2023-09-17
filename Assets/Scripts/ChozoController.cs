@@ -17,7 +17,6 @@ public class ChozoController : MonoBehaviour
     }
     public void ProjectileEnter()
     {
-
         chozoAnimator.SetTrigger("Open");
 
         StartCoroutine(CloseAfterTime(timeToClose));

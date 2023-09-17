@@ -28,6 +28,16 @@ public class PlayerInventory : MonoBehaviour
             Destroy(other.gameObject);
             hasMorphBall = true;
         }
+        if (other.gameObject.CompareTag("MissileTank"))
+        {
+
+            // Add Missile Tank sequence
+            missilesUnlocked = true;
+            playerWeapon.IncreaseMaxMissiles(5);
+            playerWeapon.AddMissiles(5);
+
+            Destroy(other.transform.parent.gameObject);
+        }
         else if (other.gameObject.CompareTag("LongBeam"))
         {
             Destroy(other.gameObject);
@@ -42,21 +52,6 @@ public class PlayerInventory : MonoBehaviour
         {
             Destroy(other.gameObject);
             playerWeapon.AddMissiles(2);
-        }
-    }
-
-    public void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("MissileTank"))
-        {
-            // Check if on top of Missile Tank
-
-            // Add Missile Tank sequence
-            missilesUnlocked = true;
-            playerWeapon.IncreaseMaxMissiles(5);
-            playerWeapon.AddMissiles(5);
-
-            Destroy(collision.gameObject);
         }
     }
 
