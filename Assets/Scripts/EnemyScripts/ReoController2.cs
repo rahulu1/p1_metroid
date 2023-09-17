@@ -30,37 +30,49 @@ public class ReoController2 : EnemyController
 
         targetPosition = playerRigid.position;
         reoDirection = new Vector3(0, playerRigid.position.x - reoRigid.position.x, 0).normalized;
-    }
 
-    void Update()
-    {
-        ReoMove();
+        StartCoroutine(ReoMove());
     }
-
     public override EnemyController GetController()
     {
         return this;
     }
 
-    void ReoMove()
+    IEnumerator ReoMove()
     {
-        if (!HasSpace())
+        while(true)
         {
+            reoDirection = new Vector3(0, targetPosition.x - reoRigid.position.x, 0).normalized;
 
-        }
-        if (Vector3.SqrMagnitude(playerRigid.position - reoRigid.position) < minDistFromPlayer)
-        {
-            targetPosition = playerRigid.position;
-            if (!swooping)
+            // If reo is close enough
+            if (Vector3.SqrMagnitude(playerRigid.position - reoRigid.position) < minDistFromPlayer)
             {
-                reoDirection = new Vector3(0, targetPosition.x - reoRigid.position.x, 0).normalized;
-                targetAltitude = targetPosition.y;
-                if (targetAltitude)
-        }
+                targetPosition = playerRigid.position;
+
+                // If not already swooping
+                if (!swooping)
+                {
+                    targetAltitude = targetPosition.y;
+
+                    if (!Mathf.Approximately(reoRigid.position.y, targetAltitude))
+                    {
+                        // if reo is below player, let gravity swoop it back up
+                        if (targetAltitude > reoRigid.position.y)
+                        {
+                            reoGravity.enabled = true;
+                            swooping = true;
+                        }
+                        // if reow is above player, have it "jump"
+                        else
+                            SwoopDown();
+                    }
+                }
+            }
+            yield return null;
         }
     }
 
-    void Swoop()
+    void SwoopDown()
     {
 
     }
