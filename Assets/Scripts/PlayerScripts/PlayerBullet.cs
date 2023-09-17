@@ -17,6 +17,11 @@ public class PlayerBullet : MonoBehaviour
         {
             other.gameObject.GetComponent<DoorCollider>().OnProjectileCollision();
         }
+        else if (other.gameObject.CompareTag("Chozo"))
+        {
+            other.GetComponent<ChozoController>().ProjectileEnter();
+            Debug.Log("Hit Chozo");
+        }
         Destroy(this.gameObject);
     }
 

@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/ChozoController.cs.meta
-guid: fbe1ae10a206db146b642dce662802c4
-========
-guid: 71e067bca2db1df4cb21d9c3f83b8052
->>>>>>>> experimental:Assets/Scripts/AlterHealthOnTouch.cs.meta
+guid: 8e68148f2ce2cc74cb461595740101d0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
-  executionOrder: 24
+  executionOrder: 2
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 
