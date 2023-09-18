@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skreeSpeed: 8
-  distanceBeforeAttacking: 5
+  aggroDistance: 5
   timeBeforeExploding: 1.2
   distanceToStopAdjusting: 3
   bulletSpeed: 20

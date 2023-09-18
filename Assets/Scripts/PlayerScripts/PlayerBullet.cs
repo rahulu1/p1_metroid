@@ -12,8 +12,14 @@ public class PlayerBullet : MonoBehaviour
         // if it hits an enemy, deal damage
         if (other.gameObject.CompareTag("Enemy"))
         {
-            other.gameObject.GetComponent<HasHealth>().TakeDamage(damage, DamageReact.DamageSource.Projectile, this.gameObject.transform.position);
-            Debug.Log("Gottem");
+            // Need to check because not all enemies have health; rippers
+            // are invincible 
+            HasHealth hasHealth = other.gameObject.GetComponent<HasHealth>();
+            if(hasHealth)
+            {
+                hasHealth.TakeDamage(damage, DamageReact.DamageSource.Projectile, this.gameObject.transform.position);
+                Debug.Log("Gottem");
+            }
         }
         else if (other.gameObject.GetComponent<DoorCollider>() != null)
         {

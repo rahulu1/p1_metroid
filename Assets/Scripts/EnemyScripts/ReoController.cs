@@ -163,8 +163,9 @@ public class ReoController : EnemyController
             Mathf.Abs(this.transform.position.x -
             playerTransform.position.x);
 
-        bool playerWithinAggroDistance =
-            XDistanceFromPlayer <= aggroDistance;
+        bool playerWithinAggroDistance = 
+            Utilities.WithinXDistance(
+                playerTransform, this.transform, aggroDistance);
 
         bool timeBetweenAttacksEnded =
             (Time.time - timeOfAttackEnd) >= timeBetweenAttacks;

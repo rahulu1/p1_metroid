@@ -9,4 +9,15 @@ public static class Utilities
     {
         return (layerMask == (layerMask | (1 << layer)));
     }
+
+    // Returns whether difference between two given transform's x
+    // positions is less than given distance
+    public static bool WithinXDistance(Transform transform1, 
+        Transform transform2, float distance)
+    {
+        float XDistanceBetween =
+            Mathf.Abs(transform1.position.x - transform2.position.x);
+
+        return XDistanceBetween <= distance;
+    }
 }

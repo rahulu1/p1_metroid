@@ -39,21 +39,7 @@ public class RipperController : EnemyController
 
     private void Update()
     {
-        RestoreHealth();
         RipperMotion();
-    }
-
-    // Hack to make Ripper unkillable; right now, HasHealth is tied
-    // to too many other things, like knockback, so can't just remove it;
-    // should probably split HasHealth into multiple components at some
-    // point if we have time
-    private void RestoreHealth()
-    {
-        HasHealth hasHealth = this.GetComponent<HasHealth>();
-        if(hasHealth.GetHealth() < 9999)
-        {
-            hasHealth.SetHealth(9999);
-        }
     }
 
     private void RipperMotion()
