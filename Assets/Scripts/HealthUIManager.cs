@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthUIManager : MonoBehaviour
 {
     public Sprite[] digitSprites = new Sprite[10];
-    public SpriteRenderer[] displayHealthDigits = new SpriteRenderer[3];
+    public Image[] displayHealthDigits = new Image[3];
 
     private int displayHealth;
     private HasHealth playerHealth;

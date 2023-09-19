@@ -14,8 +14,6 @@ public class PlayerState : MonoBehaviour
 
     [SerializeField]
     private Collider activeCollider;
-    private CapsuleCollider capsuleCollider;
-    private SphereCollider sphereCollider;
 
     private bool isStanding;
     private bool cheatEnabled;
@@ -23,11 +21,9 @@ public class PlayerState : MonoBehaviour
     private PlayerInventory playerInventory;
     private PlayerWeapon playerWeapon;
     private HasHealth playerHealth;
-    private void Start()
+    void Start()
     {
-        capsuleCollider = GetComponentInChildren<CapsuleCollider>();
-        sphereCollider = GetComponentInChildren<SphereCollider>();
-        activeCollider = capsuleCollider;
+        activeCollider = standing.GetComponent<Collider>();
 
         isStanding = true;
         cheatEnabled = false;
@@ -58,19 +54,19 @@ public class PlayerState : MonoBehaviour
         {
             if (isStanding && Input.GetKeyDown(KeyCode.DownArrow) && playerInventory.HasMorphBall())
             {
-                activeCollider = sphereCollider;
                 standing.SetActive(false);
                 morphed.SetActive(true);
+                activeCollider = morphed.GetComponent<Collider>();
                 isStanding = false;
             }
             if (!isStanding && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.A)))
             {
                 if (HasSpace())
                 {
-                    activeCollider = capsuleCollider;
                     standing.SetActive(true);
                     morphed.SetActive(false);
                     isStanding = true;
+                    activeCollider = standing.GetComponent<Collider>();
                 }
             }
         }
@@ -147,6 +143,7 @@ public class PlayerState : MonoBehaviour
 
         gameOverText.SetActive(true);
         HUD.SetActive(false);
+        Camera.main.cullingMask = LayerMask.GetMask("UI");
 
         Destroy(this.gameObject);
         gameManager.enableRestart();

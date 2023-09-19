@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
         if (restart && Input.GetKeyDown(KeyCode.Return))
         {
             restart = false;
-            Debug.Log("Help");
+            Camera.main.cullingMask = LayerMask.GetMask("Everything");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             
         }

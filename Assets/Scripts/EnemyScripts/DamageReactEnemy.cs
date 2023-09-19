@@ -31,7 +31,8 @@ public class DamageReactEnemy : DamageReact
 
     protected override void Die()
     {
-        Destroy(this.gameObject);
+        // This destroys the Enemy and has a chance to spawn a collectable in its place
+        this.GetComponentInParent<SpawnController>().KillEntity();
     }
 
     IEnumerator RestoreEnemyMovement(float freezeDuration)
