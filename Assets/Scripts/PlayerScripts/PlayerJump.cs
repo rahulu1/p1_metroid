@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class PlayerJump : MonoBehaviour
 {
+
     private PlayerState playerState;
     private Rigidbody rigid;
+    private AudioPlayer sfxPlayer;
 
     [SerializeField]
     private float minJumpTime = 0.16f;
@@ -29,6 +31,7 @@ public class PlayerJump : MonoBehaviour
     {
         playerState = GetComponentInParent<PlayerState>();
         rigid = GetComponentInParent<Rigidbody>();
+        sfxPlayer = GameObject.Find("AudioPlayer").GetComponent<AudioPlayer>();
     }
 
     // Update is called once per frame
@@ -54,6 +57,7 @@ public class PlayerJump : MonoBehaviour
             // starting a jump
             if (pressedJump)
             {
+                sfxPlayer.playSfxClip("Jump");
                 AddJumpVelocity(jumpSpeed);
 
                 holdingJump = true;

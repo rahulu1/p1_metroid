@@ -345,6 +345,7 @@ MonoBehaviour:
   knockbackForce: 15
   knockbackTime: 0.2
   blinking: 0
+  blinkFrames: 0
 --- !u!114 &3629063497890524727
 MonoBehaviour:
   m_ObjectHideFlags: 0

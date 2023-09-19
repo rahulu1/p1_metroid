@@ -25,7 +25,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -77,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -89,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -101,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -113,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -125,6 +129,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -137,6 +142,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -149,6 +155,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -161,6 +168,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -3978,188 +3986,188 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      metroid_misc_sheet_114: 1855545586
-      metroid_misc_sheet_100: -1538072508
-      metroid_misc_sheet_75: 313534957
-      metroid_misc_sheet_120: -634606789
-      metroid_misc_sheet_148: 1878240563
-      metroid_misc_sheet_56: -1860295884
-      metroid_misc_sheet_19: 1128627499
-      metroid_misc_sheet_73: -879655680
-      metroid_misc_sheet_117: -713365608
-      metroid_misc_sheet_173: -201934116
-      metroid_misc_sheet_35: 1258413130
-      metroid_misc_sheet_50: 918519261
-      metroid_misc_sheet_111: 1222816927
-      metroid_misc_sheet_180: -94211004
-      metroid_misc_sheet_119: 382401275
-      metroid_misc_sheet_38: 1411380750
-      metroid_misc_sheet_131: -697843539
-      metroid_misc_sheet_48: -376660703
-      metroid_misc_sheet_59: -1466429590
-      metroid_misc_sheet_67: 289627370
-      metroid_misc_sheet_136: 1673694939
-      metroid_misc_sheet_26: 138582531
-      metroid_misc_sheet_151: -310768468
-      metroid_misc_sheet_139: -2042349989
-      metroid_misc_sheet_8: 1198150783
-      metroid_misc_sheet_16: -1548131021
-      metroid_misc_sheet_87: 1287802345
-      metroid_misc_sheet_21: -724821171
-      metroid_misc_sheet_160: 1324982657
-      metroid_misc_sheet_169: 172745383
-      metroid_misc_sheet_55: 33268385
-      metroid_misc_sheet_164: 814849746
-      metroid_misc_sheet_69: 123337809
-      metroid_misc_sheet_127: -1158206403
-      metroid_misc_sheet_18: -1526097798
-      metroid_misc_sheet_104: 1888611847
-      metroid_misc_sheet_9: -505618352
-      metroid_misc_sheet_145: -1872984821
-      metroid_misc_sheet_91: -989235548
-      metroid_misc_sheet_170: -1807801218
-      metroid_misc_sheet_52: 851378285
-      metroid_misc_sheet_103: 1583766277
-      metroid_misc_sheet_156: -1267026973
-      metroid_misc_sheet_22: -915171196
-      metroid_misc_sheet_130: 1030463020
-      metroid_misc_sheet_171: -391949445
-      metroid_misc_sheet_1: 702348157
-      metroid_misc_sheet_124: 1464939567
-      metroid_misc_sheet_112: 2053025114
-      metroid_misc_sheet_116: -2090375199
-      metroid_misc_sheet_34: -1770676902
-      metroid_misc_sheet_150: 102611182
-      metroid_misc_sheet_123: 411511734
-      metroid_misc_sheet_13: -557845658
-      metroid_misc_sheet_121: 1625663958
-      metroid_misc_sheet_176: -1678595248
-      metroid_misc_sheet_46: 1920229378
-      metroid_misc_sheet_29: -1133452543
-      metroid_misc_sheet_49: -793396908
-      metroid_misc_sheet_110: -260672548
-      metroid_misc_sheet_42: -1849018818
-      metroid_misc_sheet_122: -636042183
-      metroid_misc_sheet_168: -657243639
-      metroid_misc_sheet_25: 1257899562
-      metroid_misc_sheet_61: -1606732304
-      metroid_misc_sheet_63: 334488747
-      metroid_misc_sheet_44: -1449637581
-      metroid_misc_sheet_174: -1204753060
-      metroid_misc_sheet_109: 351331437
-      metroid_misc_sheet_39: -1413004159
-      metroid_misc_sheet_105: 488637575
-      metroid_misc_sheet_128: 750669067
-      metroid_misc_sheet_106: 2081790042
-      metroid_misc_sheet_147: -1474505063
-      metroid_misc_sheet_78: -1625311932
-      metroid_misc_sheet_40: -1499818393
-      metroid_misc_sheet_159: 1946524047
-      metroid_misc_sheet_129: 1043866644
-      metroid_misc_sheet_140: -1593374103
-      metroid_misc_sheet_178: -342433165
-      metroid_misc_sheet_74: -2125166520
-      metroid_misc_sheet_10: 670251390
-      metroid_misc_sheet_155: -895878776
-      metroid_misc_sheet_27: 438235491
-      metroid_misc_sheet_161: -890949601
-      metroid_misc_sheet_149: 931588685
-      metroid_misc_sheet_141: 1360444851
-      metroid_misc_sheet_118: 647473321
-      metroid_misc_sheet_12: 123815887
-      metroid_misc_sheet_137: 662555172
-      metroid_misc_sheet_165: -1227704772
-      metroid_misc_sheet_134: 109799028
-      metroid_misc_sheet_153: -704072438
-      metroid_misc_sheet_5: -1642666235
-      metroid_misc_sheet_6: -711111543
-      metroid_misc_sheet_158: 347065803
-      metroid_misc_sheet_24: 19319982
-      metroid_misc_sheet_79: -1876182115
-      metroid_misc_sheet_2: 51109932
-      metroid_misc_sheet_82: 822600148
-      metroid_misc_sheet_163: 1396400194
-      metroid_misc_sheet_86: 1851123499
-      metroid_misc_sheet_97: 774164321
-      metroid_misc_sheet_95: 1273494471
-      metroid_misc_sheet_142: -1619300238
-      metroid_misc_sheet_138: 786455113
-      metroid_misc_sheet_162: -1177141418
-      metroid_misc_sheet_85: 1254685379
-      metroid_misc_sheet_167: -1872088254
-      metroid_misc_sheet_66: -2026351807
-      metroid_misc_sheet_71: 628108145
-      metroid_misc_sheet_102: 1283404622
-      metroid_misc_sheet_58: -1352656916
-      metroid_misc_sheet_76: 2064658721
-      metroid_misc_sheet_47: -131261647
-      metroid_misc_sheet_154: 353385587
-      metroid_misc_sheet_11: 685296453
-      metroid_misc_sheet_64: -1722228984
-      metroid_misc_sheet_31: -1339126355
-      metroid_misc_sheet_14: 1985243365
-      metroid_misc_sheet_107: -15537629
-      metroid_misc_sheet_81: 918715939
-      metroid_misc_sheet_126: 1540857887
-      metroid_misc_sheet_108: -1473170804
-      metroid_misc_sheet_17: -1508960707
-      metroid_misc_sheet_93: 428524144
-      metroid_misc_sheet_77: 1474268308
-      metroid_misc_sheet_101: -2082218259
-      metroid_misc_sheet_88: -2138685406
-      metroid_misc_sheet_94: 1118631452
-      metroid_misc_sheet_132: 242964019
-      metroid_misc_sheet_54: -1888099529
       metroid_misc_sheet_0: -1794314593
-      metroid_misc_sheet_23: 293508489
-      metroid_misc_sheet_41: 466197985
-      metroid_misc_sheet_92: 1084405061
-      metroid_misc_sheet_45: 2059975698
-      metroid_misc_sheet_70: -895461384
-      metroid_misc_sheet_15: -1140361145
-      metroid_misc_sheet_179: 1519542057
-      metroid_misc_sheet_96: -1872679727
-      metroid_misc_sheet_36: -1772088183
-      metroid_misc_sheet_65: 795130622
-      metroid_misc_sheet_57: 1082602600
-      metroid_misc_sheet_3: -2135793213
-      metroid_misc_sheet_143: 1166655028
-      metroid_misc_sheet_80: 128880504
-      metroid_misc_sheet_146: -1934728145
-      metroid_misc_sheet_98: -679644744
-      metroid_misc_sheet_133: -131023560
-      metroid_misc_sheet_28: -1248218815
-      metroid_misc_sheet_125: -980150088
-      metroid_misc_sheet_99: -1370718049
+      metroid_misc_sheet_1: 702348157
+      metroid_misc_sheet_10: 670251390
+      metroid_misc_sheet_100: -1538072508
+      metroid_misc_sheet_101: -2082218259
+      metroid_misc_sheet_102: 1283404622
+      metroid_misc_sheet_103: 1583766277
+      metroid_misc_sheet_104: 1888611847
+      metroid_misc_sheet_105: 488637575
+      metroid_misc_sheet_106: 2081790042
+      metroid_misc_sheet_107: -15537629
+      metroid_misc_sheet_108: -1473170804
+      metroid_misc_sheet_109: 351331437
+      metroid_misc_sheet_11: 685296453
+      metroid_misc_sheet_110: -260672548
+      metroid_misc_sheet_111: 1222816927
+      metroid_misc_sheet_112: 2053025114
       metroid_misc_sheet_113: -1344895781
+      metroid_misc_sheet_114: 1855545586
       metroid_misc_sheet_115: -12482482
-      metroid_misc_sheet_62: -782562232
-      metroid_misc_sheet_20: -1444539431
-      metroid_misc_sheet_33: -1821055445
-      metroid_misc_sheet_32: 1959356356
-      metroid_misc_sheet_4: -1393749182
-      metroid_misc_sheet_72: -310653943
-      metroid_misc_sheet_7: 1163069953
-      metroid_misc_sheet_60: -1144222628
+      metroid_misc_sheet_116: -2090375199
+      metroid_misc_sheet_117: -713365608
+      metroid_misc_sheet_118: 647473321
+      metroid_misc_sheet_119: 382401275
+      metroid_misc_sheet_12: 123815887
+      metroid_misc_sheet_120: -634606789
+      metroid_misc_sheet_121: 1625663958
+      metroid_misc_sheet_122: -636042183
+      metroid_misc_sheet_123: 411511734
+      metroid_misc_sheet_124: 1464939567
+      metroid_misc_sheet_125: -980150088
+      metroid_misc_sheet_126: 1540857887
+      metroid_misc_sheet_127: -1158206403
+      metroid_misc_sheet_128: 750669067
+      metroid_misc_sheet_129: 1043866644
+      metroid_misc_sheet_13: -557845658
+      metroid_misc_sheet_130: 1030463020
+      metroid_misc_sheet_131: -697843539
+      metroid_misc_sheet_132: 242964019
+      metroid_misc_sheet_133: -131023560
+      metroid_misc_sheet_134: 109799028
       metroid_misc_sheet_135: 306678255
-      metroid_misc_sheet_68: -1996088418
-      metroid_misc_sheet_177: -319160512
-      metroid_misc_sheet_152: -133342423
-      metroid_misc_sheet_175: -930280902
-      metroid_misc_sheet_30: 1686576511
-      metroid_misc_sheet_89: -1530520536
-      metroid_misc_sheet_166: 964053799
-      metroid_misc_sheet_43: -1208047646
-      metroid_misc_sheet_51: -738235579
+      metroid_misc_sheet_136: 1673694939
+      metroid_misc_sheet_137: 662555172
+      metroid_misc_sheet_138: 786455113
+      metroid_misc_sheet_139: -2042349989
+      metroid_misc_sheet_14: 1985243365
+      metroid_misc_sheet_140: -1593374103
+      metroid_misc_sheet_141: 1360444851
+      metroid_misc_sheet_142: -1619300238
+      metroid_misc_sheet_143: 1166655028
       metroid_misc_sheet_144: 1987238993
-      metroid_misc_sheet_37: -398816059
-      metroid_misc_sheet_83: 1934683279
-      metroid_misc_sheet_172: -2073365934
-      metroid_misc_sheet_84: 1641504872
+      metroid_misc_sheet_145: -1872984821
+      metroid_misc_sheet_146: -1934728145
+      metroid_misc_sheet_147: -1474505063
+      metroid_misc_sheet_148: 1878240563
+      metroid_misc_sheet_149: 931588685
+      metroid_misc_sheet_15: -1140361145
+      metroid_misc_sheet_150: 102611182
+      metroid_misc_sheet_151: -310768468
+      metroid_misc_sheet_152: -133342423
+      metroid_misc_sheet_153: -704072438
+      metroid_misc_sheet_154: 353385587
+      metroid_misc_sheet_155: -895878776
+      metroid_misc_sheet_156: -1267026973
       metroid_misc_sheet_157: 1750320533
+      metroid_misc_sheet_158: 347065803
+      metroid_misc_sheet_159: 1946524047
+      metroid_misc_sheet_16: -1548131021
+      metroid_misc_sheet_160: 1324982657
+      metroid_misc_sheet_161: -890949601
+      metroid_misc_sheet_162: -1177141418
+      metroid_misc_sheet_163: 1396400194
+      metroid_misc_sheet_164: 814849746
+      metroid_misc_sheet_165: -1227704772
+      metroid_misc_sheet_166: 964053799
+      metroid_misc_sheet_167: -1872088254
+      metroid_misc_sheet_168: -657243639
+      metroid_misc_sheet_169: 172745383
+      metroid_misc_sheet_17: -1508960707
+      metroid_misc_sheet_170: -1807801218
+      metroid_misc_sheet_171: -391949445
+      metroid_misc_sheet_172: -2073365934
+      metroid_misc_sheet_173: -201934116
+      metroid_misc_sheet_174: -1204753060
+      metroid_misc_sheet_175: -930280902
+      metroid_misc_sheet_176: -1678595248
+      metroid_misc_sheet_177: -319160512
+      metroid_misc_sheet_178: -342433165
+      metroid_misc_sheet_179: 1519542057
+      metroid_misc_sheet_18: -1526097798
+      metroid_misc_sheet_180: -94211004
+      metroid_misc_sheet_19: 1128627499
+      metroid_misc_sheet_2: 51109932
+      metroid_misc_sheet_20: -1444539431
+      metroid_misc_sheet_21: -724821171
+      metroid_misc_sheet_22: -915171196
+      metroid_misc_sheet_23: 293508489
+      metroid_misc_sheet_24: 19319982
+      metroid_misc_sheet_25: 1257899562
+      metroid_misc_sheet_26: 138582531
+      metroid_misc_sheet_27: 438235491
+      metroid_misc_sheet_28: -1248218815
+      metroid_misc_sheet_29: -1133452543
+      metroid_misc_sheet_3: -2135793213
+      metroid_misc_sheet_30: 1686576511
+      metroid_misc_sheet_31: -1339126355
+      metroid_misc_sheet_32: 1959356356
+      metroid_misc_sheet_33: -1821055445
+      metroid_misc_sheet_34: -1770676902
+      metroid_misc_sheet_35: 1258413130
+      metroid_misc_sheet_36: -1772088183
+      metroid_misc_sheet_37: -398816059
+      metroid_misc_sheet_38: 1411380750
+      metroid_misc_sheet_39: -1413004159
+      metroid_misc_sheet_4: -1393749182
+      metroid_misc_sheet_40: -1499818393
+      metroid_misc_sheet_41: 466197985
+      metroid_misc_sheet_42: -1849018818
+      metroid_misc_sheet_43: -1208047646
+      metroid_misc_sheet_44: -1449637581
+      metroid_misc_sheet_45: 2059975698
+      metroid_misc_sheet_46: 1920229378
+      metroid_misc_sheet_47: -131261647
+      metroid_misc_sheet_48: -376660703
+      metroid_misc_sheet_49: -793396908
+      metroid_misc_sheet_5: -1642666235
+      metroid_misc_sheet_50: 918519261
+      metroid_misc_sheet_51: -738235579
+      metroid_misc_sheet_52: 851378285
       metroid_misc_sheet_53: -1338107218
+      metroid_misc_sheet_54: -1888099529
+      metroid_misc_sheet_55: 33268385
+      metroid_misc_sheet_56: -1860295884
+      metroid_misc_sheet_57: 1082602600
+      metroid_misc_sheet_58: -1352656916
+      metroid_misc_sheet_59: -1466429590
+      metroid_misc_sheet_6: -711111543
+      metroid_misc_sheet_60: -1144222628
+      metroid_misc_sheet_61: -1606732304
+      metroid_misc_sheet_62: -782562232
+      metroid_misc_sheet_63: 334488747
+      metroid_misc_sheet_64: -1722228984
+      metroid_misc_sheet_65: 795130622
+      metroid_misc_sheet_66: -2026351807
+      metroid_misc_sheet_67: 289627370
+      metroid_misc_sheet_68: -1996088418
+      metroid_misc_sheet_69: 123337809
+      metroid_misc_sheet_7: 1163069953
+      metroid_misc_sheet_70: -895461384
+      metroid_misc_sheet_71: 628108145
+      metroid_misc_sheet_72: -310653943
+      metroid_misc_sheet_73: -879655680
+      metroid_misc_sheet_74: -2125166520
+      metroid_misc_sheet_75: 313534957
+      metroid_misc_sheet_76: 2064658721
+      metroid_misc_sheet_77: 1474268308
+      metroid_misc_sheet_78: -1625311932
+      metroid_misc_sheet_79: -1876182115
+      metroid_misc_sheet_8: 1198150783
+      metroid_misc_sheet_80: 128880504
+      metroid_misc_sheet_81: 918715939
+      metroid_misc_sheet_82: 822600148
+      metroid_misc_sheet_83: 1934683279
+      metroid_misc_sheet_84: 1641504872
+      metroid_misc_sheet_85: 1254685379
+      metroid_misc_sheet_86: 1851123499
+      metroid_misc_sheet_87: 1287802345
+      metroid_misc_sheet_88: -2138685406
+      metroid_misc_sheet_89: -1530520536
+      metroid_misc_sheet_9: -505618352
       metroid_misc_sheet_90: -1275092093
-  spritePackingTag: 
+      metroid_misc_sheet_91: -989235548
+      metroid_misc_sheet_92: 1084405061
+      metroid_misc_sheet_93: 428524144
+      metroid_misc_sheet_94: 1118631452
+      metroid_misc_sheet_95: 1273494471
+      metroid_misc_sheet_96: -1872679727
+      metroid_misc_sheet_97: 774164321
+      metroid_misc_sheet_98: -679644744
+      metroid_misc_sheet_99: -1370718049
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
