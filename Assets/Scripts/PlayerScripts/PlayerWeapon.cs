@@ -50,7 +50,7 @@ public class PlayerWeapon : MonoBehaviour
     void Update()
     {
         // Toggle between missiles and beam with shift
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (weaponEquipped == beamEquipped && playerInventory.MissilesUnlocked())
             {

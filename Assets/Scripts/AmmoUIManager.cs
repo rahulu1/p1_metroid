@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AmmoUIManager : MonoBehaviour
 {
     public Sprite[] digitSprites = new Sprite[10];
-    public SpriteRenderer missileSprite;
-    public SpriteRenderer[] displayAmmoDigits = new SpriteRenderer[3];
+    public Image missileSprite;
+    public Image[] displayAmmoDigits = new Image[3];
 
     private int displayAmmo = 0;
     private PlayerWeapon playerWeapon;
@@ -37,7 +38,7 @@ public class AmmoUIManager : MonoBehaviour
     public void ShowAmmoUI()
     {
         missileSprite.enabled = true;
-        foreach(SpriteRenderer displayAmmoDigit in displayAmmoDigits)
+        foreach(Image displayAmmoDigit in displayAmmoDigits)
         {
             displayAmmoDigit.enabled = true;
         }

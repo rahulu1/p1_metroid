@@ -146,4 +146,9 @@ public class CameraController : MonoBehaviour
         currMaxRoomOffset = roomData[currRoom].GetMaxRoomOffset();
         currRoomMiddle = roomData[currRoom].GetRoomMiddle();
     }
+
+    public bool IsCurrRoomHorizontal()
+    {
+        return currIsHorizontal;
+    }
 }
