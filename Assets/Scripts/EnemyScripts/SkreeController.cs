@@ -37,6 +37,8 @@ public class SkreeController : EnemyController
 
     private void Update()
     {
+        RecordVelocity(rb);
+
         if (hasExploded)
             return;
 
@@ -89,6 +91,8 @@ public class SkreeController : EnemyController
 
             if (keepAdjusting)
                 AdjustTrajectory();
+            else
+                rb.velocity = lastNonzeroVelocity;
         }
     }
 

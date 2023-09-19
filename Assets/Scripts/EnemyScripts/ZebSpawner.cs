@@ -60,7 +60,8 @@ public class ZebSpawner : EnemyController
 
     private void Spawn()
     {
-        currentSpawnedZeb = Instantiate(zebPrefab);
+        currentSpawnedZeb = Instantiate(
+            zebPrefab, this.transform.position, Quaternion.Euler(0, 0, 0));
         ++numZebSpawned;
     }
 

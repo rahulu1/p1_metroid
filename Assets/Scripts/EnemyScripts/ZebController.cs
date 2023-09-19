@@ -13,6 +13,7 @@ public class ZebController : EnemyController
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
     private Vector3 attackDirection;
+    private float initialYPos;
 
     private enum ZebState
     { 
@@ -36,12 +37,14 @@ public class ZebController : EnemyController
 
         attackDirection = CalculateAttackDirection();
         FaceTowardsPlayer(attackDirection);
+        initialYPos = this.transform.position.y;
 
         state = ZebState.Ascending;
     }
 
     private void Update()
     {
+        RecordVelocity(rb);
         Vector3 newVelocity = Vector3.zero;
 
         switch (state)
@@ -63,9 +66,9 @@ public class ZebController : EnemyController
 
     private Vector3 Ascending()
     {
-        Vector3 newVelocity = rb.velocity;
+        Vector3 newVelocity = lastNonzeroVelocity;
         
-        if(AtPlayerHeight() || AtCeiling())
+        if(ShouldAttack() || AtCeiling())
         {
             state = ZebState.Attacking;
             newVelocity = attackDirection * xSpeed;
@@ -80,7 +83,7 @@ public class ZebController : EnemyController
 
     private Vector3 Attacking()
     {
-        Vector3 newVelocity = rb.velocity;
+        Vector3 newVelocity = lastNonzeroVelocity;
 
         if(AtWall())
             ReverseXDirection(ref newVelocity);
@@ -88,10 +91,22 @@ public class ZebController : EnemyController
         return newVelocity;
     }
 
-    private bool AtPlayerHeight()
+    private bool ShouldAttack()
     {
-        //return Mathf.Approximately(
-        //    this.transform.position.y, playerTransform.position.y);
+        // First check if the zeb has travelled to minHeightAbovePipe
+        float yDistTravelled = this.transform.position.y - initialYPos;
+        bool travelledMinHeight = yDistTravelled >= minHeightAbovePipe;
+
+        if(!travelledMinHeight)
+            return false;
+
+        // Zeb should attack immediately after reaching minHeightAbovePipe
+        // if player is below them
+        bool playerBelow = 
+            playerTransform.position.y < this.transform.position.y;
+
+        if (playerBelow)
+            return true;
 
         float acceptableHeightDiff = 0.1f;
         float heightDiff = Mathf.Abs(

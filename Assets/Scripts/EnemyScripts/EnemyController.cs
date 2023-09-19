@@ -4,6 +4,14 @@ using UnityEngine;
 
 public abstract class EnemyController : MonoBehaviour
 {
+    protected Vector3 lastNonzeroVelocity;
+
+    protected void RecordVelocity(Rigidbody rb)
+    {
+        bool nonzeroVelocity = Utilities.IsZeroVector(rb.velocity);
+        if (nonzeroVelocity)
+            lastNonzeroVelocity = rb.velocity;
+    }
     public void DisableMovement()
     {
         EnemyController controller = GetController();

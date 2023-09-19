@@ -54,6 +54,7 @@ public class ReoController : EnemyController
 
     private void Update()
     {
+        RecordVelocity(rb);
         Vector3 newVelocity = Vector3.zero;
 
         switch (state)
@@ -100,7 +101,7 @@ public class ReoController : EnemyController
 
     private Vector3 Swooping()
     {
-        Vector3 newVelocity = rb.velocity;
+        Vector3 newVelocity = lastNonzeroVelocity;
 
         if (AtTargetHeight())
         {
@@ -123,7 +124,7 @@ public class ReoController : EnemyController
 
     private Vector3 Chasing()
     {
-        Vector3 newVelocity = rb.velocity;
+        Vector3 newVelocity = lastNonzeroVelocity;
 
         if (PlayerJumped() && !waitingToAscend)
             StartCoroutine(WaitToAscend(delayBeforeAscending));
@@ -138,7 +139,7 @@ public class ReoController : EnemyController
 
     private Vector3 Ascending()
     {
-        Vector3 newVelocity = rb.velocity;
+        Vector3 newVelocity = lastNonzeroVelocity;
 
         if (AtCeiling())
         {

@@ -20,4 +20,10 @@ public static class Utilities
 
         return XDistanceBetween <= distance;
     }
+
+    // Returns whether the given bool is the zero vector
+    public static bool IsZeroVector(Vector3 vector)
+    {
+        return !Mathf.Approximately(vector.magnitude, 0f);
+    }
 }

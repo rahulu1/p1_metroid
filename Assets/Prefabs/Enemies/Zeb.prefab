@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5803631508499331884, guid: 5cbaf30b1083b9949a3c1b225701f13c, type: 3}
       propertyPath: m_Name
-      value: Zeb Variant
+      value: Zeb
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -95,6 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ySpeed: 5
   xSpeed: 5
+  minHeightAbovePipe: 2
   layerMask:
     serializedVersion: 2
     m_Bits: 1

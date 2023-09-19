@@ -38,9 +38,10 @@ public class DamageReactEnemy : DamageReact
     IEnumerator RestoreEnemyMovement(float freezeDuration)
     {
         yield return new WaitForSeconds(freezeDuration);
-
         rigid.constraints = RigidbodyConstraints.None;
         rigid.constraints = RigidbodyConstraints.FreezeRotation;
         rigid.constraints = RigidbodyConstraints.FreezePositionZ;
+        Debug.Log("Unfreezing");
+
     }
 }
