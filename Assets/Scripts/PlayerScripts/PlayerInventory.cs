@@ -10,6 +10,7 @@ public class PlayerInventory : MonoBehaviour
 
     private HasHealth playerHealth;
     private PlayerWeapon playerWeapon;
+    private AudioPlayer audioPlayer;
 
     private Collider col;
     private RaycastHit hit;
@@ -18,19 +19,21 @@ public class PlayerInventory : MonoBehaviour
     {
         playerHealth = this.gameObject.GetComponent<HasHealth>();
         playerWeapon = this.gameObject.GetComponentInChildren<PlayerWeapon>();
+        audioPlayer = GameObject.Find("AudioPlayer").GetComponent<AudioPlayer>();
 
     }
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("MorphBall"))
         {
+            audioPlayer.playJingle("ItemJingle");
             // TODO: Add Morph Ball Unlock Sequence
             Destroy(other.gameObject);
             hasMorphBall = true;
         }
         if (other.gameObject.CompareTag("MissileTank"))
         {
-
+            audioPlayer.playJingle("ItemJingle");
             // Add Missile Tank sequence
             missilesUnlocked = true;
             playerWeapon.IncreaseMaxMissiles(5);
@@ -40,16 +43,19 @@ public class PlayerInventory : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("LongBeam"))
         {
+            audioPlayer.playJingle("ItemJingle");
             Destroy(other.gameObject);
             hasLongBeam = true;
         }
         else if (other.gameObject.CompareTag("HealthOrb"))
         {
+            audioPlayer.playSfxClip("HealthPickup");
             Destroy(other.gameObject);
             playerHealth.AddHealth(5);
         }
         else if (other.gameObject.CompareTag("MissileAmmo"))
         {
+            audioPlayer.playSfxClip("MissilePickup");
             Destroy(other.gameObject);
             playerWeapon.AddMissiles(2);
         }

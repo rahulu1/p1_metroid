@@ -6,6 +6,7 @@ public class ZebController : EnemyController
 {
     public float ySpeed;
     public float xSpeed;
+    public float minHeightAbovePipe;
     public LayerMask layerMask;
 
     private Rigidbody rb;

@@ -15,15 +15,19 @@ public class DamageReactPlayer : DamageReact
     public int blinkFrames;
 
     private PlayerState playerState;
+    private AudioPlayer sfxPlayer;
     
     protected override void Start()
     {
         base.Start();
         playerState = GetComponent<PlayerState>();
+        sfxPlayer = GameObject.Find("AudioPlayer").GetComponent<AudioPlayer>();
     }
 
     public override void ReactToDamage(DamageSource source, Vector3 DamagePos)
     {
+        sfxPlayer.playSfxClip("Damage");
+
         if(entityHealth.GetHealth() <= 0)
         {
             // make invincible
@@ -63,6 +67,7 @@ public class DamageReactPlayer : DamageReact
 
     protected override void Die()
     {
+        sfxPlayer.playSfxClip("Death");
         playerState.DisablePlayerControls();
         playerState.DeathSequence();
     }
