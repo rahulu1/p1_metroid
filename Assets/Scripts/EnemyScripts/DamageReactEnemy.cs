@@ -23,6 +23,7 @@ public class DamageReactEnemy : DamageReact
             bool freezesOnHit = !Mathf.Approximately(freezeDuration, 0f);
             if (freezesOnHit)
             {
+                GetComponent<SpriteRenderer>().color = new Color(0.7f, 0.2f, 0.2f, 1f);
                 rigid.constraints = RigidbodyConstraints.FreezePosition;
                 StartCoroutine(RestoreEnemyMovement(freezeDuration));
             }
@@ -47,5 +48,6 @@ public class DamageReactEnemy : DamageReact
         rigid.constraints = RigidbodyConstraints.None;
         rigid.constraints = RigidbodyConstraints.FreezeRotation;
         rigid.constraints = RigidbodyConstraints.FreezePositionZ;
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 }

@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7152564411788364017}
   - component: {fileID: 1708843885813460162}
   - component: {fileID: 2512086213946344444}
+  - component: {fileID: 6848717942552964641}
   m_Layer: 8
   m_Name: Standing
   m_TagString: PlayerCollider
@@ -190,6 +191,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc536bc1747ea24696655f18cd6a585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &6848717942552964641
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261388227512904452}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 50254489864a44e44bec0cc517a92c94, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4661149022722204300
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +368,7 @@ MonoBehaviour:
   knockbackTime: 0.2
   blinking: 0
   blinkFrames: 0
+  lavaInvincibilityFrames: 0
 --- !u!114 &3629063497890524727
 MonoBehaviour:
   m_ObjectHideFlags: 0

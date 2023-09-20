@@ -104,6 +104,11 @@ public class PlayerState : MonoBehaviour
             return true;
     }
 
+    public bool IsMorphed()
+    {
+        return morphed.activeInHierarchy;
+    }
+
     public bool CheatEnabled()
     {
         return cheatEnabled;

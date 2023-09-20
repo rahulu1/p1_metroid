@@ -37,12 +37,12 @@ public class PlayerDirection : MonoBehaviour
         if (lookingUp && !holdingUp)
         {
             lookingUp = false;
-            sr.sprite = spriteLookForward;
+            GetComponentInChildren<Animator>().Play("Standing");
         }
         else if (!lookingUp && holdingUp)
         {
             lookingUp = true;
-            sr.sprite = spriteLookUp;
+            GetComponentInChildren<Animator>().Play("LookingUp");
         }
     }
 
