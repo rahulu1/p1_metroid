@@ -17,6 +17,7 @@ public class PlayerState : MonoBehaviour
 
     private bool isStanding;
     private bool cheatEnabled;
+    private bool inLava;
 
     private PlayerInventory playerInventory;
     private PlayerWeapon playerWeapon;
@@ -27,6 +28,7 @@ public class PlayerState : MonoBehaviour
 
         isStanding = true;
         cheatEnabled = false;
+        inLava = false;
         playerInventory = GetComponent<PlayerInventory>();
         playerWeapon = GetComponentInChildren<PlayerWeapon>();
         playerHealth = GetComponent<HasHealth>();
@@ -105,6 +107,16 @@ public class PlayerState : MonoBehaviour
     public bool CheatEnabled()
     {
         return cheatEnabled;
+    }
+
+    public bool GetInLava()
+    {
+        return inLava;
+    }
+
+    public void SetInLava(bool lavaBool)
+    {
+        inLava = lavaBool;
     }
 
     public void DisablePlayerControls()
