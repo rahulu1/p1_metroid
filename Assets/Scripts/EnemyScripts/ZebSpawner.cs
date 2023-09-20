@@ -30,7 +30,7 @@ public class ZebSpawner : EnemyController
 
     private void Update()
     {
-        if(ShouldSpawn())
+        if (ShouldSpawn())
         {
             Spawn();
             StartCoroutine(SpawnCooldown(timeBetweenSpawns));
@@ -47,20 +47,21 @@ public class ZebSpawner : EnemyController
 
         bool maxSpawnsExceeded;
 
-        if(maxSpawns == -1)
+        if (maxSpawns == -1)
             maxSpawnsExceeded = false;
         else
             maxSpawnsExceeded = (numZebSpawned >= maxSpawns);
 
-        return playerWithinAggroDistance && 
-               lastSpawnedZebDestroyed && 
+        return playerWithinAggroDistance &&
+               lastSpawnedZebDestroyed &&
                !inSpawnCooldown &&
                !maxSpawnsExceeded;
     }
 
     private void Spawn()
     {
-        currentSpawnedZeb = Instantiate(zebPrefab);
+        currentSpawnedZeb = Instantiate(
+            zebPrefab, this.transform.position, Quaternion.Euler(0, 0, 0));
         ++numZebSpawned;
     }
 

@@ -47,11 +47,13 @@ public class ZoomerController : EnemyController
         {
             if (!(IsGrounded()))
             {
+                Debug.Log("No ground");
                 this.transform.Rotate(turnAngle);
                 AdjustPosition();
             }
             else if (!(HasSpace()))
             {
+                Debug.Log("No space");
                 this.transform.Rotate(turnAngle * -1f);
                 AdjustPosition();
             }

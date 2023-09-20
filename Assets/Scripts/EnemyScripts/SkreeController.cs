@@ -37,6 +37,8 @@ public class SkreeController : EnemyController
 
     private void Update()
     {
+        RecordVelocity(rb);
+
         if (hasExploded)
             return;
 
@@ -44,13 +46,13 @@ public class SkreeController : EnemyController
         {
             WaitingToAttack();
         }
-        else if(hasLanded)
+        else if (hasLanded)
         {
             WaitingToExplode();
         }
         else // if currently attacking and in the air
         {
-            CurrentlyAttacking();   
+            CurrentlyAttacking();
         }
     }
 
@@ -83,12 +85,14 @@ public class SkreeController : EnemyController
         }
         else
         {
-            float YDistanceFromPlayer = 
+            float YDistanceFromPlayer =
                 this.transform.position.y - playerTransform.position.y;
             bool keepAdjusting = YDistanceFromPlayer > distanceToStopAdjusting;
 
             if (keepAdjusting)
                 AdjustTrajectory();
+            else
+                rb.velocity = lastNonzeroVelocity;
         }
     }
 
@@ -127,7 +131,7 @@ public class SkreeController : EnemyController
 
         List<GameObject> bullets = new List<GameObject>(4);
 
-        for(int i = 0; i < 4; ++i)
+        for (int i = 0; i < 4; ++i)
         {
             GameObject bullet = GameObject.Instantiate(skreeBulletPrefab);
             bullet.transform.position = skreePos;
