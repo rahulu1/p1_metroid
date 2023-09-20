@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class DoorCollider : MonoBehaviour
 {
-    [SerializeField] private float timeOpen;
+    private float timeOpen;
     [SerializeField] private float maxTimeOpen = 3.5f;
 
     private bool midTransition = false;
-    private bool open = false;
+    protected bool open = false;
 
-    private Collider doorCollider;
-    private SpriteRenderer[] doorRenderers = new SpriteRenderer[3];
-    private LayerMask excludeSamusAndBullets;
-    private LayerMask excludeNothing;
+    protected Collider doorCollider;
+    protected SpriteRenderer[] doorRenderers = new SpriteRenderer[3];
+    protected LayerMask excludeSamusAndBullets;
+    protected LayerMask excludeNothing;
     
     // Start is called before the first frame update
     void Awake()
@@ -25,7 +25,7 @@ public class DoorCollider : MonoBehaviour
         timeOpen = maxTimeOpen;
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (timeOpen >= maxTimeOpen)
         {
@@ -36,12 +36,12 @@ public class DoorCollider : MonoBehaviour
             timeOpen += Time.deltaTime;
     }
 
-    public void OnProjectileCollision()
+    public virtual void OnProjectileCollision(GameObject projectile)
     {
         OpenDoor();
     }
 
-    public void OpenDoor()
+    public virtual void OpenDoor()
     {
         open = true;
         timeOpen = 0f;
@@ -53,7 +53,7 @@ public class DoorCollider : MonoBehaviour
         //TODO: replace with animation
     }
 
-    public void CloseDoor()
+    public virtual void CloseDoor()
     {
         open = false;
         doorCollider.excludeLayers = excludeNothing;
@@ -64,7 +64,7 @@ public class DoorCollider : MonoBehaviour
         //TODO: replace w animation
     }
 
-    public void SetTransition(bool isMidTransition)
+    public virtual void SetTransition(bool isMidTransition)
     {
         midTransition = isMidTransition;
     }
