@@ -16,7 +16,7 @@ public class DoorCollider : MonoBehaviour
     private LayerMask excludeNothing;
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         doorCollider = GetComponent<Collider>();
         doorRenderers = GetComponentsInChildren<SpriteRenderer>();

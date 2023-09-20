@@ -50,8 +50,8 @@ MonoBehaviour:
   missileAmmoPrefab: {fileID: 6541189136936615059, guid: 0cae7b4ac28af284496a06ff2e8f0a39, type: 3}
   initialSpawnChance: 1
   respawnChance: 0.7
-  healthDropChance: 0.25
-  missileDropChance: 0.5
+  healthDropChance: 0.125
+  missileDropChance: 0.2
   maxCamOffsetX: 8.5
   maxCamOffsetY: 8
 --- !u!212 &7535725269557420660

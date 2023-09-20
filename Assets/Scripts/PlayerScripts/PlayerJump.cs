@@ -70,7 +70,7 @@ public class PlayerJump : MonoBehaviour
             }
             else
             {
-                if(Mathf.Approximately(rigid.velocity.y, 0f))
+                if(rigid.velocity.y <= 0f)
                 {
                     isJumping = false;
                     isRunningJump = false;

@@ -5,9 +5,12 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField]
+    private List<GameObject> rooms;
+    [SerializeField]
     private List<RoomProperties> roomData;
 
     private Rigidbody playerRB;
+    private PlayerState playerState;
 
     private bool roomTransitioning = false;
     private bool moveRight = true;
@@ -17,6 +20,7 @@ public class CameraController : MonoBehaviour
 
     [SerializeField]
     private int currRoom = 0;
+    private int prevRoom;
     [SerializeField]
     private bool currIsHorizontal = true;
     [SerializeField]
@@ -40,6 +44,7 @@ public class CameraController : MonoBehaviour
         newCamPosition = transform.position;
 
         playerRB = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>();
+        playerState = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerState>();
         UpdateCurrData ();
 
         StartCoroutine(WaitForRoomTransition());
@@ -134,7 +139,9 @@ public class CameraController : MonoBehaviour
 
     public void StartRoomTransition(int toRoom, bool mR)
     {
+        StartCoroutine(playerState.PausePlayerControls(lerpDuration + 0.1f));
         roomTransitioning = true;
+        prevRoom = currRoom;
         currRoom = toRoom;
         moveRight = mR;
     }
@@ -150,5 +157,15 @@ public class CameraController : MonoBehaviour
     public bool IsCurrRoomHorizontal()
     {
         return currIsHorizontal;
+    }
+
+    public void EnableNextRoom(int toRoom)
+    {
+        rooms[toRoom].SetActive(true);
+    }
+
+    public void DisablePrevRoom()
+    {
+        rooms[prevRoom].SetActive(false);
     }
 }
