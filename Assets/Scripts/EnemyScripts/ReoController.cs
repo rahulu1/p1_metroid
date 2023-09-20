@@ -164,7 +164,7 @@ public class ReoController : EnemyController
             Mathf.Abs(this.transform.position.x -
             playerTransform.position.x);
 
-        bool playerWithinAggroDistance = 
+        bool playerWithinAggroDistance =
             Utilities.WithinXDistance(
                 playerTransform, this.transform, aggroDistance);
 

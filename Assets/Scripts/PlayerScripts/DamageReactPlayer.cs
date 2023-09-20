@@ -12,7 +12,8 @@ public class DamageReactPlayer : DamageReact
     private float knockbackTime = 0.2f;
 
     public bool blinking = false;
-    public int blinkFrames;
+    public int blinkFrames = 0;
+    public int lavaInvincibilityFrames = 0;
 
     private PlayerState playerState;
     private AudioPlayer sfxPlayer;
@@ -22,6 +23,32 @@ public class DamageReactPlayer : DamageReact
         base.Start();
         playerState = GetComponent<PlayerState>();
         sfxPlayer = GameObject.Find("AudioPlayer").GetComponent<AudioPlayer>();
+    }
+
+    void Update()
+    {
+        if (playerState.GetInLava())
+        {
+            if (lavaInvincibilityFrames <= 0)
+            {
+                lavaInvincibilityFrames = 7;
+                if (!blinking)
+                {
+                    blinking = true;
+                    blinkFrames = 7;
+                    StartCoroutine(Blink());
+                }
+                else
+                {
+                    if (blinkFrames < 7)
+                        blinkFrames = 7;
+                }
+
+                entityHealth.DirectDamage(1);
+            }
+            else
+                lavaInvincibilityFrames--;
+        }
     }
 
     public override void ReactToDamage(DamageSource source, Vector3 DamagePos)
@@ -48,21 +75,6 @@ public class DamageReactPlayer : DamageReact
             else
                 blinkFrames = 31;
         }
-        else if(source == DamageSource.Lava)
-        {
-            entityHealth.EnableInvincibility();
-            StartCoroutine(DisableInvincibilityAfterTime(8f / 60f));
-
-            if (!blinking)
-            {
-                blinking = true;
-                blinkFrames = 7;
-                StartCoroutine(Blink());
-            }
-            else
-                blinkFrames = 7;
-        }
-
     }
 
     protected override void Die()

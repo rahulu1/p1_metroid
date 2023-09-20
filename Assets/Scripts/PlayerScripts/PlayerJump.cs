@@ -66,12 +66,17 @@ public class PlayerJump : MonoBehaviour
                 currJumpTime = 0f;
 
                 if (running)
+                {
                     isRunningJump = true;
+                    GetComponent<Animator>().Play("RunningJump");
+                }
             }
             else
             {
-                if(Mathf.Approximately(rigid.velocity.y, 0f))
+                if(rigid.velocity.y <= 0f)
                 {
+                    if (isRunningJump)
+                        GetComponent<Animator>().Play("Standing");
                     isJumping = false;
                     isRunningJump = false;
                 }

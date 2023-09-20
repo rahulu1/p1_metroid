@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 677474885
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -2496527861429691737, guid: c5fd7de8cef431142937ebc643ac801d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lerpDuration: 4
+  lerpDistance: 3.5
   toRoom: 0
   moveRight: 0
   enterDoor: {fileID: 0}

@@ -12,7 +12,7 @@ public static class Utilities
 
     // Returns whether difference between two given transform's x
     // positions is less than given distance
-    public static bool WithinXDistance(Transform transform1, 
+    public static bool WithinXDistance(Transform transform1,
         Transform transform2, float distance)
     {
         float XDistanceBetween =

@@ -67,7 +67,7 @@ public class PlayerWeapon : MonoBehaviour
                 
         }
 
-        if(Input.GetKeyDown(KeyCode.S))
+        if(Input.GetKeyDown(KeyCode.X))
         {
 
             if (weaponEquipped == beamEquipped)

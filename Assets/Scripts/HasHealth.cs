@@ -43,6 +43,11 @@ public class HasHealth : MonoBehaviour
         }
     }
 
+    public void DirectDamage(int i)
+    {
+        health -= i;
+    }
+
     public void EnableInvincibility() { invincible = true; }
     public void DisableInvincibility() { invincible = false; }
 }

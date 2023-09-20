@@ -22,7 +22,7 @@ public class DoorWay : MonoBehaviour
     private Rigidbody playerRB;
     private CameraController mainCamController;
 
-    void Start()
+    void Awake()
     {
         // if this doorway tile doesn't have a collider, don't run this script
         if(GetComponent<Collider>() == null)
@@ -46,10 +46,10 @@ public class DoorWay : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PlayerCollider"))
         {
+            mainCamController.EnableNextRoom(toRoom);
+
             playerRB.velocity = Vector3.zero;
-            playerRB.isKinematic = true;
             playerState.DisablePlayerCollider();
-            StartCoroutine(playerState.PausePlayerControls(lerpDuration + 0.1f));
 
             originalPosition = playerTransform.position;
 
@@ -61,7 +61,8 @@ public class DoorWay : MonoBehaviour
             StartCoroutine(CoroutineUtilities.MoveObjectOverTime(playerTransform, originalPosition, destinationPosition, lerpDuration));
             mainCamController.StartRoomTransition(toRoom, moveRight);
             StartCoroutine(AnimateDoorsTransition());
-            
+            playerRB.isKinematic = true;
+
         }    
     }
 
@@ -82,5 +83,7 @@ public class DoorWay : MonoBehaviour
         playerState.EnablePlayerCollider();
         enterDoor.SetTransition(false);
         exitDoor.SetTransition(false);
+
+        mainCamController.DisablePrevRoom();
     }
 }

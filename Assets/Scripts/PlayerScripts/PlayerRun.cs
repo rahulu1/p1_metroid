@@ -7,6 +7,7 @@ public class PlayerRun : MonoBehaviour
     private Rigidbody rigid;
 
     private PlayerJump playerJump;
+    private PlayerState playerState;
 
     public float moveSpeed = 5;
 
@@ -14,6 +15,7 @@ public class PlayerRun : MonoBehaviour
     {
         rigid = this.GetComponent<Rigidbody>();
         playerJump = this.GetComponentInChildren<PlayerJump>();
+        playerState = GetComponent<PlayerState>();
     }
 
     // Update is called once per frame
@@ -21,6 +23,9 @@ public class PlayerRun : MonoBehaviour
     {
         Vector3 newVelocity = rigid.velocity;
         float input = Input.GetAxis("Horizontal");
+
+        if (playerState.GetInLava())
+            input /= 1.5f;
 
         if (playerJump.IsRunningJump())
         {

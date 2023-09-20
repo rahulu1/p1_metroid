@@ -23,6 +23,7 @@ public class DamageReactEnemy : DamageReact
             bool freezesOnHit = !Mathf.Approximately(freezeDuration, 0f);
             if (freezesOnHit)
             {
+                GetComponent<SpriteRenderer>().color = new Color(0.7f, 0.2f, 0.2f, 1f);
                 rigid.constraints = RigidbodyConstraints.FreezePosition;
                 StartCoroutine(RestoreEnemyMovement(freezeDuration));
             }
@@ -32,7 +33,12 @@ public class DamageReactEnemy : DamageReact
     protected override void Die()
     {
         // This destroys the Enemy and has a chance to spawn a collectable in its place
-        this.GetComponentInParent<SpawnController>().KillEntity();
+        if (this.GetComponentInParent<SpawnController>() != null)
+        {
+            this.GetComponentInParent<SpawnController>().KillEntity();
+        }
+        else
+            Destroy(this.gameObject);
     }
 
     IEnumerator RestoreEnemyMovement(float freezeDuration)
@@ -41,7 +47,6 @@ public class DamageReactEnemy : DamageReact
         rigid.constraints = RigidbodyConstraints.None;
         rigid.constraints = RigidbodyConstraints.FreezeRotation;
         rigid.constraints = RigidbodyConstraints.FreezePositionZ;
-        Debug.Log("Unfreezing");
-
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 }

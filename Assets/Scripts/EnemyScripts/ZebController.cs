@@ -16,8 +16,8 @@ public class ZebController : EnemyController
     private float initialYPos;
 
     private enum ZebState
-    { 
-        Ascending, 
+    {
+        Ascending,
         Attacking
     }
 
@@ -67,8 +67,8 @@ public class ZebController : EnemyController
     private Vector3 Ascending()
     {
         Vector3 newVelocity = lastNonzeroVelocity;
-        
-        if(ShouldAttack() || AtCeiling())
+
+        if (ShouldAttack() || AtCeiling())
         {
             state = ZebState.Attacking;
             newVelocity = attackDirection * xSpeed;
@@ -85,7 +85,7 @@ public class ZebController : EnemyController
     {
         Vector3 newVelocity = lastNonzeroVelocity;
 
-        if(AtWall())
+        if (AtWall())
             ReverseXDirection(ref newVelocity);
 
         return newVelocity;
@@ -97,12 +97,12 @@ public class ZebController : EnemyController
         float yDistTravelled = this.transform.position.y - initialYPos;
         bool travelledMinHeight = yDistTravelled >= minHeightAbovePipe;
 
-        if(!travelledMinHeight)
+        if (!travelledMinHeight)
             return false;
 
         // Zeb should attack immediately after reaching minHeightAbovePipe
         // if player is below them
-        bool playerBelow = 
+        bool playerBelow =
             playerTransform.position.y < this.transform.position.y;
 
         if (playerBelow)
@@ -135,10 +135,10 @@ public class ZebController : EnemyController
 
     private Vector3 CalculateAttackDirection()
     {
-        bool playerToLeft = 
-            playerTransform.position.x < this.transform.position.x; 
+        bool playerToLeft =
+            playerTransform.position.x < this.transform.position.x;
 
-        if(playerToLeft)
+        if (playerToLeft)
             return Vector3.left;
         else
             return Vector3.right;

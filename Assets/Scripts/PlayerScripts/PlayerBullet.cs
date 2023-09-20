@@ -23,7 +23,7 @@ public class PlayerBullet : MonoBehaviour
         }
         else if (other.gameObject.GetComponent<DoorCollider>() != null)
         {
-            other.gameObject.GetComponent<DoorCollider>().OnProjectileCollision();
+            other.gameObject.GetComponent<DoorCollider>().OnProjectileCollision(this.gameObject);
         }
         else if (other.gameObject.CompareTag("Chozo"))
         {
