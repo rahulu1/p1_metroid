@@ -101,10 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d22bba1b9a6e2d41b007dde5f76c5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skreeSpeed: 8
-  aggroDistance: 5
+  skreeSpeed: 9
+  aggroDistance: 3
   timeBeforeExploding: 1.2
-  distanceToStopAdjusting: 3
+  distanceToStopAdjusting: 5
   bulletSpeed: 20
   bulletDuration: 0.2
   skreeBulletPrefab: {fileID: 7420940070373130045, guid: 5b1eccfef766478498778f5ae169400e, type: 3}

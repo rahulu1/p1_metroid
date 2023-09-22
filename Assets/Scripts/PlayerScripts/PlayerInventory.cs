@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    bool hasMorphBall = false;
-    bool hasLongBeam = false;
-    bool missilesUnlocked = false;
-
+    private GameManager gameManager;
     private HasHealth playerHealth;
     private PlayerWeapon playerWeapon;
     private AudioPlayer audioPlayer;
@@ -17,9 +14,12 @@ public class PlayerInventory : MonoBehaviour
 
     void Start()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>().GetInstance();
         playerHealth = this.gameObject.GetComponent<HasHealth>();
         playerWeapon = this.gameObject.GetComponentInChildren<PlayerWeapon>();
         audioPlayer = GameObject.Find("AudioPlayer").GetComponent<AudioPlayer>();
+
+
 
     }
     public void OnTriggerEnter(Collider other)
@@ -29,13 +29,13 @@ public class PlayerInventory : MonoBehaviour
             audioPlayer.playJingle("ItemJingle");
             // TODO: Add Morph Ball Unlock Sequence
             Destroy(other.gameObject);
-            hasMorphBall = true;
+            gameManager.UnlockMorphBall();
         }
         if (other.gameObject.CompareTag("MissileTank"))
         {
             audioPlayer.playJingle("ItemJingle");
             // Add Missile Tank sequence
-            missilesUnlocked = true;
+            gameManager.UnlockMissiles();
             playerWeapon.IncreaseMaxMissiles(5);
             playerWeapon.AddMissiles(5);
 
@@ -45,7 +45,7 @@ public class PlayerInventory : MonoBehaviour
         {
             audioPlayer.playJingle("ItemJingle");
             Destroy(other.gameObject);
-            hasLongBeam = true;
+            gameManager.UnlockLongBeam();
         }
         else if (other.gameObject.CompareTag("HealthOrb"))
         {
@@ -55,6 +55,11 @@ public class PlayerInventory : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("MissileAmmo"))
         {
+            // Ensure that if the player has missiles unlocked, they are 
+            // able to pick up ammo
+            if(MissilesUnlocked() && playerWeapon.GetMaxMissiles() == 0)
+                playerWeapon.IncreaseMaxMissiles(5);
+
             audioPlayer.playSfxClip("MissilePickup");
             Destroy(other.gameObject);
             playerWeapon.AddMissiles(2);
@@ -63,22 +68,22 @@ public class PlayerInventory : MonoBehaviour
 
     public bool HasMorphBall()
     {
-        return hasMorphBall;
+        return gameManager.MorphBallUnlocked();
     }
 
     public bool HasLongBeam()
     {
-        return hasLongBeam;
+        return gameManager.LongBeamUnlocked();
     }
 
     public bool MissilesUnlocked()
     {
-        return missilesUnlocked;
+        return gameManager.MissilesUnlocked();
     }
 
     public void UnlockMissiles()
     {
         Debug.Log("Missiles Unlocked (Cheat)");
-        missilesUnlocked=true;
+        gameManager.UnlockMissiles();
     }
 }

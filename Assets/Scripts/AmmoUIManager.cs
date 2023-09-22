@@ -17,6 +17,14 @@ public class AmmoUIManager : MonoBehaviour
     {
         playerWeapon = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<PlayerWeapon>();
         displayAmmo = playerWeapon.GetMissileCount();
+        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
+
+        if (playerInventory.MissilesUnlocked())
+        {
+            ShowAmmoUI();
+            setAmmo();
+        }
+            
     }
     void Update()
     {

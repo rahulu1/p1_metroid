@@ -5,7 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private static bool hasMorphBall = false;
+    private static bool hasLongBeam = false;
+    private static bool missilesUnlocked = false;
+
+    private static GameManager instance;
+
     private bool restart = false;
+
+
+    private void Awake()
+    {
+        if (!instance)
+            instance = this;
+        else if (instance != this)
+            Destroy(this.gameObject);
+
+        Debug.Log("Missiles unlocked: " + missilesUnlocked.ToString());
+    }
 
     void Update()
     {
@@ -22,5 +39,40 @@ public class GameManager : MonoBehaviour
     {
         restart = true;
         Debug.Log(restart);
+    }
+
+    public GameManager GetInstance()
+    {
+        return instance;
+    }
+
+    public bool MissilesUnlocked()
+    {
+        return missilesUnlocked;
+    }
+
+    public bool LongBeamUnlocked()
+    {
+        return hasLongBeam;
+    }
+
+    public bool MorphBallUnlocked()
+    {
+        return hasMorphBall;
+    }
+
+    public void UnlockMorphBall()
+    {
+        hasMorphBall = true;
+    }
+
+    public void UnlockMissiles()
+    {
+        missilesUnlocked = true;
+    }
+
+    public void UnlockLongBeam()
+    {
+        hasLongBeam = true;
     }
 }

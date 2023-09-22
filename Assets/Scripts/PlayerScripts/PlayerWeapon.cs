@@ -23,6 +23,7 @@ public class PlayerWeapon : MonoBehaviour
     private PlayerDirection playerDirection;
     private PlayerInventory playerInventory;
     private AmmoUIManager ammoUIManager;
+    private AudioPlayer audioPlayer;
 
     private const int beamEquipped = 0, missileEquipped = 1;
     private int weaponEquipped;
@@ -37,8 +38,9 @@ public class PlayerWeapon : MonoBehaviour
     {
         playerState = GetComponentInParent<PlayerState>();
         playerDirection = GetComponentInParent<PlayerDirection>();
-        playerInventory = this.GetComponentInParent<PlayerInventory>();
+        playerInventory = GetComponentInParent<PlayerInventory>();
         ammoUIManager = GameObject.FindGameObjectWithTag("AmmoUI").GetComponent<AmmoUIManager>();
+        audioPlayer = GameObject.Find("AudioPlayer").GetComponent<AudioPlayer>();
 
         maxMissiles = 0;
         weaponEquipped = beamEquipped;
@@ -54,6 +56,11 @@ public class PlayerWeapon : MonoBehaviour
         {
             if (weaponEquipped == beamEquipped && playerInventory.MissilesUnlocked())
             {
+                // Need to check that maxMissiles isn't 0 if missiles are unlocked, or
+                // player won't be able to shoot missiles
+                if (maxMissiles == 0)
+                    IncreaseMaxMissiles(5);
+
                 weaponEquipped = missileEquipped;
                 weaponDamage = missileDamage;
                 weaponPrefab = missilePrefab;
@@ -72,6 +79,7 @@ public class PlayerWeapon : MonoBehaviour
 
             if (weaponEquipped == beamEquipped)
             {
+                audioPlayer.playSfxClip("Fire");
                 bulletInstance = GameObject.Instantiate(weaponPrefab);
                 DestroyOnTime destroyTimer = bulletInstance.GetComponent<DestroyOnTime>();
                 if (playerInventory.HasLongBeam())
@@ -85,6 +93,7 @@ public class PlayerWeapon : MonoBehaviour
                 if (missileCount <= 0) // if no missiles, don't shoot anything
                     return;
 
+                audioPlayer.playSfxClip("Missile");
                 bulletInstance = GameObject.Instantiate(weaponPrefab);
                 DestroyOnTime destroyTimer = bulletInstance.GetComponent<DestroyOnTime>();
 
@@ -125,6 +134,11 @@ public class PlayerWeapon : MonoBehaviour
     public int GetMissileCount()
     {
         return missileCount;
+    }
+
+    public int GetMaxMissiles()
+    {
+        return maxMissiles;
     }
 
     public void AddMissiles(int i)
