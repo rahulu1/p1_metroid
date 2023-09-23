@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorCollider : MonoBehaviour
+public class DoorCollider : Lockable
 {
     private float timeOpen;
     [SerializeField] private float maxTimeOpen = 3.5f;
@@ -38,7 +38,10 @@ public class DoorCollider : MonoBehaviour
 
     public virtual void OnProjectileCollision(GameObject projectile)
     {
-        OpenDoor();
+        if (IsUnlocked())
+        {
+            OpenDoor();
+        }
     }
 
     public virtual void OpenDoor()

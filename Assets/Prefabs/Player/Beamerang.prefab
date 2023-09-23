@@ -215,11 +215,11 @@ MonoBehaviour:
   beamerangSpeed: 10
   beamerangControlSpeed: 0.06
   maxControlSpeed: 0.15
-  maxSplatTime: 12
-  maxControlTime: 8
+  maxSplatTime: 9
+  maxControlTime: 6
   dontSplat:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 7680
   controlPointer: {fileID: 6704146708993415106}
   currState: 0
 --- !u!95 &7587466014114904308

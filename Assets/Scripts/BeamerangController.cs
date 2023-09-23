@@ -33,6 +33,7 @@ public class BeamerangController : MonoBehaviour
 
     private Vector3 lerpPosition;
     private Vector3 targetDirection; // Direction to launch towards
+    private Vector3 pointerMouseOffset;
 
     [SerializeField]
     private LayerMask dontSplat; // Layers not to splat on. Can potentially damage still
@@ -65,7 +66,7 @@ public class BeamerangController : MonoBehaviour
         // If controlling Beamerang, update pointer position
         if(currState == BeamerangState.ctrlRecalled)
         {
-            controlPointer.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) - Vector3.forward * Camera.main.transform.position.z;
+            controlPointer.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + pointerMouseOffset;
             lerpPosition = Vector3.Lerp(transform.position, controlPointer.transform.position, beamerangControlSpeed);
 
             if((lerpPosition - transform.position).magnitude > maxControlSpeed)
@@ -110,6 +111,14 @@ public class BeamerangController : MonoBehaviour
             else if ((currState == BeamerangState.recalled) || (currState == BeamerangState.ctrlRecalled))
                 Detonate();
         }
+        else
+        {
+            other.gameObject.TryGetComponent<TransistorController>(out TransistorController tc);
+            if(tc != null)
+            {
+                tc.ChargeUp();
+            }
+        }
     }
 
 
@@ -140,6 +149,7 @@ public class BeamerangController : MonoBehaviour
         GetComponent<Collider>().includeLayers = LayerMask.GetMask("Player");
 
         rigid.velocity = Vector3.zero;
+        pointerMouseOffset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         controlPointer.SetActive(true);
         StartCoroutine(DetonateIfMaxTimeReached(maxControlTime));
     }

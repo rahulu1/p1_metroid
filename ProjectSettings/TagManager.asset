@@ -32,7 +32,7 @@ TagManager:
   - Bullet
   - Collectable
   - Enemy
-  - 
+  - Toggle
   - 
   - 
   - 
@@ -55,6 +55,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Midground
+    uniqueID: 599979861
+    locked: 0
+  - name: Player
+    uniqueID: 128930501
     locked: 0
   - name: Foreground
     uniqueID: 677474885

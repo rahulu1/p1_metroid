@@ -20,14 +20,17 @@ public class MissileDoorCollider : DoorCollider
 
     public override void OnProjectileCollision(GameObject projectile)
     {
-        if(projectile.GetComponent<Missile>() != null)
+        if(IsUnlocked())
         {
-            if (missileHits == 4)
+            if (projectile.GetComponent<Missile>() != null)
             {
-                OpenDoor();
+                if (missileHits == 4)
+                {
+                    OpenDoor();
+                }
+                else
+                    missileHits++;
             }
-            else
-                missileHits++;
         }
     }
 
