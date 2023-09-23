@@ -81,6 +81,11 @@ public class PlayerInventory : MonoBehaviour
         return gameManager.MissilesUnlocked();
     }
 
+    public bool BeamerangUnlocked()
+    {
+        return gameManager.BeamerangUnlocked();
+    }
+
     public void UnlockMissiles()
     {
         Debug.Log("Missiles Unlocked (Cheat)");

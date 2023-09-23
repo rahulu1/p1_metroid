@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     private static bool hasMorphBall = false;
     private static bool hasLongBeam = false;
     private static bool missilesUnlocked = false;
+    private static bool beamerangUnlocked = true;
 
     private static GameManager instance;
 
@@ -61,6 +62,12 @@ public class GameManager : MonoBehaviour
         return hasMorphBall;
     }
 
+    public bool BeamerangUnlocked()
+    {
+        return beamerangUnlocked;
+    }
+
+
     public void UnlockMorphBall()
     {
         hasMorphBall = true;
@@ -74,5 +81,10 @@ public class GameManager : MonoBehaviour
     public void UnlockLongBeam()
     {
         hasLongBeam = true;
+    }
+
+    public void UnlockBeamerang()
+    {
+        beamerangUnlocked = true;
     }
 }

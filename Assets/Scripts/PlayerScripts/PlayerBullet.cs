@@ -18,7 +18,6 @@ public class PlayerBullet : MonoBehaviour
             if(hasHealth)
             {
                 hasHealth.TakeDamage(damage, DamageReact.DamageSource.Projectile, this.gameObject.transform.position);
-                Debug.Log("Gottem");
             }
         }
         else if (other.gameObject.GetComponent<DoorCollider>() != null)

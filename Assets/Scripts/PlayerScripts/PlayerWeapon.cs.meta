@@ -3,7 +3,13 @@ guid: 325bcf7acd38fc04b8e60feb57da8641
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - bulletPrefab: {fileID: 7420940070373130045, guid: d88aa48b563a2ae41b64f945ff59b7d6, type: 3}
+  - missilePrefab: {fileID: 7420940070373130045, guid: a927569b517a722479049d311909811d, type: 3}
+  - beamerangPrefab: {fileID: 8429716431687683466, guid: 13878873be0c7a2499a63a5d36124a7a, type: 3}
+  - beamerangController: {instanceID: 0}
+  - firingPosForward: {instanceID: 0}
+  - firingPosUp: {instanceID: 0}
   executionOrder: 8
   icon: {instanceID: 0}
   userData: 

@@ -6,6 +6,7 @@ public class PlayerWeapon : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public GameObject missilePrefab;
+    public GameObject beamerangPrefab;
 
     public Transform firingPosForward;
     public Transform firingPosUp;
@@ -17,6 +18,8 @@ public class PlayerWeapon : MonoBehaviour
     private GameObject weaponPrefab;
     private GameObject bulletInstance;
 
+    private BeamerangController beamerangController;
+
     private SpriteRenderer bulletRenderer;
 
     private PlayerState playerState;
@@ -25,10 +28,10 @@ public class PlayerWeapon : MonoBehaviour
     private AmmoUIManager ammoUIManager;
     private AudioPlayer audioPlayer;
 
-    private const int beamEquipped = 0, missileEquipped = 1;
-    private int weaponEquipped;
+    private enum weapon {  beam, missile, beamerang }
+    private PlayerWeapon.weapon weaponEquipped;
 
-    private const int beamDamage = 1, missileDamage = 16;
+    private const int beamDamage = 1, missileDamage = 16, beamerangDamage = 1;
     private int weaponDamage;
 
     private int maxMissiles;
@@ -43,7 +46,7 @@ public class PlayerWeapon : MonoBehaviour
         audioPlayer = GameObject.Find("AudioPlayer").GetComponent<AudioPlayer>();
 
         maxMissiles = 0;
-        weaponEquipped = beamEquipped;
+        weaponEquipped = weapon.beam;
         weaponDamage = beamDamage;
         weaponPrefab = bulletPrefab;
     }
@@ -51,74 +54,124 @@ public class PlayerWeapon : MonoBehaviour
     // TODO: Refactor this code. Lots of duplication here
     void Update()
     {
-        // Toggle between missiles and beam with shift
         if (Input.GetKeyDown(KeyCode.Space))
+            SwitchWeapon();
+
+        if (Input.GetKeyDown(KeyCode.X))
+            UseWeapon();
+    }
+
+    void SwitchWeapon()
+    {
+        // Rotate between beam, missiles, and beamerang with spacebar
+        if (weaponEquipped == weapon.beam)
         {
-            if (weaponEquipped == beamEquipped && playerInventory.MissilesUnlocked())
+            if (playerInventory.MissilesUnlocked())
             {
                 // Need to check that maxMissiles isn't 0 if missiles are unlocked, or
                 // player won't be able to shoot missiles
                 if (maxMissiles == 0)
                     IncreaseMaxMissiles(5);
 
-                weaponEquipped = missileEquipped;
+                weaponEquipped = weapon.missile;
                 weaponDamage = missileDamage;
                 weaponPrefab = missilePrefab;
             }
-            else if (weaponEquipped == missileEquipped)
+            else if (playerInventory.BeamerangUnlocked())
             {
-                weaponEquipped = beamEquipped;
-                weaponDamage = beamDamage;
-                weaponPrefab = bulletPrefab;
+                weaponEquipped = weapon.beamerang;
+                weaponDamage = beamerangDamage;
+                weaponPrefab = beamerangPrefab;
             }
-                
         }
-
-        if(Input.GetKeyDown(KeyCode.X))
+        else if (weaponEquipped == weapon.missile)
         {
-
-            if (weaponEquipped == beamEquipped)
+            if (playerInventory.BeamerangUnlocked())
             {
-                audioPlayer.playSfxClip("Fire");
-                bulletInstance = GameObject.Instantiate(weaponPrefab);
-                DestroyOnTime destroyTimer = bulletInstance.GetComponent<DestroyOnTime>();
-                if (playerInventory.HasLongBeam())
-                    destroyTimer.destroyTime = infiniteDuration;
-                else
-                    destroyTimer.destroyTime = startingBeamBulletDuration;
-
-            }
-            else // if (weaponEquipped == missileEquipped)
-            {
-                if (missileCount <= 0) // if no missiles, don't shoot anything
-                    return;
-
-                audioPlayer.playSfxClip("Missile");
-                bulletInstance = GameObject.Instantiate(weaponPrefab);
-                DestroyOnTime destroyTimer = bulletInstance.GetComponent<DestroyOnTime>();
-
-                destroyTimer.destroyTime = infiniteDuration;
-
-                if(!(playerState.CheatEnabled()))
-                    missileCount--;
-            }
-
-            bulletInstance.GetComponent<PlayerBullet>().SetDamage(weaponDamage);
-
-            bulletRenderer = bulletInstance.GetComponent<SpriteRenderer>();
-
-            bulletRenderer.flipX = playerDirection.IsFacingRight() ? false : true;
-
-            if (playerDirection.IsLookingUp())
-            {
-                bulletRenderer.flipY = true;
-                bulletInstance.transform.position = firingPosUp.position;
-                bulletInstance.transform.rotation = Quaternion.AngleAxis(90f, Vector3.forward);
-                bulletInstance.GetComponent<Rigidbody>().velocity = Vector3.up * bulletSpeed;
+                weaponEquipped = weapon.beamerang;
+                weaponDamage = beamerangDamage;
+                weaponPrefab = beamerangPrefab;
             }
             else
             {
-                bulletInstance.transform.position = firingPosForward.position;
+                weaponEquipped = weapon.beam;
+                weaponDamage = beamDamage;
+                weaponPrefab = bulletPrefab;
+            }
+        }
+        else if (weaponEquipped == weapon.beamerang)
+        {
+            weaponEquipped = weapon.beam;
+            weaponDamage = beamDamage;
+            weaponPrefab = bulletPrefab;
+        }
+    }
+
+    void UseWeapon()
+    {
+        if (weaponEquipped == weapon.beam)
+        {
+            audioPlayer.playSfxClip("Fire");
+            bulletInstance = GameObject.Instantiate(weaponPrefab);
+            DestroyOnTime destroyTimer = bulletInstance.GetComponent<DestroyOnTime>();
+            if (playerInventory.HasLongBeam())
+                destroyTimer.destroyTime = infiniteDuration;
+            else
+                destroyTimer.destroyTime = startingBeamBulletDuration;
+
+        }
+        else if (weaponEquipped == weapon.missile)
+        {
+            if (missileCount <= 0) // if no missiles, don't shoot anything
+                return;
+
+            audioPlayer.playSfxClip("Missile");
+            bulletInstance = GameObject.Instantiate(weaponPrefab);
+            DestroyOnTime destroyTimer = bulletInstance.GetComponent<DestroyOnTime>();
+
+            destroyTimer.destroyTime = infiniteDuration;
+
+            if (!(playerState.CheatEnabled()))
+                missileCount--;
+        }
+        else // if (weaponEquipped == weapon.beamerang)
+        {
+            audioPlayer.playSfxClip("Fire");
+
+            // If there's no active beamerang, instantiate one
+            if (beamerangController == null)
+            {
+                bulletInstance = GameObject.Instantiate(weaponPrefab);
+                beamerangController = bulletInstance.GetComponent<BeamerangController>();
+            }
+            // If there's an active beamerang, toggle its state
+            else
+            {
+                beamerangController.ToggleBeamerangState(transform.position);
+                return;
+            }
+        }
+
+        // TODO: Delete this!!!
+        if (weaponEquipped != weapon.beamerang)
+            bulletInstance.GetComponent<PlayerBullet>().SetDamage(weaponDamage);
+
+        bulletRenderer = bulletInstance.GetComponent<SpriteRenderer>();
+
+        if (playerDirection.IsLookingUp())
+        {
+            bulletRenderer.flipY = true;
+            bulletInstance.transform.position = firingPosUp.position;
+            bulletInstance.transform.rotation = firingPosUp.rotation;
+            if(weaponEquipped != weapon.beamerang)
+                bulletInstance.GetComponent<Rigidbody>().velocity = Vector3.up * bulletSpeed;
+        }
+        else
+        {
+            bulletInstance.transform.position = firingPosForward.position;
+
+            if(weaponEquipped != weapon.beamerang)
+            {
                 if (playerDirection.IsFacingRight())
                 {
                     bulletInstance.GetComponent<Rigidbody>().velocity = Vector3.right * bulletSpeed;
@@ -128,6 +181,10 @@ public class PlayerWeapon : MonoBehaviour
                     bulletInstance.GetComponent<Rigidbody>().velocity = Vector3.left * bulletSpeed;
                 }
             }
+        }
+        if (!(playerDirection.IsFacingRight()))
+        {
+            bulletInstance.transform.Rotate(Vector3.up * 180);
         }
     }
 

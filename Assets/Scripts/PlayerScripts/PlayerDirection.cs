@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerDirection : MonoBehaviour
 {
+    public GameObject forwardPos;
+
     public SpriteRenderer sr;
 
     public Sprite spriteLookForward;
@@ -11,11 +13,6 @@ public class PlayerDirection : MonoBehaviour
     
     private bool facingRight = true;
     private bool lookingUp = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -33,6 +30,8 @@ public class PlayerDirection : MonoBehaviour
             this.transform.localScale = new Vector3(1, 1, 1);
         }
 
+        
+        // Vertical
         bool holdingUp = Input.GetKey(KeyCode.UpArrow);
         if (lookingUp && !holdingUp)
         {

@@ -174,6 +174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7420940070373130045, guid: d88aa48b563a2ae41b64f945ff59b7d6, type: 3}
   missilePrefab: {fileID: 7420940070373130045, guid: a927569b517a722479049d311909811d, type: 3}
+  beamerangPrefab: {fileID: 8429716431687683466, guid: 13878873be0c7a2499a63a5d36124a7a, type: 3}
+  beamerangController: {fileID: 0}
   firingPosForward: {fileID: 6553869000477610318}
   firingPosUp: {fileID: 4369627128544051142}
   bulletSpeed: 10

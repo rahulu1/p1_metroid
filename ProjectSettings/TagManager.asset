@@ -17,6 +17,7 @@ TagManager:
   - PlayerCollider
   - Room
   - Chozo
+  - Beamerang
   layers:
   - Default
   - TransparentFX
@@ -54,9 +55,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UI
-    uniqueID: 501030375
-    locked: 0
   - name: Foreground
     uniqueID: 677474885
+    locked: 0
+  - name: UI
+    uniqueID: 501030375
     locked: 0
