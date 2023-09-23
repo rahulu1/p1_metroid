@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     private static bool hasMorphBall = false;
     private static bool hasLongBeam = false;
     private static bool missilesUnlocked = false;
-    private static bool beamerangUnlocked = true;
+    private static bool beamerangUnlocked = false;
 
     private static GameManager instance;
 

@@ -29,6 +29,7 @@ public class PlayerWeapon : MonoBehaviour
     private AudioPlayer audioPlayer;
 
     private enum weapon {  beam, missile, beamerang }
+    [SerializeField]
     private PlayerWeapon.weapon weaponEquipped;
 
     private const int beamDamage = 1, missileDamage = 16, beamerangDamage = 1;

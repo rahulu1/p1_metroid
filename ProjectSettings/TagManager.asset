@@ -18,6 +18,7 @@ TagManager:
   - Room
   - Chozo
   - Beamerang
+  - BeamerangPlasma
   layers:
   - Default
   - TransparentFX

@@ -47,6 +47,12 @@ public class PlayerInventory : MonoBehaviour
             Destroy(other.gameObject);
             gameManager.UnlockLongBeam();
         }
+        else if (other.gameObject.CompareTag("BeamerangPlasma"))
+        {
+            audioPlayer.playJingle("ItemJingle");
+            Destroy(other.gameObject);
+            gameManager.UnlockBeamerang();
+        }
         else if (other.gameObject.CompareTag("HealthOrb"))
         {
             audioPlayer.playSfxClip("HealthPickup");

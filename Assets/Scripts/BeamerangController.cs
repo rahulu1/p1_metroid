@@ -12,9 +12,6 @@ using UnityEngine;
 //       crashed into. Switched to a capsule collider, but it triggers
 //       too easily when recalled (i.e. blows up when recalled sometimes)
 
-
-
-// TODO: Finish controlRecall
 // TODO: Change sound for beamerang
 
 public class BeamerangController : MonoBehaviour

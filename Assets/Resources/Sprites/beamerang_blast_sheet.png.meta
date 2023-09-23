@@ -409,7 +409,7 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -417,6 +417,153 @@ TextureImporter:
       bones: []
       spriteID: dde334515fc28d04ab7b4d88ec814a20
       internalID: 2115133039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamerang_blast_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 14
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944b087411dc59e45bb46b70b911356c
+      internalID: 1972573504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamerang_blast_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 14
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80bc59cb8cebf244bd1cb1ae821d5e5
+      internalID: -896542152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamerang_blast_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 14
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1506cf7c9f13ef4fb3a694be97bb86c
+      internalID: 309958680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamerang_blast_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 14
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6823a179be337a346af3b71076135834
+      internalID: 1521924604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamerang_blast_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 14
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b77768cd151c3428c3f80957085e66
+      internalID: 939482551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamerang_blast_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 14
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c7348583e92424cb017eaad93be7fb
+      internalID: 384469142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beamerang_blast_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 10
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ec91fa726d59848b629b8648330db5
+      internalID: -2098868534
       vertices: []
       indices: 
       edges: []
@@ -438,6 +585,12 @@ TextureImporter:
       beamerang_blast_sheet_11: -160276948
       beamerang_blast_sheet_12: 2115133039
       beamerang_blast_sheet_13: 1972573504
+      beamerang_blast_sheet_14: -896542152
+      beamerang_blast_sheet_15: 309958680
+      beamerang_blast_sheet_16: 1521924604
+      beamerang_blast_sheet_17: 939482551
+      beamerang_blast_sheet_18: 384469142
+      beamerang_blast_sheet_19: -2098868534
       beamerang_blast_sheet_2: -1955288780
       beamerang_blast_sheet_3: -1894383147
       beamerang_blast_sheet_4: 411604183
