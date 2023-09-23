@@ -88,7 +88,7 @@ public class PlayerState : MonoBehaviour
         return Physics.SphereCast(ray, radius, fullDistance);
     }
 
-    bool HasSpace()
+    public bool HasSpace()
     {
         activeCollider = this.GetComponentInChildren<Collider>();
 

@@ -49,6 +49,8 @@ public class BeamerangController : MonoBehaviour
     [SerializeField]
     private BeamerangState currState = BeamerangState.firstLaunch;
 
+    private bool collidedWithWall = false;
+
 
 
     // Launches Beamerang forward with beamerangSpeed after FormBlast finishes
@@ -63,6 +65,13 @@ public class BeamerangController : MonoBehaviour
     void Update()
     {
         beamerangAnimator.SetInteger("State", (int) currState);
+
+        // Check if Beamerang has collided with wall
+        collidedWithWall = CollidedWithWall();
+
+        if (collidedWithWall)
+            Debug.Log("Collided with wall");
+
         // If controlling Beamerang, update pointer position
         if(currState == BeamerangState.ctrlRecalled)
         {
@@ -88,7 +97,35 @@ public class BeamerangController : MonoBehaviour
     // When Beamerang collides with a tile
     void OnTriggerEnter(Collider other)
     {
-        if(!(Utilities.LayerInMask(dontSplat, other.gameObject.layer)))
+        BeamerangCollision(other);
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        // Only need to do this during firstLaunch to prevent beamerangs
+        // from passing through walls
+        if(currState == BeamerangState.firstLaunch)
+            BeamerangCollision(other);    
+    }
+
+    void BeamerangCollision(Collider other)
+    {
+        Debug.Log("Collided with: " + other.name);
+        if (!collidedWithWall && currState == BeamerangState.firstLaunch)
+            return;
+
+        // Ensures that beamerang stops when it reaches the player on recall
+        bool recalled = (currState == BeamerangState.recalled) || 
+                        (currState == BeamerangState.ctrlRecalled);
+        //bool hitPlayer = other.CompareTag("Player");
+
+        //if (recalled && hitPlayer)
+        //{
+        //    Detonate();
+        //    return;
+        //}
+
+        if (!(Utilities.LayerInMask(dontSplat, other.gameObject.layer)))
         {
             if (currState == BeamerangState.firstLaunch)
             {
@@ -96,29 +133,26 @@ public class BeamerangController : MonoBehaviour
                 // with the middle of tile it hit. Currently
                 // disabled until the collider is fixed.
 
-                /*
-                Vector3 adjustedPos = transform.position;
-                if (Vector3.Dot(transform.forward, Vector3.up) == 0)
-                    adjustedPos.y = other.transform.position.y;
-                else
-                    adjustedPos.x = other.transform.position.x;
-
-                transform.position = adjustedPos;
-                */
+                //AdjustSplat(other);
 
                 SplatOnTile();
-            }  
-            else if ((currState == BeamerangState.recalled) || (currState == BeamerangState.ctrlRecalled))
+            }
+            else if (recalled)
                 Detonate();
         }
         else
         {
             other.gameObject.TryGetComponent<TransistorController>(out TransistorController tc);
-            if(tc != null)
+            if (tc != null)
             {
                 tc.ChargeUp();
             }
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("OnCollisionEnter: " + collision.gameObject.name);
     }
 
 
@@ -127,6 +161,25 @@ public class BeamerangController : MonoBehaviour
         currState = BeamerangState.splatted;
         rigid.velocity = Vector3.zero;
         StartCoroutine(DetonateIfMaxTimeReached(maxSplatTime));
+    }
+
+    void AdjustSplat(Collider other)
+    {
+        Vector3 adjustedPos = transform.position;
+        if (Vector3.Dot(transform.forward, Vector3.up) == 0)
+            adjustedPos.y = other.transform.position.y;
+        else
+            adjustedPos.x = other.transform.position.x;
+
+        transform.position = adjustedPos;
+    }
+
+    bool CollidedWithWall()
+    {
+        Vector3 origin = transform.position;
+        float rayLength = 0.6f;
+
+        return Physics.Raycast(origin, targetDirection, rayLength, ~dontSplat);
     }
 
 
@@ -181,7 +234,7 @@ public class BeamerangController : MonoBehaviour
     }
 
 
-    void Detonate()
+    public void Detonate()
     {
         rigid.velocity = Vector3.zero;
         currState = BeamerangState.detonating;
