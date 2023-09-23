@@ -16,5 +16,6 @@ public class EECS494Helper : MonoBehaviour
         Debug.Log("Setting desired framerate to 60fps. Disabling vsync.");
         Application.targetFrameRate = 60;
         QualitySettings.vSyncCount = 0;
+        Screen.SetResolution(1152, 1080, false);
     }
 }
