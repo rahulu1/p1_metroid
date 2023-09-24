@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D.Animation;
 
 public class PlayerWeapon : MonoBehaviour
 {
@@ -27,6 +28,16 @@ public class PlayerWeapon : MonoBehaviour
     private PlayerInventory playerInventory;
     private AmmoUIManager ammoUIManager;
     private AudioPlayer audioPlayer;
+    private Animator playerAnimator;
+
+    private SpriteLibrary playerSpriteLib;
+
+    [SerializeField]
+    private SpriteLibraryAsset defaultSamusSprites;
+    [SerializeField]
+    private SpriteLibraryAsset missileSamusSprites;
+    [SerializeField]
+    private SpriteLibraryAsset beamerangSamusSprites;
 
     private enum weapon {  beam, missile, beamerang }
     [SerializeField]
@@ -45,6 +56,8 @@ public class PlayerWeapon : MonoBehaviour
         playerInventory = GetComponentInParent<PlayerInventory>();
         ammoUIManager = GameObject.FindGameObjectWithTag("AmmoUI").GetComponent<AmmoUIManager>();
         audioPlayer = GameObject.Find("AudioPlayer").GetComponent<AudioPlayer>();
+        playerAnimator = GetComponentInParent<Animator>();
+        playerSpriteLib = GetComponentInParent<SpriteLibrary>();
 
         maxMissiles = 0;
         weaponEquipped = weapon.beam;
@@ -77,12 +90,14 @@ public class PlayerWeapon : MonoBehaviour
                 weaponEquipped = weapon.missile;
                 weaponDamage = missileDamage;
                 weaponPrefab = missilePrefab;
+                playerSpriteLib.spriteLibraryAsset = missileSamusSprites;
             }
             else if (playerInventory.BeamerangUnlocked())
             {
                 weaponEquipped = weapon.beamerang;
                 weaponDamage = beamerangDamage;
                 weaponPrefab = beamerangPrefab;
+                playerSpriteLib.spriteLibraryAsset = beamerangSamusSprites;
             }
         }
         else if (weaponEquipped == weapon.missile)
@@ -92,12 +107,14 @@ public class PlayerWeapon : MonoBehaviour
                 weaponEquipped = weapon.beamerang;
                 weaponDamage = beamerangDamage;
                 weaponPrefab = beamerangPrefab;
+                playerSpriteLib.spriteLibraryAsset = beamerangSamusSprites;
             }
             else
             {
                 weaponEquipped = weapon.beam;
                 weaponDamage = beamDamage;
                 weaponPrefab = bulletPrefab;
+                playerSpriteLib.spriteLibraryAsset = defaultSamusSprites;
             }
         }
         else if (weaponEquipped == weapon.beamerang)
@@ -105,6 +122,7 @@ public class PlayerWeapon : MonoBehaviour
             weaponEquipped = weapon.beam;
             weaponDamage = beamDamage;
             weaponPrefab = bulletPrefab;
+            playerSpriteLib.spriteLibraryAsset = defaultSamusSprites;
         }
     }
 
@@ -152,6 +170,8 @@ public class PlayerWeapon : MonoBehaviour
                 return;
             }
         }
+
+        playerAnimator.SetTrigger("Shoot");
 
         // TODO: Delete this!!!
         if (weaponEquipped != weapon.beamerang)

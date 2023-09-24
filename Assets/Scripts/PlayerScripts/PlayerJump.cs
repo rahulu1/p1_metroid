@@ -7,8 +7,10 @@ public class PlayerJump : MonoBehaviour
 {
 
     private PlayerState playerState;
+    private PlayerRun playerRun;
     private Rigidbody rigid;
     private AudioPlayer sfxPlayer;
+    private Animator playerAnimator;
 
     [SerializeField]
     private float minJumpTime = 0.16f;
@@ -30,8 +32,10 @@ public class PlayerJump : MonoBehaviour
     private void Awake()
     {
         playerState = GetComponentInParent<PlayerState>();
+        playerRun = GetComponentInParent<PlayerRun>();
         rigid = GetComponentInParent<Rigidbody>();
         sfxPlayer = GameObject.Find("AudioPlayer").GetComponent<AudioPlayer>();
+        playerAnimator = GetComponentInParent<Animator>();
     }
 
     // Update is called once per frame
@@ -50,7 +54,7 @@ public class PlayerJump : MonoBehaviour
             holdingJump = false;
 
         grounded = playerState.IsGrounded();
-        bool running = rigid.velocity.x != 0;
+        bool running = playerRun.IsRunning();
 
         if (grounded)
         {
@@ -68,17 +72,17 @@ public class PlayerJump : MonoBehaviour
                 if (running)
                 {
                     isRunningJump = true;
-                    GetComponent<Animator>().Play("RunningJump");
+                    playerAnimator.SetTrigger("RunningJump");
                 }
             }
             else
             {
                 if(rigid.velocity.y <= 0f)
                 {
-                    if (isRunningJump)
-                        GetComponent<Animator>().Play("Standing");
                     isJumping = false;
                     isRunningJump = false;
+
+                    playerAnimator.SetBool("Grounded", true);
                 }
                     
             }
@@ -105,6 +109,11 @@ public class PlayerJump : MonoBehaviour
         rigid.velocity = newVelocity;
     }
 
+
+    public bool IsJumping()
+    {
+        return isJumping;
+    }
     public bool IsRunningJump()
     {
         return isRunningJump;

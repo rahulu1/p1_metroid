@@ -7,9 +7,11 @@ MonoImporter:
   - bulletPrefab: {fileID: 7420940070373130045, guid: d88aa48b563a2ae41b64f945ff59b7d6, type: 3}
   - missilePrefab: {fileID: 7420940070373130045, guid: a927569b517a722479049d311909811d, type: 3}
   - beamerangPrefab: {fileID: 8429716431687683466, guid: 13878873be0c7a2499a63a5d36124a7a, type: 3}
-  - beamerangController: {instanceID: 0}
   - firingPosForward: {instanceID: 0}
   - firingPosUp: {instanceID: 0}
+  - defaultSamusSprites: {fileID: 7108339969198208228, guid: 9a19807b4159d114e803e86328b31915, type: 3}
+  - missileSamusSprites: {fileID: 7108339969198208228, guid: 0d73986e4a1d843478cf6d39f1fbd8f1, type: 3}
+  - beamerangSamusSprites: {fileID: 7108339969198208228, guid: d2b6d740b9cb6074d912c1f63977dbca, type: 3}
   executionOrder: 8
   icon: {instanceID: 0}
   userData: 

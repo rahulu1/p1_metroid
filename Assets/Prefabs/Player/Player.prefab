@@ -126,6 +126,9 @@ MonoBehaviour:
   bulletSpeed: 10
   startingBeamBulletDuration: 0.35
   infiniteDuration: -1
+  defaultSamusSprites: {fileID: 7108339969198208228, guid: 9a19807b4159d114e803e86328b31915, type: 3}
+  missileSamusSprites: {fileID: 7108339969198208228, guid: 0d73986e4a1d843478cf6d39f1fbd8f1, type: 3}
+  beamerangSamusSprites: {fileID: 7108339969198208228, guid: d2b6d740b9cb6074d912c1f63977dbca, type: 3}
   weaponEquipped: 0
 --- !u!114 &2512086213946344444
 MonoBehaviour:
