@@ -241,6 +241,7 @@ MonoBehaviour:
   maxControlSpeed: 0.15
   maxSplatTime: 9
   maxControlTime: 6
+  minLaunchDist: 0.85
   dontSplat:
     serializedVersion: 2
     m_Bits: 7680

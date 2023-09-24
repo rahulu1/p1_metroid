@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc61a1662f4aff499a4dade7ae56bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomerSpeed: 2
+  zoomerSpeed: 3
   moveRight: 1
   layerMask:
     serializedVersion: 2

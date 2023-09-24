@@ -32,6 +32,7 @@ public class ReoController : EnemyController
     private Rigidbody rb;
     private Transform playerTransform;
     private Vector3 swoopDirection;
+    private Collider collider;
 
     private float timeOfAttackEnd;
     private float timeOfPlayerJump;
@@ -48,6 +49,7 @@ public class ReoController : EnemyController
     {
         state = ReoState.Waiting;
         rb = this.GetComponent<Rigidbody>();
+        collider = this.GetComponent<Collider>();
         playerTransform = GameObject.Find("Player").transform;
         timeOfAttackEnd = Time.time;
     }
@@ -203,18 +205,17 @@ public class ReoController : EnemyController
 
     private bool AtCeiling()
     {
-        Vector3 origin = this.transform.position;
-        Vector3 upwards = Vector3.up;
-        float rayLength = 0.65f;
+        Ray ray = new Ray(collider.bounds.center, Vector3.up);
+        float radius = collider.bounds.extents.x - .05f;
+        float fullDistance = collider.bounds.extents.y - 0.1f;
 
-        return Physics.Raycast(
-            origin, upwards, rayLength, layerMask);
+        return Physics.SphereCast(ray, radius, fullDistance, layerMask);
     }
 
     private bool HittingWall()
     {
         Vector3 origin = this.transform.position;
-        float rayLength = 0.8f;
+        float rayLength = 0.5f;
 
         return Physics.Raycast(
             origin, swoopDirection, rayLength, layerMask);

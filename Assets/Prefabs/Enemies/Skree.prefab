@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d22bba1b9a6e2d41b007dde5f76c5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skreeSpeed: 9
+  skreeSpeed: 11
   aggroDistance: 3
   timeBeforeExploding: 1.2
   distanceToStopAdjusting: 5

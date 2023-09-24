@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e68148f2ce2cc74cb461595740101d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthDelta: 8
+  healthDelta: 5
   damageSource: 1
   dontAlter:
     serializedVersion: 2

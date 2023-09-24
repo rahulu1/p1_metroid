@@ -84,6 +84,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Reo
       objectReference: {fileID: 0}
+    - target: {fileID: 7683233674648152333, guid: 5cbaf30b1083b9949a3c1b225701f13c, type: 3}
+      propertyPath: health
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 9128582481380634923, guid: 5cbaf30b1083b9949a3c1b225701f13c, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -118,7 +122,7 @@ MonoBehaviour:
   initialXSpeed: 2
   yAccelerationFactor: 0.98
   xAccelerationFactor: 1.017
-  aggroDistance: 5
+  aggroDistance: 10
   timeBetweenAttacks: 1
   delayBeforeAscending: 0.3
   targetDistanceFromGround: 1

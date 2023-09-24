@@ -26,6 +26,9 @@ public class BeamerangController : MonoBehaviour
     [SerializeField]
     private float maxControlTime; // Max time before exploding in control mode
 
+    [SerializeField]
+    private float minLaunchDist;
+
     private Vector3 lerpPosition;
     private Vector3 targetDirection; // Direction to launch towards
     private Vector3 pointerMouseOffset;
@@ -99,8 +102,7 @@ public class BeamerangController : MonoBehaviour
 
                 transform.position = adjustedPos;
                 */
-
-                if (Vector3.SqrMagnitude(transform.position - other.transform.position) < 0.81f)
+                if (Vector3.SqrMagnitude(transform.position - other.transform.position) < minLaunchDist)
                     Detonate();
                 else
                     SplatOnTile();
