@@ -6,36 +6,35 @@ public class AlterHealthOnTouch : MonoBehaviour
 {
     public int healthDelta;
     public DamageReact.DamageSource damageSource;
-    Collider col;
 
     // Only alters health of layers in layerMask
     public LayerMask dontAlter;
 
-    void Start()
-    {
-        col = GetComponent<Collider>();
-        col.excludeLayers = dontAlter;
-    }
-
     private void OnTriggerEnter(Collider other)
     {
-        HasHealth hasHealth = CheckForHasHealth(other.gameObject);
-
-        if(hasHealth)
+        if(!(Utilities.LayerInMask(dontAlter, other.gameObject.layer)))
         {
-            Vector2 damagePos = new Vector2(transform.position.x, transform.position.y);
-            hasHealth.TakeDamage(healthDelta, damageSource, damagePos);
+            HasHealth hasHealth = CheckForHasHealth(other.gameObject);
+
+            if (hasHealth)
+            {
+                Vector2 damagePos = new Vector2(transform.position.x, transform.position.y);
+                hasHealth.TakeDamage(healthDelta, damageSource, damagePos);
+            }
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        HasHealth hasHealth = CheckForHasHealth(collision.gameObject);
-
-        if (hasHealth)
+        if (!(Utilities.LayerInMask(dontAlter, collision.gameObject.layer)))
         {
-            Vector2 damagePos = new Vector2(transform.position.x, transform.position.y);
-            hasHealth.TakeDamage(healthDelta, damageSource, damagePos);
+            HasHealth hasHealth = CheckForHasHealth(collision.gameObject);
+
+            if (hasHealth)
+            {
+                Vector2 damagePos = new Vector2(transform.position.x, transform.position.y);
+                hasHealth.TakeDamage(healthDelta, damageSource, damagePos);
+            }
         }
     }
 

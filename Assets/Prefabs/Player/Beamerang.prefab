@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6794453602362282787}
   - component: {fileID: 6739093273406347264}
-  m_Layer: 13
+  m_Layer: 9
   m_Name: ControlPointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,11 +95,11 @@ GameObject:
   - component: {fileID: 8582725543420564547}
   - component: {fileID: -378176433998600168}
   - component: {fileID: 8003889839843443958}
+  - component: {fileID: 3275683263175537153}
   - component: {fileID: 3523619880312887087}
   - component: {fileID: 7587466014114904308}
-  - component: {fileID: -5530090607617987824}
-  - component: {fileID: -3252447540484933500}
-  m_Layer: 13
+  - component: {fileID: 1577139227526824952}
+  m_Layer: 9
   m_Name: Beamerang
   m_TagString: Beamerang
   m_Icon: {fileID: 0}
@@ -200,51 +200,8 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 56
-  m_CollisionDetection: 0
---- !u!114 &3523619880312887087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8429716431687683466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1b4d4e19d6edec418a8c2e2e78fd933, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beamerangSpeed: 10
-  beamerangControlSpeed: 0.06
-  maxControlSpeed: 0.15
-  maxSplatTime: 9
-  maxControlTime: 6
-  dontSplat:
-    serializedVersion: 2
-    m_Bits: 7680
-  controlPointer: {fileID: 6704146708993415106}
-  currState: 0
---- !u!95 &7587466014114904308
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8429716431687683466}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 15554022ad2de1645a8b21181d844064, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!136 &-5530090607617987824
+  m_CollisionDetection: 2
+--- !u!136 &3275683263175537153
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,7 +224,49 @@ CapsuleCollider:
   m_Height: 1.5
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-3252447540484933500
+--- !u!114 &3523619880312887087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8429716431687683466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1b4d4e19d6edec418a8c2e2e78fd933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beamerangSpeed: 10
+  beamerangControlSpeed: 0.06
+  maxControlSpeed: 0.15
+  maxSplatTime: 9
+  maxControlTime: 6
+  dontSplat:
+    serializedVersion: 2
+    m_Bits: 7680
+  controlPointer: {fileID: 6704146708993415106}
+--- !u!95 &7587466014114904308
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8429716431687683466}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 15554022ad2de1645a8b21181d844064, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1577139227526824952
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -279,7 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e68148f2ce2cc74cb461595740101d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthDelta: 2
+  healthDelta: 1
   damageSource: 0
   dontAlter:
     serializedVersion: 2

@@ -7,11 +7,6 @@ using UnityEngine;
 // This script primarily controls the movement and
 // despawning of the Beamerang
 
-// TODO: Fix Beamerang Collider - Originally it was a sphere collider,
-//       but that would always trigger halfway inside the tile it
-//       crashed into. Switched to a capsule collider, but it triggers
-//       too easily when recalled (i.e. blows up when recalled sometimes)
-
 // TODO: Change sound for beamerang
 
 public class BeamerangController : MonoBehaviour
@@ -46,10 +41,7 @@ public class BeamerangController : MonoBehaviour
     // Determines what happens OnTriggerEnter and current animation state
     public enum BeamerangState { firstLaunch, splatted, recalled, ctrlRecalled, detonating }
 
-    [SerializeField]
     private BeamerangState currState = BeamerangState.firstLaunch;
-
-    private bool collidedWithWall = false;
 
 
 
@@ -65,13 +57,6 @@ public class BeamerangController : MonoBehaviour
     void Update()
     {
         beamerangAnimator.SetInteger("State", (int) currState);
-
-        // Check if Beamerang has collided with wall
-        collidedWithWall = CollidedWithWall();
-
-        if (collidedWithWall)
-            Debug.Log("Collided with wall");
-
         // If controlling Beamerang, update pointer position
         if(currState == BeamerangState.ctrlRecalled)
         {
@@ -97,35 +82,7 @@ public class BeamerangController : MonoBehaviour
     // When Beamerang collides with a tile
     void OnTriggerEnter(Collider other)
     {
-        BeamerangCollision(other);
-    }
-
-    void OnTriggerStay(Collider other)
-    {
-        // Only need to do this during firstLaunch to prevent beamerangs
-        // from passing through walls
-        if(currState == BeamerangState.firstLaunch)
-            BeamerangCollision(other);    
-    }
-
-    void BeamerangCollision(Collider other)
-    {
-        Debug.Log("Collided with: " + other.name);
-        if (!collidedWithWall && currState == BeamerangState.firstLaunch)
-            return;
-
-        // Ensures that beamerang stops when it reaches the player on recall
-        bool recalled = (currState == BeamerangState.recalled) || 
-                        (currState == BeamerangState.ctrlRecalled);
-        //bool hitPlayer = other.CompareTag("Player");
-
-        //if (recalled && hitPlayer)
-        //{
-        //    Detonate();
-        //    return;
-        //}
-
-        if (!(Utilities.LayerInMask(dontSplat, other.gameObject.layer)))
+        if(!(Utilities.LayerInMask(dontSplat, other.gameObject.layer)))
         {
             if (currState == BeamerangState.firstLaunch)
             {
@@ -133,26 +90,31 @@ public class BeamerangController : MonoBehaviour
                 // with the middle of tile it hit. Currently
                 // disabled until the collider is fixed.
 
-                //AdjustSplat(other);
+                /*
+                Vector3 adjustedPos = transform.position;
+                if (Vector3.Dot(transform.forward, Vector3.up) == 0)
+                    adjustedPos.y = other.transform.position.y;
+                else
+                    adjustedPos.x = other.transform.position.x;
 
-                SplatOnTile();
-            }
-            else if (recalled)
+                transform.position = adjustedPos;
+                */
+
+                if (Vector3.SqrMagnitude(transform.position - other.transform.position) < 0.81f)
+                    Detonate();
+                else
+                    SplatOnTile();
+            }  
+            else if ((currState == BeamerangState.recalled) || (currState == BeamerangState.ctrlRecalled))
                 Detonate();
         }
         else
         {
             other.gameObject.TryGetComponent<TransistorController>(out TransistorController tc);
-            if (tc != null)
-            {
-                tc.ChargeUp();
-            }
-        }
-    }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("OnCollisionEnter: " + collision.gameObject.name);
+            if(tc != null)
+                tc.ChargeUp();
+        }
     }
 
 
@@ -161,25 +123,6 @@ public class BeamerangController : MonoBehaviour
         currState = BeamerangState.splatted;
         rigid.velocity = Vector3.zero;
         StartCoroutine(DetonateIfMaxTimeReached(maxSplatTime));
-    }
-
-    void AdjustSplat(Collider other)
-    {
-        Vector3 adjustedPos = transform.position;
-        if (Vector3.Dot(transform.forward, Vector3.up) == 0)
-            adjustedPos.y = other.transform.position.y;
-        else
-            adjustedPos.x = other.transform.position.x;
-
-        transform.position = adjustedPos;
-    }
-
-    bool CollidedWithWall()
-    {
-        Vector3 origin = transform.position;
-        float rayLength = 0.6f;
-
-        return Physics.Raycast(origin, targetDirection, rayLength, ~dontSplat);
     }
 
 
@@ -234,7 +177,7 @@ public class BeamerangController : MonoBehaviour
     }
 
 
-    public void Detonate()
+    void Detonate()
     {
         rigid.velocity = Vector3.zero;
         currState = BeamerangState.detonating;
@@ -244,6 +187,8 @@ public class BeamerangController : MonoBehaviour
     {
         if((currState == BeamerangState.firstLaunch) || (currState == BeamerangState.splatted))
         {
+            GetComponent<CapsuleCollider>().height = 1.1f;
+
             if (Input.GetKey(KeyCode.LeftShift))
                 ControlRecall();
             else
