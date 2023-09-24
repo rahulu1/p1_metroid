@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D.Animation;
 
 public class PlayerDirection : MonoBehaviour
 {
     public GameObject forwardPos;
 
-    public SpriteRenderer sr;
+    public SpriteResolver sr;
 
     public Sprite spriteLookForward;
     public Sprite spriteLookUp;
