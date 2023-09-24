@@ -24,14 +24,15 @@ public class PlayerRun : MonoBehaviour
     {
         Vector3 newVelocity = rigid.velocity;
         float input = Input.GetAxis("Horizontal");
+        Debug.Log(input);
 
         if (playerState.GetInLava())
             input /= 1.5f;
 
-        if (Mathf.Approximately(Mathf.Abs(input), 0f))
-            running = false;
-        else
+        if (input != 0)
             running = true;
+        else
+            running = false;
 
         if (playerJump.IsRunningJump())
         {
