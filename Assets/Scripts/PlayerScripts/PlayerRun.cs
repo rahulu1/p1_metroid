@@ -10,6 +10,7 @@ public class PlayerRun : MonoBehaviour
     private PlayerState playerState;
 
     public float moveSpeed = 5;
+    private bool running;
 
     private void Awake()
     {
@@ -26,6 +27,11 @@ public class PlayerRun : MonoBehaviour
 
         if (playerState.GetInLava())
             input /= 1.5f;
+
+        if (Mathf.Approximately(Mathf.Abs(input), 0f))
+            running = false;
+        else
+            running = true;
 
         if (playerJump.IsRunningJump())
         {
@@ -44,5 +50,10 @@ public class PlayerRun : MonoBehaviour
         }
 
         rigid.velocity = newVelocity;
+    }
+
+    public bool IsRunning()
+    {
+        return running;
     }
 }

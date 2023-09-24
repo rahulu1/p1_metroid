@@ -22,6 +22,7 @@ public class PlayerState : MonoBehaviour
     private PlayerInventory playerInventory;
     private PlayerWeapon playerWeapon;
     private HasHealth playerHealth;
+    private Animator playerAnimator;
     void Start()
     {
         activeCollider = standing.GetComponent<Collider>();
@@ -32,6 +33,7 @@ public class PlayerState : MonoBehaviour
         playerInventory = GetComponent<PlayerInventory>();
         playerWeapon = GetComponentInChildren<PlayerWeapon>();
         playerHealth = GetComponent<HasHealth>();
+        playerAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -60,6 +62,7 @@ public class PlayerState : MonoBehaviour
                 morphed.SetActive(true);
                 activeCollider = morphed.GetComponent<Collider>();
                 isStanding = false;
+                playerAnimator.SetTrigger("Morph");
             }
             if (!isStanding && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.A)))
             {
@@ -69,6 +72,7 @@ public class PlayerState : MonoBehaviour
                     morphed.SetActive(false);
                     isStanding = true;
                     activeCollider = standing.GetComponent<Collider>();
+                    playerAnimator.SetTrigger("Unmorph");
                 }
             }
         }
@@ -84,8 +88,9 @@ public class PlayerState : MonoBehaviour
 
         // Ray will extend a bit below the bottom of the collider
         float fullDistance = activeCollider.bounds.extents.y - .28f;
+        Debug.Log(activeCollider);
 
-        return Physics.SphereCast(ray, radius, fullDistance);
+        return Physics.SphereCast(ray, radius, fullDistance);        
     }
 
     public bool HasSpace()
