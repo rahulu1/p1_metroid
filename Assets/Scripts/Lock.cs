@@ -25,6 +25,7 @@ public class Lock : MonoBehaviour
 
     void Start()
     {
+        lockedComponent.Lock();
         TransistorController.on_transistor_charge += OnTransistorCharge;
         TransistorController.on_transistor_discharge += OnTransistorDischarge;
 
