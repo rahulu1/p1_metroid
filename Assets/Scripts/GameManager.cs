@@ -39,7 +39,6 @@ public class GameManager : MonoBehaviour
     public void enableRestart()
     {
         restart = true;
-        Debug.Log(restart);
     }
 
     public GameManager GetInstance()

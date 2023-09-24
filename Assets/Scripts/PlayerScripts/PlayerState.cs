@@ -43,7 +43,6 @@ public class PlayerState : MonoBehaviour
         {
             if (!cheatEnabled)
             {
-                Debug.Log("Cheat Enabled");
                 playerInventory.UnlockMissiles();
                 playerWeapon.IncreaseMaxMissiles(255);
                 playerWeapon.AddMissiles(255);

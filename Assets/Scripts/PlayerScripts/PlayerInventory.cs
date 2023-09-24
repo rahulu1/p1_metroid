@@ -94,7 +94,6 @@ public class PlayerInventory : MonoBehaviour
 
     public void UnlockMissiles()
     {
-        Debug.Log("Missiles Unlocked (Cheat)");
         gameManager.UnlockMissiles();
     }
 }

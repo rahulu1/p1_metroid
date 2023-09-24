@@ -207,8 +207,6 @@ public class PlayerWeapon : MonoBehaviour
         {
             bulletInstance.transform.Rotate(Vector3.up * 180);
         }
-
-        DetonateBeamerangIfNoRoom(bulletInstance);
     }
 
     public int GetMissileCount()
@@ -239,42 +237,5 @@ public class PlayerWeapon : MonoBehaviour
             maxMissiles += i;
         else
             maxMissiles = 255;
-    }
-
-    private void DetonateBeamerangIfNoRoom(GameObject bulletInstance)
-    {
-        if (weaponEquipped != weapon.beamerang)
-            return;   
-
-        if(NoRoomToFire())
-        {
-            Debug.Log("No room to fire beamarang");
-            beamerangController.ToggleBeamerangState(transform.position);
-        }
-    }
-
-    public bool NoRoomToFire()
-    {
-        Vector3 origin = transform.position;
-        float rayLength = 1.2f;
-        Vector3 direction;
-
-        if (playerDirection.IsLookingUp())
-        {
-            direction = Vector3.up;
-        }
-        else if(playerDirection.IsFacingRight())
-        {
-            direction = Vector3.right;
-        }
-        else
-        {
-            direction = Vector3.left;
-        }
-
-        int defaultLayer = 0;
-        LayerMask mask = (1 << defaultLayer);
-
-        return Physics.Raycast(origin, direction, rayLength, mask);
     }
 }

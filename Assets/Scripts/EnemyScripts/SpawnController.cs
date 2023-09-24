@@ -153,7 +153,6 @@ public class SpawnController : MonoBehaviour
             // spawn it at the spawn anchor
             spawnedEntity.transform.position = transform.position;
             spawnedEntity.transform.rotation = transform.rotation;
-            Debug.Log(spawnedEntity.transform.position);
         }
     }
 }

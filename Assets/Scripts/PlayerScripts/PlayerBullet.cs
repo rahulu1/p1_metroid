@@ -8,7 +8,6 @@ public class PlayerBullet : MonoBehaviour
     private int damage;
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Hit " + other.gameObject.name);
         // if it hits an enemy, deal damage
         if (other.gameObject.CompareTag("Enemy"))
         {

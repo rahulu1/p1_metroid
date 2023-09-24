@@ -35,9 +35,9 @@ MonoBehaviour:
     m_OverrideEntries:
     - m_Name: Default 0
       m_Hash: 919977692
-      m_Sprite: {fileID: -1590008283, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_Sprite: {fileID: -1951014537, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -1590008283, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
+      m_SpriteOverride: {fileID: -1951014537, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
     - m_Name: Default 1
       m_Hash: 30576202
       m_Sprite: {fileID: 1193700570, guid: ce94f51f558bd47eca28c0601d6aa21e, type: 3}
@@ -154,5 +154,5 @@ MonoBehaviour:
     m_FromMain: 0
     m_EntryOverrideCount: 4
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638311111578741328
+  m_ModificationHash: 638311821933047576
   m_Version: 1
