@@ -10,7 +10,7 @@ public class TransistorController : MonoBehaviour
     private Animator transistorAnimator;
 
     [SerializeField]
-    private List<int> sets = new(); // Every set the button belongs to
+    private List<int> sets; // Every set the button belongs to
 
     [SerializeField]
     private float chargeDuration; // How long the transistor holds a charge

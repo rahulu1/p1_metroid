@@ -24,7 +24,6 @@ public class PlayerRun : MonoBehaviour
     {
         Vector3 newVelocity = rigid.velocity;
         float input = Input.GetAxis("Horizontal");
-        Debug.Log(input);
 
         if (playerState.GetInLava())
             input /= 1.5f;

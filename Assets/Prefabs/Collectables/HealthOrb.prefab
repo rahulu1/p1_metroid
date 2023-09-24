@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4829597493186133939}
   - component: {fileID: 3598495198410004388}
   - component: {fileID: -6454339155883779186}
+  - component: {fileID: 5261332252689154042}
   m_Layer: 10
   m_Name: HealthOrb
   m_TagString: HealthOrb
@@ -128,3 +129,16 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.29
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5261332252689154042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5490904276765965763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26db2d33f7d5de146bc426126ad5f03d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 7

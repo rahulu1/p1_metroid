@@ -88,7 +88,6 @@ public class PlayerState : MonoBehaviour
 
         // Ray will extend a bit below the bottom of the collider
         float fullDistance = activeCollider.bounds.extents.y - .28f;
-        Debug.Log(activeCollider);
 
         return Physics.SphereCast(ray, radius, fullDistance);        
     }

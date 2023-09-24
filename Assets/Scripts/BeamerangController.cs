@@ -26,9 +26,6 @@ public class BeamerangController : MonoBehaviour
     [SerializeField]
     private float maxControlTime; // Max time before exploding in control mode
 
-    [SerializeField]
-    private float minLaunchDist;
-
     private Vector3 lerpPosition;
     private Vector3 targetDirection; // Direction to launch towards
     private Vector3 pointerMouseOffset;
@@ -102,10 +99,8 @@ public class BeamerangController : MonoBehaviour
 
                 transform.position = adjustedPos;
                 */
-                if (Vector3.SqrMagnitude(transform.position - other.transform.position) < minLaunchDist)
-                    Detonate();
-                else
-                    SplatOnTile();
+
+                SplatOnTile();
             }  
             else if ((currState == BeamerangState.recalled) || (currState == BeamerangState.ctrlRecalled))
                 Detonate();
@@ -156,7 +151,7 @@ public class BeamerangController : MonoBehaviour
     // Called by animator at the end of FormBlast and Unsplat
     void Launch()
     {
-        if(currState != BeamerangState.ctrlRecalled)
+        if (currState == BeamerangState.firstLaunch || currState == BeamerangState.recalled)
         {
             transform.right = targetDirection;
             Vector3 launchVelocity = targetDirection.normalized * beamerangSpeed;
@@ -189,12 +184,20 @@ public class BeamerangController : MonoBehaviour
     {
         if((currState == BeamerangState.firstLaunch) || (currState == BeamerangState.splatted))
         {
-            GetComponent<CapsuleCollider>().height = 1.1f;
+            CapsuleCollider beamerangCollider = GetComponent<CapsuleCollider>();
+            
+
 
             if (Input.GetKey(KeyCode.LeftShift))
+            {
+                beamerangCollider.height = 0f;
+                beamerangCollider.radius = 0.5f;
                 ControlRecall();
+            }
             else
+            {
                 Recall(playerPosition);
+            }
         }
         else if((currState == BeamerangState.recalled) || (currState == BeamerangState.ctrlRecalled))
         {
