@@ -7,11 +7,6 @@ using UnityEngine;
 // This script primarily controls the movement and
 // despawning of the Beamerang
 
-// TODO: Fix Beamerang Collider - Originally it was a sphere collider,
-//       but that would always trigger halfway inside the tile it
-//       crashed into. Switched to a capsule collider, but it triggers
-//       too easily when recalled (i.e. blows up when recalled sometimes)
-
 // TODO: Change sound for beamerang
 
 public class BeamerangController : MonoBehaviour
@@ -46,7 +41,6 @@ public class BeamerangController : MonoBehaviour
     // Determines what happens OnTriggerEnter and current animation state
     public enum BeamerangState { firstLaunch, splatted, recalled, ctrlRecalled, detonating }
 
-    [SerializeField]
     private BeamerangState currState = BeamerangState.firstLaunch;
 
 
@@ -106,7 +100,10 @@ public class BeamerangController : MonoBehaviour
                 transform.position = adjustedPos;
                 */
 
-                SplatOnTile();
+                if (Vector3.SqrMagnitude(transform.position - other.transform.position) < 0.81f)
+                    Detonate();
+                else
+                    SplatOnTile();
             }  
             else if ((currState == BeamerangState.recalled) || (currState == BeamerangState.ctrlRecalled))
                 Detonate();
@@ -114,10 +111,9 @@ public class BeamerangController : MonoBehaviour
         else
         {
             other.gameObject.TryGetComponent<TransistorController>(out TransistorController tc);
+
             if(tc != null)
-            {
                 tc.ChargeUp();
-            }
         }
     }
 
@@ -191,6 +187,8 @@ public class BeamerangController : MonoBehaviour
     {
         if((currState == BeamerangState.firstLaunch) || (currState == BeamerangState.splatted))
         {
+            GetComponent<CapsuleCollider>().height = 1.1f;
+
             if (Input.GetKey(KeyCode.LeftShift))
                 ControlRecall();
             else
