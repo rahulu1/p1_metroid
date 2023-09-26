@@ -116,11 +116,19 @@ public class BeamerangController : MonoBehaviour
         }
         else
         {
-            other.gameObject.TryGetComponent<TransistorController>(out TransistorController tc);
+            other.gameObject.TryGetComponent<Chargeable>(out Chargeable chargeThis);
 
-            if(tc != null)
-                tc.ChargeUp();
+            if(chargeThis != null)
+                chargeThis.ChargeUp();
         }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        other.gameObject.TryGetComponent<Chargeable>(out Chargeable chargeThis);
+
+        if (chargeThis != null)
+            chargeThis.ChargeUp();
     }
 
 
