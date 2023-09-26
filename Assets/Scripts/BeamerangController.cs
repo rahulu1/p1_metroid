@@ -162,13 +162,14 @@ public class BeamerangController : MonoBehaviour
     public void ControlRecall()
     {
         AdjustCollider(0f, 0.5f);
-        currState = BeamerangState.ctrlRecalled;
         GetComponent<Collider>().includeLayers = LayerMask.GetMask("Player");
 
         rigid.velocity = Vector3.zero;
         pointerMouseOffset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         controlPointer.SetActive(true);
+        lerpPosition = transform.position;
         controlPointer.transform.position = transform.position;
+        currState = BeamerangState.ctrlRecalled;
         StartCoroutine(DetonateIfMaxTimeReached(maxControlTime));
     }
 
