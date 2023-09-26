@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6852471024135369567}
   m_Layer: 10
   m_Name: PlasmaAura
-  m_TagString: Untagged
+  m_TagString: BeamerangPlasma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 7365734514927216045}
   m_Layer: 10
   m_Name: BeamerangPlasma
-  m_TagString: MorphBall
+  m_TagString: BeamerangPlasma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

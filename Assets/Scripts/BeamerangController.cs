@@ -82,7 +82,16 @@ public class BeamerangController : MonoBehaviour
     // When Beamerang collides with a tile
     void OnTriggerEnter(Collider other)
     {
-        if(!(Utilities.LayerInMask(dontSplat, other.gameObject.layer)))
+        if (other.gameObject.TryGetComponent<DoorCollider>(out DoorCollider dc))
+        {
+            if(dc.IsUnlocked())
+            {
+                dc.OnProjectileCollision(this.gameObject);
+                Detonate();
+                return;
+            }
+        }
+        if (!(Utilities.LayerInMask(dontSplat, other.gameObject.layer)))
         {
             if (currState == BeamerangState.firstLaunch)
             {
