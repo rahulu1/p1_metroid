@@ -253,6 +253,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: plasma_transistor_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5688a2d36700a4b46aa5ca46b8f847e7
+      internalID: 2024002402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plasma_transistor_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6f710862833e9478a5eb166e07620f
+      internalID: -821718548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plasma_transistor_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2724d1d039a62341a5657cc0e22131c
+      internalID: 1813253497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plasma_transistor_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de07a9b5df2b81449cd2bb8e967dd58
+      internalID: -1070844910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -269,6 +353,10 @@ TextureImporter:
       plasma_transistor_sheet_2: -104851187
       plasma_transistor_sheet_3: 182628102
       plasma_transistor_sheet_4: -1734843462
+      plasma_transistor_sheet_5: 2024002402
+      plasma_transistor_sheet_6: -821718548
+      plasma_transistor_sheet_7: 1813253497
+      plasma_transistor_sheet_8: -1070844910
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

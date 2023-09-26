@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
+    public static System.Action<string> on_player_unlock;
     private GameManager gameManager;
     private HasHealth playerHealth;
     private PlayerWeapon playerWeapon;
@@ -52,6 +53,7 @@ public class PlayerInventory : MonoBehaviour
             audioPlayer.playJingle("ItemJingle");
             Destroy(other.gameObject);
             gameManager.UnlockBeamerang();
+            on_player_unlock("Beamerang");
         }
         else if (other.gameObject.CompareTag("HealthOrb"))
         {
