@@ -51,21 +51,23 @@ public class DamageReactPlayer : DamageReact
         }
     }
 
-    public override void ReactToDamage(DamageSource source, Vector3 DamagePos)
+    public override void ReactToDamage(int i, DamageSource source, Vector3 damagePos)
     {
         sfxPlayer.playSfxClip("Damage");
 
-        if(entityHealth.GetHealth() <= 0)
+        if(source == DamageSource.Enemy)
         {
-            // make invincible
-            Die();
-        }
-        else if(source == DamageSource.Enemy)
-        {
+            entityHealth.DirectDamage(i);
+            if (entityHealth.GetHealth() <= 0)
+            {
+                // make invincible
+                Die();
+                return;
+            }
             entityHealth.EnableInvincibility();
             StartCoroutine(DisableInvincibilityAfterTime(invincibilityTime));
 
-            Knockback(DamagePos);
+            Knockback(damagePos);
             if(!blinking)
             {
                 blinking = true;

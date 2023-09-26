@@ -37,9 +37,7 @@ public class HasHealth : MonoBehaviour
     {
         if (!invincible)
         {
-            health -= i;
-
-            damageReact.ReactToDamage(source, damagePos);
+            damageReact.ReactToDamage(i, source, damagePos);
         }
     }
 

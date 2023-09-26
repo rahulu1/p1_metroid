@@ -16,6 +16,6 @@ public class DamageReact : MonoBehaviour
         rigid = GetComponent<Rigidbody>();
     }
 
-    public virtual void ReactToDamage(DamageSource source, Vector3 DamagePos) { }
+    public virtual void ReactToDamage(int i, DamageSource source, Vector3 damagePos) { }
     protected virtual void Die() { }
 }

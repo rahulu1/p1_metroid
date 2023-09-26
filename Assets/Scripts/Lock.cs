@@ -26,8 +26,8 @@ public class Lock : MonoBehaviour
     void Start()
     {
         lockedComponent.Lock();
-        TransistorController.on_transistor_charge += OnTransistorCharge;
-        TransistorController.on_transistor_discharge += OnTransistorDischarge;
+        TransistorController.on_charge += OnCharge;
+        TransistorController.on_discharge += OnDischarge;
 
         totalSets = lockRequirements.Count;
     }
@@ -38,7 +38,7 @@ public class Lock : MonoBehaviour
         
     }
 
-    void OnTransistorCharge(int fromSet)
+    void OnCharge(int fromSet)
     {
         foreach (setReqs requirement in  lockRequirements)
         {
@@ -57,7 +57,7 @@ public class Lock : MonoBehaviour
         }
     }
 
-    void OnTransistorDischarge(int fromSet)
+    void OnDischarge(int fromSet)
     {
         foreach (setReqs requirement in lockRequirements)
         {

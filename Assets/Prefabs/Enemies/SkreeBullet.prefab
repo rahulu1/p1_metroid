@@ -166,7 +166,7 @@ MonoBehaviour:
   damageSource: 1
   dontAlter:
     serializedVersion: 2
-    m_Bits: 3639
+    m_Bits: 15927
 --- !u!114 &8841320048027887905
 MonoBehaviour:
   m_ObjectHideFlags: 0

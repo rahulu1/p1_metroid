@@ -12,14 +12,16 @@ public class DamageReactEnemy : DamageReact
         base.Start();
     }
 
-    public override void ReactToDamage(DamageSource source, Vector3 DamagePos)
+    public override void ReactToDamage(int i, DamageSource source, Vector3 damagePos)
     {
-        if(entityHealth.GetHealth() <= 0)
+        if(source == DamageSource.Projectile)
         {
-            Die();
-        }
-        else if(source == DamageSource.Projectile)
-        {
+            entityHealth.DirectDamage(i);
+            if (entityHealth.GetHealth() <= 0)
+            {
+                Die();
+                return;
+            }
             bool freezesOnHit = !Mathf.Approximately(freezeDuration, 0f);
             if (freezesOnHit)
             {
@@ -41,7 +43,7 @@ public class DamageReactEnemy : DamageReact
             Destroy(this.gameObject);
     }
 
-    IEnumerator RestoreEnemyMovement(float freezeDuration)
+    protected IEnumerator RestoreEnemyMovement(float freezeDuration)
     {
         yield return new WaitForSeconds(freezeDuration);
         rigid.constraints = RigidbodyConstraints.None;
