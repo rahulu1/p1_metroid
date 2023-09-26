@@ -10,7 +10,7 @@ public class AlterHealthOnTouch : MonoBehaviour
     // Only alters health of layers in layerMask
     public LayerMask dontAlter;
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if(!(Utilities.LayerInMask(dontAlter, other.gameObject.layer)))
         {
@@ -24,7 +24,7 @@ public class AlterHealthOnTouch : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (!(Utilities.LayerInMask(dontAlter, collision.gameObject.layer)))
         {
