@@ -239,9 +239,8 @@ MonoBehaviour:
   beamerangSpeed: 10
   beamerangControlSpeed: 0.06
   maxControlSpeed: 0.15
-  maxSplatTime: 9
+  maxSplatTime: 20
   maxControlTime: 6
-  minLaunchSpace: 0.81
   dontSplat:
     serializedVersion: 2
     m_Bits: 7680

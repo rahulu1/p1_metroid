@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -147,6 +148,7 @@ public class BeamerangController : MonoBehaviour
     // Launches the beamerang towards the player
     public void Recall(Vector3 playerPosition)
     {
+        AdjustCollider(0f, 0.5f);
         currState = BeamerangState.recalled;
         GetComponent<Collider>().includeLayers = LayerMask.GetMask("Player");
 
@@ -159,8 +161,7 @@ public class BeamerangController : MonoBehaviour
     // Should feel like tugging it with string or something
     public void ControlRecall()
     {
-        beamerangCollider.height = 0f;
-        beamerangCollider.radius = 0.5f;
+        AdjustCollider(0f, 0.5f);
         currState = BeamerangState.ctrlRecalled;
         GetComponent<Collider>().includeLayers = LayerMask.GetMask("Player");
 
@@ -235,5 +236,11 @@ public class BeamerangController : MonoBehaviour
     void DestroyBeamerang()
     {
         Destroy(this.gameObject);
+    }
+
+    void AdjustCollider(float height, float radius)
+    {
+        beamerangCollider.height = height;
+        beamerangCollider.radius = radius;
     }
 }
