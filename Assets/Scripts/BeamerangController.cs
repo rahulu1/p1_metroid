@@ -26,6 +26,8 @@ public class BeamerangController : MonoBehaviour
     [SerializeField]
     private float maxControlTime; // Max time before exploding in control mode
 
+    private int holdFrames = 60;
+
     private Vector3 lerpPosition;
     private Vector3 targetDirection; // Direction to launch towards
     private Vector3 pointerMouseOffset;
@@ -37,6 +39,7 @@ public class BeamerangController : MonoBehaviour
     private GameObject controlPointer;
     private Rigidbody rigid;
     private Animator beamerangAnimator;
+    private CapsuleCollider beamerangCollider;
 
     // Determines what happens OnTriggerEnter and current animation state
     public enum BeamerangState { firstLaunch, splatted, recalled, ctrlRecalled, detonating }
@@ -51,19 +54,20 @@ public class BeamerangController : MonoBehaviour
         rigid = GetComponent<Rigidbody>();
         targetDirection = transform.right;
         beamerangAnimator = GetComponent<Animator>();
+        beamerangCollider = GetComponent<CapsuleCollider>();
     }
 
 
     void Update()
     {
-        beamerangAnimator.SetInteger("State", (int) currState);
+        beamerangAnimator.SetInteger("State", (int)currState);
         // If controlling Beamerang, update pointer position
-        if(currState == BeamerangState.ctrlRecalled)
+        if (currState == BeamerangState.ctrlRecalled)
         {
             controlPointer.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + pointerMouseOffset;
             lerpPosition = Vector3.Lerp(transform.position, controlPointer.transform.position, beamerangControlSpeed);
 
-            if((lerpPosition - transform.position).magnitude > maxControlSpeed)
+            if ((lerpPosition - transform.position).magnitude > maxControlSpeed)
                 lerpPosition = ((lerpPosition - transform.position).normalized * maxControlSpeed) + transform.position;
         }
     }
@@ -84,7 +88,7 @@ public class BeamerangController : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent<DoorCollider>(out DoorCollider dc))
         {
-            if(dc.IsUnlocked())
+            if (dc.IsUnlocked())
             {
                 dc.OnProjectileCollision(this.gameObject);
                 Detonate();
@@ -110,16 +114,16 @@ public class BeamerangController : MonoBehaviour
                 */
 
                 SplatOnTile();
-            }  
+            }
             else if ((currState == BeamerangState.recalled) || (currState == BeamerangState.ctrlRecalled))
                 Detonate();
         }
         else
         {
-            other.gameObject.TryGetComponent<Chargeable>(out Chargeable chargeThis);
+            other.gameObject.TryGetComponent<TransistorController>(out TransistorController tc);
 
-            if(chargeThis != null)
-                chargeThis.ChargeUp();
+            if (tc != null)
+                tc.ChargeUp();
         }
     }
 
@@ -155,12 +159,15 @@ public class BeamerangController : MonoBehaviour
     // Should feel like tugging it with string or something
     public void ControlRecall()
     {
+        beamerangCollider.height = 0f;
+        beamerangCollider.radius = 0.5f;
         currState = BeamerangState.ctrlRecalled;
         GetComponent<Collider>().includeLayers = LayerMask.GetMask("Player");
 
         rigid.velocity = Vector3.zero;
         pointerMouseOffset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         controlPointer.SetActive(true);
+        controlPointer.transform.position = transform.position;
         StartCoroutine(DetonateIfMaxTimeReached(maxControlTime));
     }
 
@@ -197,26 +204,28 @@ public class BeamerangController : MonoBehaviour
         currState = BeamerangState.detonating;
     }
 
-    public void ToggleBeamerangState(Vector3 playerPosition)
+    IEnumerator DetermineRecallType(Vector3 playerPosition)
     {
-        if((currState == BeamerangState.firstLaunch) || (currState == BeamerangState.splatted))
+        for (int i = 0; i < holdFrames; i++)
         {
-            CapsuleCollider beamerangCollider = GetComponent<CapsuleCollider>();
-            
-
-
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                beamerangCollider.height = 0f;
-                beamerangCollider.radius = 0.5f;
-                ControlRecall();
-            }
-            else
+            if (Input.GetKeyUp(KeyCode.X))
             {
                 Recall(playerPosition);
+                yield break;
             }
+            yield return null;
         }
-        else if((currState == BeamerangState.recalled) || (currState == BeamerangState.ctrlRecalled))
+        ControlRecall();
+        yield break;
+    }
+
+    public void ToggleBeamerangState(Vector3 playerPosition)
+    {
+        if ((currState == BeamerangState.firstLaunch) || (currState == BeamerangState.splatted))
+        {
+            StartCoroutine(DetermineRecallType(playerPosition));
+        }
+        else if ((currState == BeamerangState.recalled) || (currState == BeamerangState.ctrlRecalled))
         {
             Detonate();
         }
