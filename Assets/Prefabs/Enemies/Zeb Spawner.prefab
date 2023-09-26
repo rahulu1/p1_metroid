@@ -45,6 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aggroDistance: 5
-  timeBetweenSpawns: 1
+  timeBetweenSpawns: 3
   maxSpawns: -1
   zebPrefab: {fileID: 3573627506515910079, guid: 93ac9f0a42e99fb469405a48dfb015b1, type: 3}

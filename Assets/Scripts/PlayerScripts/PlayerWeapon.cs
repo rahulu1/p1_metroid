@@ -182,8 +182,9 @@ public class PlayerWeapon : MonoBehaviour
         if (playerDirection.IsLookingUp())
         {
             bulletRenderer.flipY = true;
+            bulletInstance.transform.Rotate(Vector3.forward * 90);
             bulletInstance.transform.position = firingPosUp.position;
-            bulletInstance.transform.rotation = firingPosUp.rotation;
+            //bulletInstance.transform.rotation = firingPosUp.rotation;
             if(weaponEquipped != weapon.beamerang)
                 bulletInstance.GetComponent<Rigidbody>().velocity = Vector3.up * bulletSpeed;
         }
@@ -203,7 +204,7 @@ public class PlayerWeapon : MonoBehaviour
                 }
             }
         }
-        if (!(playerDirection.IsFacingRight()))
+        if (!(playerDirection.IsFacingRight()) && !playerDirection.IsLookingUp())
         {
             bulletInstance.transform.Rotate(Vector3.up * 180);
         }
