@@ -6,12 +6,6 @@ public class DamageReactEnemy : DamageReact
 {
     public float freezeDuration;
 
-    // Start is called before the first frame update
-    protected override void Start()
-    {
-        base.Start();
-    }
-
     public override void ReactToDamage(int i, DamageSource source, Vector3 damagePos)
     {
         if(source == DamageSource.Projectile)

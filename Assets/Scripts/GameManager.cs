@@ -32,7 +32,12 @@ public class GameManager : MonoBehaviour
             restart = false;
             Camera.main.cullingMask = LayerMask.GetMask("Everything");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Debug.Log("Pressed");
+            LoadingData.sceneToLoad = "BEOS_FACILITY";
+            SceneManager.LoadScene("Loading Screen");
         }
     }
 
