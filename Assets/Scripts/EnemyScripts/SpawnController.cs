@@ -11,6 +11,8 @@ public class SpawnController : MonoBehaviour
     private GameObject healthOrbPrefab; // used to spawn health orb
     [SerializeField]
     private GameObject missileAmmoPrefab; // used to spawn missile ammo
+    [SerializeField]
+    private GameObject explodeSpritePrefab;
     private PlayerInventory playerInventory;
 
     private Transform camTransform; // used to determine camera position
@@ -31,6 +33,9 @@ public class SpawnController : MonoBehaviour
     private float maxCamOffsetY = 8f;
 
     private bool frozen = false;
+
+    [SerializeField]
+    private int explodeFrames;
 
     void Awake()
     {
@@ -114,6 +119,8 @@ public class SpawnController : MonoBehaviour
 
         Vector3 deathLocation = spawnedEntity.transform.position;
 
+        StartCoroutine(ExplodeSprite(deathLocation));
+
         Destroy(spawnedEntity);
 
         float spawnOrNot = Random.Range(0f, 1f);
@@ -139,6 +146,18 @@ public class SpawnController : MonoBehaviour
                 spawnedEntity.transform.position = deathLocation;
             }
         }
+    }
+
+    IEnumerator ExplodeSprite(Vector3 explodePosition)
+    {
+        GameObject explosion = Instantiate(explodeSpritePrefab);
+        explosion.transform.position = explodePosition;
+
+        for (int i = 0; i <= explodeFrames; i++)
+        {
+            yield return null;
+        }
+        Destroy(explosion);
     }
 
     void AttemptToSpawn()
