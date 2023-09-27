@@ -27,6 +27,7 @@ public class BeamerangController : MonoBehaviour
     [SerializeField]
     private float maxControlTime; // Max time before exploding in control mode
 
+    [SerializeField]
     private int holdFrames = 60;
 
     private Vector3 lerpPosition;

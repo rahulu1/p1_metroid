@@ -240,7 +240,8 @@ MonoBehaviour:
   beamerangControlSpeed: 0.06
   maxControlSpeed: 0.15
   maxSplatTime: 20
-  maxControlTime: 6
+  maxControlTime: 4
+  holdFrames: 40
   dontSplat:
     serializedVersion: 2
     m_Bits: 7680
@@ -278,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e68148f2ce2cc74cb461595740101d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthDelta: 1
+  healthDelta: 2
   damageSource: 0
   dontAlter:
     serializedVersion: 2
