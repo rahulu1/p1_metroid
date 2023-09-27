@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6042874127132482120
+--- !u!1 &7007560962715843775
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,61 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8095540652603853643}
-  - component: {fileID: 3132794207201217859}
-  - component: {fileID: 7535725269557420660}
+  - component: {fileID: 8297271372831177384}
+  - component: {fileID: 7992851841551251677}
   m_Layer: 0
-  m_Name: SpawnAnchor
+  m_Name: Explode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8095540652603853643
+--- !u!4 &8297271372831177384
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6042874127132482120}
+  m_GameObject: {fileID: 7007560962715843775}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3132794207201217859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6042874127132482120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29d81c2e1df1d5d40b389f04321ad2eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entityPrefab: {fileID: 0}
-  healthOrbPrefab: {fileID: 5490904276765965763, guid: 39796f2961bd6604f927f59f7201ed3b, type: 3}
-  missileAmmoPrefab: {fileID: 6541189136936615059, guid: 0cae7b4ac28af284496a06ff2e8f0a39, type: 3}
-  explodeSpritePrefab: {fileID: 7007560962715843775, guid: d2eda7700de06d446912e8136910cb1e, type: 3}
-  initialSpawnChance: 1
-  respawnChance: 0.7
-  healthDropChance: 0.125
-  missileDropChance: 0.2
-  maxCamOffsetX: 8.5
-  maxCamOffsetY: 8
-  explodeFrames: 10
---- !u!212 &7535725269557420660
+--- !u!212 &7992851841551251677
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6042874127132482120}
+  m_GameObject: {fileID: 7007560962715843775}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -97,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1361087762, guid: 0c79924c3de4e9e4694f6fe0610154f7, type: 3}
+  m_Sprite: {fileID: 2046376207, guid: e834e0016650744469ab692c36439892, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
